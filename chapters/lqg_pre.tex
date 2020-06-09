@@ -1,0 +1,135 @@
+% !TeX root = ../main.tex
+
+\chapter{正则圈量子引力：量子化程序}
+
+	\label{chp-Quantization}
+	\section{量子化的准备工作}
+
+		\label{sec-pre}
+		在量子化之前，还需作一些讨论。
+
+		\paragraph{规范群的选择} 如前文所述，纯引力的情况下，Ashtekar 联络 $\tensor{A}{^i_a}$ 是 $\so{3}$ 值联络，理论具有局域 $\SO{3}$ 规范对称性。但为了方便量子化，也为了考虑与旋量场的耦合——即引入费米子，从这里起我们将规范群替换为 $\SO{3}$ 的双覆盖群 $\SU{2}$，$\tensor{A}{^i_a}$ 理解为 $\su{2}$ 值联络。取 $W$ 到 $\su{2}$ 的同构 $\tensor{\tau}{_i}$，使得 $\tensor{\tau}{_\alpha} \definedby \tensor{\tau}{_i} \tensor{\xi}{^i_\alpha}, \alpha=1,2,3$ 在 Killing 度规下正交归一，例如$\frac{\ii}{2}$倍的三个泡利矩阵。则 $\tensor{A}{_a} = \tensor{A}{^i_a} \tensor{\tau}{_i}$ 是 $\su{2}$ 值一形式。
+
+		\nomenclature{$\tensor{\tau}{_i} = \frac{\ii}{2} \tensor{\sigma}{_i}$}{$\su{2}$的一组正交归一基底}
+
+		\paragraph{约束代数的分析} 注意到约束构成的泊松代数~\eqref{eq-constrain_algebra} 中，右边是依赖变量 $\tensor{A}{^i_a}$ 和 $\tensor{\tilde{P}}{^a_i}$ 的，故约束代数并非李代数，这给量子化带来一定的麻烦。注意到所有高斯约束 $\left\{ G(\Lambda) \right\}$ 不仅是泊松代数的子代数，还是双边理想，因此可以考虑先独立解出高斯约束，然后考虑约化约束代数
+		\begin{equation}
+			\begin{split}
+				\left\{ C_{\mathrm{Diff}}(u), C_{\text{Diff}}(v) \right\} &= C_{\text{Diff}}([u,v]),\\
+				\left\{ C_{\text{Diff}}(v), C_{\text{H}}(f) \right\} &= - C_{\text{H}}(v(f)),\\
+				\left\{ C_{\text{H}}(f), C_{\text{H}}(f') \right\} &= - C_{\text{Diff}}(S(f,f')),\label{eq-reduced_constrain_algebra}
+			\end{split}
+		\end{equation}
+		进一步解约束则比较麻烦，因为微分同胚约束和哈密顿约束不能分开处理。这给哈密顿算符的构造带来一定的模糊性\cite{Han2005,Thiemann1996aw}。2006年，Thomas Thiemann 发表了“The Phoenix Project”\cite{Thiemann2003zv}，将约束代数~\eqref{eq-reduced_constrain_algebra} 重写，引入了 Master Constraint Programme，后文会回到这个问题上。
+
+	\section{第一类约束系统的量子化}
+
+		\label{sec-Quantization}
+		之前在第\ref{chp-canonical_gravity}章第\ref{section-QGD}节中介绍了 Dirac 量子化的简要思想，但由于原本的 Dirac 量子化方法存在一些不足，尤其是在物理状态上定义的 Hilbert 空间结构需要额外附加，会导致一些问题。在解决其问题上取得进展的方法有几何量子化，coherent states 路径积分，$C^*$ 代数方法，Algebraic Quantization，Refined Algebraic Quantization等。这里参考 \cite{Han2005,Thiemann0210094, Thiemann2007,arXiv9812024} 对 Refined Algebraic Quantization 进行简要概括
+		%，并略去一些虽然数学上很重要，但对物理无关紧要的细节（例如对物理量的泊松代数取泛包络代数）
+		。
+		
+		\subsection{Refined Algebraic Quantization（RAQ）}
+		\begin{enumerate}
+			\item \emph{相空间与约束}
+
+					量子化程序的出发点是给定相空间 $\left( \phasespace{M}, \{\cdot, \cdot\} \right)$ ，哈密顿量 $H$ 及一些第一类约束 $\left\{ C_I \right\}$。
+
+			\item \emph{选择极化}
+			
+					相空间的极化是指从相空间中选定位型变量 ${q}$，用数学语言来讲，是选择 $\phasespace{M}$ 的一个拉格朗日子流形 $\configurationspace{C}$。物理上感兴趣的情况下，往往有 $\phasespace{M} \cong \CTB{\configurationspace{Q}}$，则取 $\configurationspace{C} = \configurationspace{Q}$ 即可。
+
+			\item \emph{物理量的$*$-代数}
+			
+					这一步要选择基本物理量构成的李$*$-代数 $\staralgebra{B}$。对量子力学的情况，可选用由 $\left\{ {q}, {p} \right\}$ 生成的代数，它具有泊松括号 $ \left\{ q^i, p_j \right\} = \tensor{\delta}{^i_j}$，但在讨论无穷自由度的场论时右边会变成 $\delta$ 函数，不便使用。于是场论情况可用光滑函数 $f \in C^\infty(\configurationspace{C})$ 代替 $q$，动量的哈密顿矢量场 $v_p(f) \definedby \left\{ p, f \right\}$ 代替 $p$，并定义一个新的括号 $\left[ (f,v_p), \left( f',v_{p'} \right) \right] \definedby \left( v(f') - v'(f), \left[ v,v' \right] \right)$，则由所有 $(f,v_p)$ 形成的李代数记为 $\staralgebra{B}$，复共轭是其上的一个 $*$ 运算。$\staralgebra{B}$ 的泛包络代数记为 $\staralgebra{A}$，这是一个泊松 $*$-代数，称为物理量的量子代数。
+
+			\item \emph{$*$-代数的不可约表示}
+
+					选择量子代数 $\staralgebra{A}$ 的不可约表示。但为了方便，这里忽略掉数学细节，而直接考虑 $\staralgebra{B}$ 的表示 $\pi \colon \staralgebra{B} \rightarrow \Linear{\Hil_{\text{kin}}}$，使得 $\forall a,b \in \staralgebra{B}$ 有
+					\begin{equation}
+						\begin{split}
+							{\pi(a)}^\dagger &= \pi(a^*),\\
+							\left[ \pi(a), \pi(b) \right] &= \ii \hbar \pi\left( \left[ a,b \right] \right),\label{eq-representation}
+						\end{split}
+					\end{equation}
+					实际上式~\eqref{eq-representation} 中的等号有定义域的问题，而且有 Groenewald-van Hove 定理的问题，为了避免这些数学的麻烦，可修改 $\staralgebra{B}$ ，用 $C^\infty(\configurationspace{C})$ 中有紧支集的函数所形成的子代数代替 $C^\infty(\configurationspace{C})$。
+
+					通常可以选择 $\Hil_{\text{kin}}$ 为 $L^2(\bar{\configurationspace{C}},\mu)$，其中 $\bar{\configurationspace{C}}$ 是 $\configurationspace{C}$ 的 distributional extension， $\mu$ 是 $\extentedconfigurationspace{C}$ 上的积分测度。例如，在闵氏时空上的标量场的情况下，$\configurationspace{C}$ 是 $\Rn{3}$ 上的速降函数集合，故 $\extentedconfigurationspace{C}$ 是 $\Rn{3}$ 上的缓增分布集合，$\mu$ 是 $\extentedconfigurationspace{C}$ 上的归一化高斯分布。
+
+			\item \emph{约束算符和哈密顿算符}
+			
+					约束和哈密顿函数往往不在 $\staralgebra{B}$ 中，除非它们只含动量的至多一次幂项，否则，$\hat{C}_I \definedby \pi(C_I)$ 和 $\hat{H} \definedby \pi(H)$ 这样的表达式会遇到 ordering ambiguity，在场论情形还可能需要正规化。我们假定 $\hat{H}$ 是对称算子（symmetric operator）\footnote{即，任取 $\psi,\phi$ 属于 $\hat{H}$ 定义域，有 $\ip*{\hat{H}\psi}{\phi} = \ip*{\psi}{\hat{H} \phi}$。}，且 $\hat{C}_I$ 都是至少可闭的（closable）\footnote{算符 $A$ 是可闭的意为 $A$ 和 $A^\dagger$ 都是稠定的。}，则一般可以找到一个子集 $\Dkin \subset \Hil_{\text{kin}}$，使得所有约束算符 $\hat{C}_I$ 及其对偶算符 $\hat{C}_I^\dagger$ 和哈密顿算符 $\hat{H}$ 都在 $\Dkin$ 上稠定，且是这些算符的不变子空间，即 $\hat{H} \Dkin \subset \Dkin$ 且任取 $I$ 有 $\hat{C}_I \Dkin \subset \Dkin$。
+
+			\item \emph{施加约束}
+			
+					经典理论中求解约束方程 $C_I=0$ 并约化相轨道在量子理论中变为求解约束算符方程 
+					\begin{equation}
+						\hat{C}_I l =0,
+					\end{equation}
+					则 $l$ 求解了约束并且是规范不变的态，因为约束算符是量子规范变换的生成元。
+
+					但由于连续取值的经典量 $C_I$ 在量子化之后得到的算符 $\hat{C}_I$ 可能具有离散点谱或连续谱，当且仅当 $0$ 属于所有 $\hat{C}_I$ 的点谱时，上述方程 $\hat{C}_I l =0$ 才可能对所有 $I$ 有共同解。否则，就要考虑在更大的分布空间中求解 $l$。这里选择为 $\Dkin$ 的代数对偶空间 $\Dkin^*$ ，于是得到 \emph{Gel'fand triple} 或称 \emph{rigged Hilbert space}
+					\begin{equation}
+						\Dkin \hookrightarrow \Hil_{\text{kin}} \hookrightarrow \Dkin^*,
+					\end{equation}
+					量子约束方程变为在 $\Dkin^*$ 中求解一个子空间 $\Dphys^*$ 使得其中的任何元素 $l$ 满足
+					\begin{equation}
+						\left( \hat{C}_I^\prime l \right)(f) \definedby l \left( \hat{C}_I^\dagger f \right) = 0 \qc \forall f \in \Dkin, \forall I,
+					\end{equation}
+					其中第一个等号左边定义了约束在 $\Dkin^*$ 上的一个反线性对偶表示。
+
+			\item \emph{量子反常}
+			
+					经典层面第一类约束系统即存在一族结构函数 $\tensor{f}{_I_J^K}$ ，使得
+					\begin{equation}
+						\left\{ C_I, C_J \right\} = \tensor{f}{_I_J^K} C_K,
+					\end{equation}
+					但在量子理论中，由于结构函数也成为算符，$\tensor{\hat{f}}{_I_J^K}$ 和 $\hat{C}_K$ 可能有 ordering ambiguity。例如，可能有
+					\begin{equation}
+						\comm{\hat{C}_I}{\hat{C}_J} = \ii\hbar \hat{C}_K \tensor{\hat{f}}{_I_J^K} = \ii\hbar \left( \comm{\hat{C}_K}{\tensor{\hat{f}}{_I_J^K}} + \tensor{\hat{f}}{_I_J^K} \hat{C}_K \right),
+					\end{equation}
+					则若 $\comm{\hat{C}_K}{\tensor{\hat{f}}{_I_J^K}}$ 不是约束算符，它便成为了新的约束，使得量子理论比相对应的经典理论具有更少的物理自由度，这种情况称为 \emph{反常}（anomaly），是理论应当避免的。
+
+			\item \emph{狄拉克观测量与物理内积}
+			
+					如前所述，除非 $0$ 属于所有约束算符的点谱，否则 $\Hkin \cap \Dphys^* = \left\{ 0 \right\}$ ，于是 $\Dphys^*$ 上需要另外定义内积，而不能继承 $\Hkin$ 上的 $\ip{\cdot}_{\text{kin}}$。$\ip{\cdot}_{\text{phys}}$ 应使得物理量是自伴算子，为此定义\emph{狄拉克观测量}（Dirac observable）。 
+					\begin{Definition}
+						一个\emph{强}狄拉克观测量（strong Dirac Observable）是指 $\Hkin$ 上的一个算符 $\hat{O}$ ，满足 $\hat{O}$ 和 $\hat{O}^\dagger$ 都在 $\Dkin$ 上稠定，并且任取 $I$ 有 $\comm{\hat{O}}{\hat{C}_I} = 0$；一个\emph{弱}狄拉克观测量（weak Dirac observable）是指 $\Hkin$ 上的一个算符 $\hat{O}$ ，满足 $\hat{O}^\prime \Dphys^* \subset \Dphys^*$。
+					\end{Definition}
+					强狄拉克观测量是满足规范不变条件 $\left\{ O, C_I \right\} = 0, \forall I$ 的经典物理量 $O$ 的量子版本，而弱狄拉克观测量则是较弱的条件 $\left. \left\{ O, C_I \right\} \right|_{{\phasespace{M}^\prime}} =0$ 的量子版本，其中 $\phasespace{M}^\prime$ 是相空间 $\phasespace{M}$ 中由 $C_I = 0, \forall I$ 决定的约束曲面。 
+
+					通过适当选取 $\Dphys^*$ 的子集 $\Hphys$ 及拓扑，可以得到另一个 Gel'fand triple
+					\begin{equation}
+						\Dphys \hookrightarrow \Hphys \hookrightarrow \Dphys^*,
+					\end{equation}
+					使得所有强狄拉克观测量 $\hat{O}$ 可以看作在 $\Dphys$ 上稠定的算子。在 $\Hphys$ 上选择物理内积 $\ip{\cdot	}_{\text{phys}}$，使 $\hat{O}^\prime$ 都是自伴的。
+
+			\item \emph{经典极限}
+			
+					最后，需要检查理论的经典极限。 $\Hphys$ 需要包括半经典态，但这取决于具体的选择。记 $m\in \phasespace{M}$ 所在的规范等价类为 $[m]$，设有一组 由 $[m]$ 标记的态 $\psi_{[m]}$，粗略来说，若满足对经典狄拉克观测量 $O$ 及其对应算符 $\hat{O}'$ 有
+					\begin{gather}
+						\lim_{\hbar \rightarrow 0} \abs{\frac{\ev**{\hat{O}'}{\psi_{[m]}}_{\text{phys}}}{O(m)} - 1} = 0,\\
+						\lim_{\hbar \rightarrow 0} \abs{\frac{\ev**{\left( \hat{O}^\prime \right)^2}{\psi_{[m]}}_{\text{phys}}}{\ev**{\hat{O}^\prime}{\psi_{[m]}}_{\text{phys}} - 1}} = 0,
+					\end{gather}
+					则 $\psi_{[m]}$ 构成一组半经典态。这样才能确信量子理论的构造有正确的经典极限。
+		\end{enumerate}
+
+	\subsection{Master Constraint Approach}
+		注意到在 Refined Algebraic Quantization 中并没有提供找出 $\Hphys$ 和 $\ip{\cdot}_{\text{phys}}$ 的可以一步步进行的“算法”；另一方面，沿着 RAQ 进行量子化在求解量子哈密顿约束时仍很复杂。Thiemann 为求解量子约束提出了 \emph{Master Constraint Approach}，对于求解广义相对论的约束似乎非常合适\cite{Thiemann2003zv}。这里予以简单介绍。
+
+		设任选一实值正定的“矩阵” $K_{IJ}$\footnote{在场论情形 $I,J$ 包含连续指标，如坐标 $x$，故矩阵一词加引号。此时，$K$ 还需对 $x$ 满足适当的速降条件。}，定义\emph{主约束}（master constraint）
+		\begin{equation}
+			\masterconstraint{M} \definedby \frac{1}{2} \sum_{I,J} \bar{C}_I K_{IJ} {C}_J,
+		\end{equation}
+		则经典理论中 $\masterconstraint{M}=0$ 当且仅当所有约束为零。并且，可以验证 $O$ 为弱狄拉克观测量当且仅当 $\left. \left\{ \left\{ O, \masterconstraint{M} \right\}, O \right\} \right|_{\masterconstraint{M} = 0} =0$。对于量子理论，容易想到在 $\Hkin$ 上考察\emph{主约束方程}（Master Equation）
+		\begin{equation}
+			\hat{\masterconstraint{M}} \psi = 0,
+		\end{equation}
+		很容易明确此式的意义。由于 $\masterconstraint{M}$ 经典层面正定，合适的选择可以使 $\hat{\masterconstraint{M}}$ 是自伴的，于是根据谱定理，$\Hkin$ 有direct integral分解
+		\begin{equation}
+			\begin{gathered}
+				\Hkin \cong \int_{\sigma(\masterconstraint{M})}^{\oplus} \dd{\mu}(\lambda) \Hkin^\oplus(\lambda),\\
+				\ip{\psi}{\phi}_{\text{kin}} = \int_{\sigma(\masterconstraint{M})} \dd{\mu}(\lambda) \ip{\psi(\lambda)}{\phi(\lambda)}_{\Hkin^\oplus(\lambda)},\label{eq-direct_integral}
+			\end{gathered}
+		\end{equation}
+		其中第一式的 $\cong$ 表示酉等价，$\sigma(\hat{\masterconstraint{M}})$ 表示 $\hat{\masterconstraint{M}}$ 的谱，而 $\mu$ 是谱测度。注意到 $0$ 不一定是 $\hat{\masterconstraint{M}}$ 的谱点，例如若某系统有$\left\{ x,y,p,q \right\}$ 四个正则坐标，$\masterconstraint{M} = \frac{1}{2} \left( \omega^2 x^2+y^2 \right)$，经典理论中这意味着将 $x,y$ 从正则坐标中删除，而量子主约束算符多出零点能 $\frac{1}{2} \hbar \omega$。故应重定义主约束算符 $\hat{\masterconstraint{M}} \mapsto \hat{\masterconstraint{M}} - \lambda_0^{\masterconstraint{M}} \hat{\II}_{\Hkin}$，其中 $\lambda_0^{\masterconstraint{M}} \definedby \inf{\sigma(\hat{\masterconstraint{M}})}$。重定义后，取 $\Hphys \definedby \Hkin^\oplus(0)$，其上自带内积 $\ip{\cdot}_{\Hkin^{\oplus}(0)}$ 可作为物理内积。

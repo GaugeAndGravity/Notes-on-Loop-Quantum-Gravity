@@ -1,0 +1,231 @@
+% !TeX root = ../main.tex
+
+\chapter{量子约束的求解及动力学}
+
+	本章将在量子理论中求解约束~\eqref{eq-constrains_in_Ashtekar_connection}：
+	\begin{equation*}
+		\begin{split}
+			\tensor{G}{_i} &= \AD{a} \tensor{\tilde{P}}{^a_i} = \Partial{a} \tensor{\tilde{P}}{^a_i} + \tensor{\vol}{_i_j^k} \tensor{A}{^j_a} \tensor{\tilde{P}}{^a_k},\\
+			\tensor{V}{_a} &= \tensor{\tilde{P}}{^b_i} \tensor{F}{^i_a_b} - \frac{1+\gamma^2}{\gamma} \tensor{K}{^i_a} \tensor{G}{_i},\\
+			C &= \frac{\gkappa \gamma^2}{2\sqrt{\abs{\det h}}} \tensor{\tilde{P}}{^a_i} \tensor{\tilde{P}}{^b_j} \left[ \tensor{\vol}{^i^j_k} \tensor{F}{^k_a_b} - \left( 1+ \gamma^2 \right) \tensor{K}{^i_a} \wedge \tensor{K}{^j_b} \right]\\
+			& \qquad + \gkappa \left( 1 +\gamma^2 \right) \tensor{G}{^i} \Partial{a} \left( \frac{\tensor{\tilde{P}}{^a_i}}{\sqrt{\abs{\det h}}} \right).
+		\end{split}
+	\end{equation*}
+	回忆它们的约束代数~\eqref{eq-constrain_algebra}，我们曾经提起过高斯约束构成双边理想，可以先独立解出，而且能直接在 $\Hkin$ 上求解得到 $\SU{2}$ 不变空间 $\Hkin^0$，较为简单。之后将以 $\Hkin^0$ 为 kinematical 希尔伯特空间，继续求解其他约束。
+
+	\section{量子高斯约束}
+
+		在~\eqref{eq-smeared_Gauss_constrain} 中定义了经典的 smeared 高斯约束
+		\begin{equation}
+			G(\Lambda) = \int_{\spc} \dd[3]{x} \tensor{\Lambda}{^i} \AD{a} \tensor{\tilde{P}}{^a_i} = - \int_{\spc} \dd[3]{x} \tensor{\tilde{P}}{^a_i} \AD{a} \tensor{\Lambda}{^i},
+		\end{equation}
+		这是动量在3维的smear，将 $\int_{\spc} \dd[3]{x} \tensor{\tilde{P}}{^a_i} \AD{a} \tensor{\Lambda}{^i}$ 记为 $P(\ADd \Lambda)$，并定义 $\bar{\configurationspace{A}}$ 上的矢量场
+		\begin{equation}
+			Y_{\ADd \Lambda}([f_\gamma]) \definedby \left\{ - P(\ADd \Lambda), f_\gamma \right\},
+		\end{equation}
+		则高斯约束可自然被量子化为
+		\begin{equation}
+			\begin{split}
+				\hat{G}(\Lambda) f &\definedby \ii\hbar Y_{\ADd \Lambda}(f)\\
+				&= \hbar \sum_{v\in V(\gamma)} \tensor{\Lambda}{^i}(v) \hat{J}^v_i f_\gamma,
+			\end{split}
+		\end{equation}
+		其中
+		\begin{equation}
+			\hat{J}^v_i \definedby \sum_{e:v\in e} \hat{J}^{(e,v)}_i,
+		\end{equation}
+		于是根据群表示的知识，$\hat{G}(\Lambda)$ 具有点谱，是可以直接在 $\Hkin$ 上求解的，量子高斯约束方程是
+		\begin{equation}
+			\hat{J}^v_i f_\gamma =0\qc \forall v \in V(\gamma),
+		\end{equation}
+		或等价地
+		\begin{equation}
+			\left( \hat{J}^v \right)^2 f_\gamma =0\qc \forall v \in V(\gamma),
+		\end{equation}
+		其中 $\left( \hat{J}^v \right)^2 \definedby \tensor{\delta}{^i^j} \hat{J}^v_i \hat{J}^v_j$。
+
+		为了求解量子高斯约束方程，我们重新观察之前构造的 $\Hkin$ 的一组基底——spin-network function。注意到 $\Hil_\gamma = \bigotimes_{e\in E(\gamma)} \Hil_e$，而 $\Hil_e \cong L^2(\SU{2},\mu_H)$ 上 $\left\{ \hat{J}^2, \hat{J}^{(L)}_3, \hat{J}^{(R)}_3 \right\}$ 构成完备对易算符集，其中
+		\begin{equation}
+			\hat{J}^2 \definedby \tensor{\delta}{^i^j} \hat{J}^{(L)}_i \hat{J}^{(L)}_j \equiv \tensor{\delta}{^i^j} \hat{J}^{(R)}_i \hat{J}^{(R)}_j
+		\end{equation}
+		它们的共同本征态就是 $\tensor{\pi}{^j_m_n}$：
+		\begin{equation}
+			\hat{J}^2 \tensor{\pi}{^j_m_n} = j(j+1) \tensor{\pi}{^j_m_n} \qc \hat{J}^{(L)}_3 \tensor{\pi}{^j_m_n} = m \tensor{\pi}{^j_m_n} \qc \hat{J}^{(R)}_3 \tensor{\pi}{^j_m_n} = n \tensor{\pi}{^j_m_n},
+		\end{equation}
+		故以 $\tensor{\pi}{^j_m_n}$ 为基底就是在算符集 $\left\{ \hat{J}^2, \hat{J}^{(L)}_3, \hat{J}^{(R)}_3 \right\}$ 下分解 $\Hil_e$。这可以通过 $\tensor{\pi}{^j_m_n}(g) = \mel{jm}{\rho^j(g)}{jn} = \tr(\op{jn}{jm}\rho^j(g))$ 从另一方面理解，映射
+		\begin{equation}
+			\op{jn}{jm} \mapsto \tensor{\pi}{^j_m_n} = \tr(\op{jn}{jm}\rho^j(\cdot))
+		\end{equation}
+		是 $\bigoplus_j \left( \Hil_j \otimes \Hil_j^* \right)$ 到 $\Hil_e$ 的同构，其中 $\Hil_j$ 是 $\SU{2}$ 的 spin-$j$ 表示空间。$\hat{J}^{(L)}_i$ 可理解为作用在左矢 $\bra{jm}$，即是 $\Hil_j^*$ 上的角动量算符，而 $\hat{J}^{(R)}_i$ 可理解为作用在右矢 $\ket{jn}$，即是 $\Hil_j$ 上的角动量算符。
+		于是 spin-network function 作为 $\tensor{\pi}{^j_m_n}$ 的张量积，是完备对易算符集 $\left\{ \left( \hat{J}^{(e)} \right)^2, \hat{J}^{(e,s(e))}_3, \hat{J}^{(e,t(e))}_3 \right\}_{e\in E(\gamma)}$ 的共同本征函数，对应于分解
+		\begin{equation}
+			\begin{split}
+				\Hil_\gamma &= \bigotimes_{e\in E(\gamma)} \Hil_e = \bigotimes_{e\in E(\gamma)} \left( \bigoplus_{j_e} \left( \Hil^{(e)}_{j_e} \otimes \Hil^{(e)*}_{j_e} \right) \right)\\
+				&= \bigoplus_{\myvec{j}} \left( \bigotimes_{e\in E(\gamma)} \left( \Hil^{(e)}_{j_e} \otimes \Hil^{(e)*}_{j_e} \right) \right),\label{eq-spin_network_function_decompose}
+			\end{split}
+		\end{equation}
+		量子高斯约束算符中的 $\hat{J}^v_i = \sum_{e:v\in e} \hat{J}^{(e,v)}_i$ 提示我们在顶点处进行角动量耦合。定义
+		\begin{equation}
+			\Hil_j^{(e,v)} \definedby
+			\begin{cases}
+				\Hil_j, & v=t(e),\\
+				\Hil_j^*, & v=s(e),\\
+				\left\{ 0 \right\}, & \text{otherwise},
+			\end{cases}
+		\end{equation}
+		则可继续改写
+		\begin{equation}
+			\begin{split}
+				\Hil_\gamma &= \bigoplus_{\myvec{j}} \left( \bigotimes_{e\in E(\gamma)} \left( \bigotimes_{\substack{v:v\in e}} \Hil_{j_e}^{(e,v)} \right) \right) = \bigoplus_{\myvec{j}} \left( \bigotimes_{v\in V} \left( \bigotimes_{\substack{e:v\in e}} \Hil_{j_e}^{(e,v)} \right) \right),
+			\end{split}
+		\end{equation}
+		顶点 $v$ 处的张量积表示 $\bigotimes_{\substack{e:v\in e}} \Hil_{j_e}^{(e,v)}$ 就是 $\hat{J}_i^{v}$ 作用的空间，可分解为不可约表示的直和
+		\begin{equation}
+			\bigotimes_{\substack{e:v\in e}} \Hil_{j_e}^{(e,v)} = \bigoplus_{l} \Hil_{\myvec{j}(v),l_v}^{v},
+		\end{equation}
+		其中 $l_v$ 是 $\left( \hat{J}^{v} \right)^2$ 的量子数，$\myvec{j}(v) = \left( j_e \right)_{v\in e}$ 是所有以 $v$ 为端点的边上标记的 $j_e$ 的数组。故
+		\begin{equation}
+			\Hil_\gamma = \bigoplus_{\myvec{j}} \left( \bigoplus_{\myvec{l}} \left( \bigotimes_{v\in V(\gamma)} \Hil_{\myvec{j}(v),l_v}^{v} \right) \right),
+		\end{equation}
+		则 $\Hil_\gamma$ 中量子高斯约束的解空间即为
+		\begin{equation}
+			\Hil_\gamma^0 \definedby \bigoplus_{\myvec{j}} \left( \bigotimes_{v\in V(\gamma)} \Hil_{\myvec{j}(v),l_v=0}^{v} \right),\label{eq-H0gamma_decompose}
+		\end{equation}
+		注意到
+		\begin{equation}
+			\Hil_{\myvec{j}(v),l_v=0}^{v} = \Inv\left( \bigotimes_{\substack{e:v\in e}} \Hil_{j_e}^{(e,v)} \right)
+		\end{equation}
+		是数学中所说的 intertwiner space，可依照分解式~\eqref{eq-H0gamma_decompose} 给出 $\Hil_\gamma^0$ 的一组基底：
+		\begin{Definition}
+			任给定图 $\gamma$，指定 $\myvec{j} = \left( j_e \right)_{e\in E(\gamma)}$，使得每个顶点处 $\bigotimes_{\substack{e:v\in e}} \Hil_{j_e}^{(e,v)}$ 都存在 intertwiner；然后对每个顶点指定一个 intertwiner $i_v \in \Hil_{\myvec{j}(v),l_v=0}^{v}$，记规范不变的spin-network 为 $s=(\gamma,\myvec{j},\myvec{i})$，则定义\emph{spin-network state}为
+			\begin{equation}
+				\psi_s(A) \definedby \operatorname{C} \left( \bigotimes_{v\in V(\gamma)} i_v \bigotimes_{e\in E(\gamma)} \rho^j(A(e)) \right),
+			\end{equation}
+			其中 $\operatorname{C}(\cdot)$ 指对每一对 $(e,v)$ 将 intertwiner $i_v$ 与 $\rho^j(A(e))$ 相对应的指标缩并。
+
+			当 $\myvec{j}$ 取遍且 $i_v$ 取遍 intertwiner space 取定的一组基底时，spin-network state 构成 $\Hil_\gamma^0$ 的基底。
+		\end{Definition}
+		对于整个 $\Hkin$，则需要一些新定义和一个分解定理\cite{Han2005}：
+		\begin{Definition}
+			对图 $\gamma$，若 $v\in V(\gamma)$ 满足：以 $v$ 为顶点的边有且只有两条，且都不是以 $v$ 为基点的圈（loop），即都只过 $v$ 一次，并且它们相乘（$\circ$运算）是解析的，则称 $v$ 为\emph{伪顶点}。换句话说，伪顶点人为地将一条边分为两条。
+			
+			定义
+			\begin{equation}
+				\Hil_\gamma^\prime = \bigoplus_{\left( \myvec{j},\myvec{l} \right) \in I_\gamma} \left( \bigotimes_{v\in V(\gamma)} \Hil_{\myvec{j}(v),l_v}^{v} \right),
+			\end{equation}
+			其中 $I_\gamma$ 对 $\myvec{j}$ 和 $\myvec{l}$ 作如下两条限定：所有 $j_e \neq 0$；对每个伪顶点，$l\neq 0$。
+		\end{Definition}
+		\begin{Theorem}
+			$\Hkin$ 有直和分解
+			\begin{equation}
+				\Hkin = \left( \bigoplus_{\gamma \in \Gamma} \Hil_\gamma^\prime \right) \oplus \mathbb{C}.
+			\end{equation}
+		\end{Theorem}
+		每个 $\Hil_\gamma^\prime$ 不过是对 $\left( \myvec{j}, \myvec{l} \right)$ 作限制，对量子高斯约束方程没有影响，故在 $\Hil_\gamma^\prime$ 中的规范不变子空间为
+		\begin{equation}
+			\Hil_\gamma^{0\prime} = \bigoplus_{\left( \myvec{j},\myvec{l}=\myvec{0} \right) \in I} \left( \bigotimes_{v\in V(\gamma)} \Hil_{\myvec{j}(v),l_v=0}^{v} \right),
+		\end{equation}
+		$\Hil_\gamma^{0\prime}$ 的基底也只需对 spin-network state 的 $\myvec{j}$ 作出限制即可。于是可直接得到
+		\begin{Theorem}
+			高斯约束的解子空间为
+			\begin{equation}
+				\Hkin^0 = \left( \bigoplus_{\gamma \in \Gamma} \Hil_\gamma^{0\prime} \right) \oplus \mathbb{C},
+			\end{equation}
+			其上的一组基底是
+			\begin{equation}
+				\left\{ \psi_{s=(\gamma,\myvec{j},\myvec{i})} \,\middle|\, (\myvec{j},\myvec{0}) \in I_\gamma, \text{每个 $i_v$ 在取定的一组基底中取值}, \gamma\in \Gamma \right\}.
+			\end{equation}
+		\end{Theorem}
+		定义 $\Cyl\left(\overline{\configurationspace{A}/\configurationspace{G}}\right) = \Span\{\psi_{s}\}$，它在 $\Hkin^0$ 中稠密，将用作求解其他约束的 $\Dkin^0$，并记 $\Cyl_\gamma\left(\overline{\configurationspace{A}/\configurationspace{G}}\right) = \Span\left\{\psi_{s}\,\middle|\,\gamma(s) = \gamma\right\}$ 。
+
+		\nomenclature{$\Hkin^0$}{$\Hkin$中规范不变的态空间}
+
+	\section{量子微分同胚约束}
+
+		与高斯约束不同的是，微分同胚约束 $C_{\text{Diff}}(v)$ 本身没有良好的算符定义，即找不到 $\Dkin$ 算符 $\hat{C}_{\text{Diff}}(v)$。空间微分同胚群在 $\Dkin^0$ 上有自然的酉表示
+		\begin{equation}
+			\hat{U}_{\varphi} f_\gamma \definedby f_{\varphi \circ \gamma},
+		\end{equation}
+		它保持 $\mu_{\text{A-L}}$ 不变，且无反常，即
+		\begin{equation}
+			\hat{U}_{\varphi} \hat{U}_{\varphi'} \hat{U}_{\varphi}^{-1} \hat{U}_{\varphi^{\prime}}^{-1} = \hat{U}_{\varphi \circ \varphi' \circ \varphi^{-1} \circ {\varphi'}^{-1}},
+		\end{equation}
+		但该表示不是弱连续的，故无法定义其生成元算符。因此，要求解的不是 $\hat{C}_{\text{Diff}} = 0$，而是 $\hat{U}_{\varphi} = \II$。
+
+		按照第\ref{chp-Quantization}章第\ref{sec-Quantization}节中介绍的 RAQ，需要求解 $l\in (\Dkin^0)^*$，使得
+		\begin{equation}
+			l\left(\hat{U}_\varphi f\right) = l(f) \qc \forall \varphi \in \Diff{\spc}, f\in \Dkin^0,\label{eq-Quantum_Diff_equation}
+		\end{equation}
+		将 $l$ 展开为
+		\begin{equation}
+			l(f) = \sum_{s} c_s \ip{\psi_s}{f}_{\text{kin}},
+		\end{equation}
+		其中 $s=(\gamma,\myvec{j},\myvec{i})$ 取遍规范不变的spin-network，则~\eqref{eq-Quantum_Diff_equation} 等价于
+		\begin{equation}
+			\hat{U}^*_{\varphi}l = \sum_s c_s \bra{\psi_{\varphi \cdot s}} = \sum_{s'} c_{\varphi^{-1} \cdot s'} \bra{\psi_{s'}} = l,
+		\end{equation}
+		这要求
+		\begin{equation}
+			c_{s=(\gamma,\myvec{j},\myvec{i})} = c_{\varphi \cdot s = \varphi(\gamma),\myvec{j},\myvec{i}}\qc \forall \varphi \in \Diff{\spc},
+		\end{equation}
+		故 $c_s = c_{\gamma,\myvec{j},\myvec{i}}$ 对 $\gamma$ 的依赖实际上是依赖于 $\gamma$ 所在的微分同胚不变等价类 $[\gamma]$，这与扭结不变量是类似的。记 $\mathcal{N}$ 为 spin-network 的微分同胚等价类 $[s]$ 的集合，其中的元素记为 $\nu$，定义
+		\begin{equation}
+			l_{\nu}(\cdot) \definedby \sum_{s\in \nu} \ip{\psi_s}{\cdot}_{\text{kin}},
+		\end{equation}
+		则任意~\eqref{eq-Quantum_Diff_equation} 的解具有形式
+		\begin{equation}
+			l = \sum_{\nu \in \mathcal{N}} c_\nu l_\nu,
+		\end{equation}
+		这样就得到了 $\DDiff^*$。关于进一步定义 $\ip{\cdot}_{\text{Diff}}$ 及 $\HDiff$ 可参见 \cite{Han2005,Thiemann2007} 等。
+
+		\nomenclature{$\DDiff^*$}{微分同胚约束的解空间}
+
+	\section{量子动力学——哈密顿约束}
+
+		这里我们遇到了正则圈量子引力的困难问题之一。在第\ref{chp-Quantization}章第\ref{sec-pre}节中提到过微分同胚约束与哈密顿约束泊松括号不为零的问题，这里表现为 哈密顿约束算符不能在 $\HDiff$ 上良好定义。Thiemann 通过对经典哈密顿约束进行一定的正规化，在 $\Hkin$ 上定义了哈密顿约束算符\cite{Thiemann1996aw}，但它不与 $\hat{U}_{\varphi}$ 对易，使得无法将其定义在 $\HDiff$ 上。另外，哈密顿约束与自己的泊松括号存在结构函数
+		\begin{equation}
+			\left\{ C_{\text{H}}(f), C_{\text{H}}(f') \right\} = - C_{\text{Diff}}(S(f,f'))
+		\end{equation}
+		还导致了量子反常，这是应当避免的。
+
+		从以上简要介绍可以看到，困难主要是由约束代数引起的。若可重新改写约束代数，使其构成李代数，并使微分同胚约束构成理想，则困难将得到很大程度地解决。这样的约束代数由 Thiemann 首次引入\cite{Thiemann2003zv}，核心想法是引入主约束
+		\begin{equation}
+			\masterconstraint{M} \definedby \frac{1}{2} \int_{\spc} \dd[3]{x} \frac{\abs{\tilde{C}(x)}^2}{\sqrt{\abs{\det{h}}}}
+		\end{equation}
+		来代替
+		\begin{equation}
+			C_{\text{H}}(f) = \int_{\spc} \dd[3]{x} f(x) \tilde{C}(x),
+		\end{equation}
+		在经典层面，$\masterconstraint{M} = 0$ 等价于 $C_{\text{H}}(f) = 0, \forall f$，但极大地简化了约束代数
+		\begin{equation}
+			\begin{split}
+				\left\{ C_{\mathrm{Diff}}(u), C_{\text{Diff}}(v) \right\} &= C_{\text{Diff}}([u,v]),\\
+				\left\{ C_{\text{Diff}}(v), \masterconstraint{M} \right\} &= 0,\\
+				\left\{ \masterconstraint{M}, \masterconstraint{M} \right\} &= 0,\label{eq-master_constrain_algebra}
+			\end{split}
+		\end{equation}
+		这种方法已经在很多约束系统中经过了检验\cite{Dittrich:2004bn,Dittrich:2004bp,Dittrich:2004bq,Dittrich:2004br,Dittrich:2004bs}。为定义主约束算符，对主约束进行正规化
+		\begin{equation}
+			\masterconstraint{M}^\epsilon \definedby \frac{1}{2} \int_{\spc} \dd[3]{x} \int_{\spc} \dd[3]{y} \chi_\epsilon(x,y) \frac{\tilde{C}(x) \tilde{C}(y)}{\sqrt{\abs{\det{h}}}},
+		\end{equation}
+		其中 $\chi_\epsilon(x,y)$ 满足 $\lim_{\epsilon \rightarrow 0} \chi_\epsilon(x,y) = \delta(x,y)$，并引入三角剖分来逼近难以写成算符的 $\det{h}$。量子化后，最终令 $\epsilon \rightarrow 0$ 来得到主约束算符 $\hat{\masterconstraint{M}}$。主约束算符的细节超出了本文的范围，这里只介绍一些它的性质：$\hat{\masterconstraint{M}}$ 是在 $\HDiff$ 上稠定的，并且是可闭算符，其闭包 $\hat{\bar{\masterconstraint{M}}}$ 是 $\hat{\masterconstraint{M}}$ 唯一的自伴扩张，称为 Friedrichs 扩张。约束代数~\eqref{eq-master_constrain_algebra} 没有量子反常，即
+		\begin{equation}
+			\left[ \hat{\masterconstraint{M}}, \hat{U}_{\varphi} \right] = 0 \qc \left[ \hat{\masterconstraint{M}}, \hat{\masterconstraint{M}} \right] = 0.
+		\end{equation}
+		另外，0确实是属于 $\hat{\masterconstraint{M}}$ 的谱的，不需要平移算符 $\hat{\masterconstraint{M}}$\cite{Thiemann:2005zg}。在\cite{Giesel:2006uj,Giesel:2006uk}中，Giesel 和 Thiemann 证明了主约束算符具有正确的经典极限。
+
+		\nomenclature{$\masterconstraint{M}$}{主约束}
+
+		按照第\ref{chp-Quantization}章第\ref{sec-Quantization}节中的量子化程序，还需进一步研究的问题有：
+		\begin{enumerate}
+			\item 求解
+			\begin{equation}
+				\Hkin \cong \int_{\sigma(\masterconstraint{M})}^{\oplus} \dd{\mu}(\lambda) \Hkin^\oplus(\lambda)
+			\end{equation}
+			中的 $\Hkin^\oplus(0)$。由于主约束算符本身的复杂性，该问题尚未完全解决；
+			\item 找出狄拉克观测量。在引力理论中寻找狄拉克观测量一直是个难题，但主约束算符提供了一条道路。若记 $\hat{U}(t)$ 是 $\hat{\masterconstraint{M}}$ 生成的单参酉算子群，若 $\hat{O}$ 是 $\HDiff$ 上的算符，且
+			\begin{equation}
+				\hat{[O]}\definedby \lim_{T\rightarrow \infty} \int_{-T}^T \dd{t} \hat{U}^{-1}(t) \hat{O} \hat{U}(t)\label{eq-group_average}
+			\end{equation}
+			收敛，则 $\hat{[O]}$ 与 $\hat{\masterconstraint{M}}$ 对易，是强狄拉克观测量。利用~\eqref{eq-group_average} 寻找狄拉克观测量是尚未解决的问题。
+		\end{enumerate}

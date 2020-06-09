@@ -1,0 +1,81 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}简介}{5}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}引力理论的正则表述}{9}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}ADM formulation}{9}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}量子几何动力学（QGD）}{13}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Palatini作用量和Holst作用量}{14}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Ashtekar 变量}{16}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}正则圈量子引力：量子化程序}{21}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}量子化的准备工作}{21}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{规范群的选择}{21}{paragraph*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{约束代数的分析}{21}{paragraph*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}第一类约束系统的量子化}{22}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Refined Algebraic Quantization（RAQ）}{22}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Master Constraint Approach}{25}{subsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}正则圈量子引力的运动学：代数及其表示}{27}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Holonomy-Flux 代数 $\mathfrak {B}$}{27}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}$\mathfrak {B}$ 的表示与kinematical 希尔伯特空间 $\mathcal {H}_{\text {kin}}$}{30}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}量子位型空间$\bar {\mathcal {A}}$}{30}{subsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}$\bar {\mathcal {A}}$ 上的拓扑}{32}{subsection.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}$\bar {\mathcal {A}}$上的测度}{33}{subsection.4.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}$\mathfrak {B}$ 在 $\mathcal {H}_{\text {kin}}$ 上的表示}{36}{subsection.4.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}量子约束的求解及动力学}{39}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}量子高斯约束}{39}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}量子微分同胚约束}{43}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}量子动力学——哈密顿约束}{44}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}正则圈量子引力的应用及发展}{47}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}量子几何——面积算符}{47}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}圈量子引力中的相干态}{48}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}圈量子宇宙学}{50}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}协变圈量子引力——spinfoam 模型}{51}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}单复形的对偶复形}{52}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}三维欧式引力：Ponzano-Regge 模型}{52}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}BF 理论与引力}{54}{section.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}BF 理论的 spinfoam 量子化}{55}{section.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}经典spinfoam引力}{56}{section.7.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.6}$\mathrm {SL}\left ( 2,\mathbb {C} \right )$ 的不可约酉表示}{57}{section.7.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.7}边界态及LQG}{58}{section.7.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.8}spinfoam 配分函数与跃迁振幅}{59}{section.7.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.9}相干态表示}{61}{section.7.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.10}半经典极限与离散几何}{62}{section.7.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{参考文献}{63}{equation.7.10.54}%

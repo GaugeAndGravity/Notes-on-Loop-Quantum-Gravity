@@ -1,0 +1,136 @@
+% !TeX root = ../main.tex
+
+\chapter{正则圈量子引力的应用及发展}
+\label{chp-application}
+
+	正则圈量子引力已定义了希尔伯特空间，关于其上的物理一直处于探索中。这里只简单介绍几何量算符和相干态，并叙述圈量子宇宙学的状况。
+
+	\section{量子几何——面积算符}
+
+		经典理论中，空间几何是黎曼几何，本节将展示在圈量子引力中，长度、面积、体积等几何量将具有分立的谱。在圈量子引力中已定义的几何量有面积算符\cite{Rovelli1994,Ashtekar:1996eg}、体积算符\cite{Ashtekar:1994wa,Rovelli1994,Ashtekar:1997fb}和长度算符\cite{Thiemann:1996at}等，这里简要介绍较为简单的面积算符。
+
+		设 $S$ 是 $\spc$ 中的一张解析、紧致且可定向的2维曲面，且有嵌入映射 $i_S \colon S \rightarrow \spc$，$S$ 上的坐标记为 $(u^1,u^2)$。则 $S$ 的面积是
+		\begin{equation}
+			A_S = \int_S \dd[2]{u} \sqrt{\det(i^*_S h)},
+		\end{equation}
+		借助坐标 $(u^1,u^2)$ 可算得
+		\begin{equation}
+			\det(i^*_S h) = \tensor{\tilde{E}}{^a_i} \tensor{n}{_a} \tensor{\tilde{E}}{^b_j} \tensor{n}{_b} \tensor{\delta}{^i^j},
+		\end{equation}
+		其中
+		\begin{equation}
+			\tensor{n}{_a} \definedby \tensor{\nvol}{_a_b_c} \tensor{\left( \pdv{u^1} \right)}{^b} \tensor{\left( \pdv{u^2} \right)}{^c}
+		\end{equation}
+		是 $S$ 上的法矢。
+		注意到在 $S$ 很小时，
+		\begin{equation}
+			P_i(S) = \int_S \tensor{\nvol}{_a_b_c} \tensor{\tilde{P}}{^a_i} = \frac{1}{\gkappa \beta} \int_S \dd[2]{u} \tensor{n}{_a} \tensor{\tilde{E}}{^a_i} \simeq \frac{1}{\gkappa \beta} \tensor{n}{_a} \tensor{\tilde{E}}{^a_i},
+		\end{equation}
+		则将 $S$ 剖分，将 $S$ 上的积分写成黎曼和，有
+		\begin{equation}
+			A_S = \lim_{N\rightarrow \infty} \gkappa \beta \sum_{\alpha=1}^N \sqrt{P_i(S_\alpha) P^i(S_\alpha)},
+		\end{equation}
+		可定义面积算符 $\hat{A}_S$ 为
+		\begin{equation}
+			\hat{A}_S f_\gamma \definedby \lim_{N\rightarrow \infty} \gkappa \beta \sum_{\alpha=1}^N \sqrt{\hat{P}_i(S_\alpha) \hat{P}^i(S_\alpha)} f_\gamma \qc \forall f_\gamma \in \Cyl^2(\gamma),
+		\end{equation}
+		注意到 $\hat{P}_i(S)$ 作用在 $f_\gamma$ 上与 $S$ 的具体形状无关，只与 $S$ 和 $\gamma$ 中的边的相交情况有关。当 $S$ 的剖分达到每个 $S_\alpha$ 至多只过一个顶点，或与一条边相交一次时，再细分已经不影响和式了，故极限被去除，求和改为对交点求和。我们适当对 $\gamma$ 的边分段，使得每条边 $e$ 至多与 $S$ 相交于端点，则
+		\begin{equation}
+			\hat{A}_S f_\gamma = 4\uppi \beta l_p^2  \sum_{v\in V(\gamma)\cap S} \sqrt{\left( \sum_{\substack{e:v\in e\\e:up}} \hat{J}^{(e,v)}_i - \sum_{\substack{e:v\in e\\e:down}} \hat{J}^{(e,v)}_i \right) \left( \sum_{\substack{e:v\in e\\e:up}} \hat{J}^{(e,v)}_j - \sum_{\substack{e:v\in e\\e:down}} \hat{J}^{(e,v)}_j \right) \tensor{\delta}{^i^j}} f_\gamma,
+		\end{equation}
+		其中 up，down 指 $e$ 在 $S$ 上方或下方，
+		\begin{equation}
+			l_p = \sqrt{\frac{\hbar \gkappa}{8\uppi}}
+		\end{equation}
+		是普朗克长度。根据角动量耦合理论，该算符可被对角化，其本征值为
+		\begin{equation}
+			a_S = 4\uppi \beta l_p^2 \sum_{i=1}^N \sqrt{2j^{(u)}_i(j^{(u)}_i+1) + 2j^{(d)}_i(j^{(d)}_i+1) - j^{(u+d)}_i(j^{(u+d)}_i+1)},
+		\end{equation}
+		其中 $N$ 是任意有限正整数，$j^{(u)}_i$，$j^{(d)}_i$ 是任意半整数自旋，而 $j^{(u+d)}_i$ 满足
+		\begin{equation}
+			j^{(u+d)}_i \in \left\{ \abs{j^{(u)}_i - j^{(d)}_i}, \abs{j^{(u)}_i - j^{(d)}_i} + 1, \cdots , j^{(u)}_i + j^{(d)}_i \right\},
+		\end{equation}
+		在某些文献中列出的 $a_S = 4\uppi \beta l_p^2 \sum_{i=1}^N \sqrt{j_i(j_i+1)}$ 形式是忽略了~\eqref{eq-flux_function_algebra} 中的因子 $\kappa(e,S)$ ，相当于只有 $j^{(u)}$ 或只有 $j^{(d)}$ 不为零的特殊情况。
+
+	\section{圈量子引力中的相干态}
+
+		\label{sec-coherent_states}
+		相干态（coherent states）是半经典态的候选。在圈量子引力中，已经定义并研究了很多组相干态，这里介绍由\cite{Thiemann2002,Ashtekar1994nx,Flori2009,Bahr2007}发展并在\cite{Bianchi2009}中详细讨论的“全纯”相干态（holomorphic coherent states），以及\cite{Livine2007} 中定义的 Livine-Speziale “semi coherent”态（LS 态）
+		。
+
+		全纯态是 Thiemann 定义的 complexifier coherent states 的特例，由每个 $e\in E(\gamma)$ 赋予 一个 $H_e \in \SL{2,\mathbb{C}}$ 标记。注意到任取 $H_e\in \SL{2,\mathbb{C}}$，有分解
+		\begin{equation}
+			H_e = \e{\ii L_l} h_e \qc L_e\in \su{2}, h_e\in \SU{2},
+		\end{equation}
+		故给出一组 $\{H_e\}\in \SL{2,\mathbb{C}}^{\abs{E(\gamma)}}$ 相当于给出 $\CTB{\SU{2}^{\abs{E(\gamma)}}}$ 中的信息，这可被视为 $\gamma$ 上的“经典相空间” $\CTB{\bar{\configurationspace{A}}_\gamma}$。
+
+		记 $\SU{2}$ 上的热核（heat kernel，热方程的基本解）为
+		\begin{equation}
+			K_t(h,h_0) = \sum_{j} (2j+1) \e{-j(j+1)t} \tr(\rho^j(h h_0^{-1})) \qc h,h_0\in \SU{2},t>0,
+		\end{equation}
+		它可唯一地解析延拓到 $K_t(h,H),h\in\SU{2},H\in \SL{2,\mathbb{C}}$。定义全纯态为
+		\begin{equation}
+			\psi_{\{H_e,t_e\}}(A) \definedby \int_{\SU{2}^{\abs{V(\gamma)}}} \left( \prod_{v\in V(\gamma)} \dd{\mu_H}(g_v) \right) \prod_{e\in E(\gamma)} K_{t_e}\left( A(e), g_{s(e)} H_e g_{t(e)} \right),
+		\end{equation}
+		其中 $t>0$ 是参数。若作分解 $H_l = \e{2\ii t L_e} h_e$，则可通过计算证明
+		\begin{equation}
+			\frac{\mel{\psi_{\{H_e,t_e\}}}{f_\gamma}{\psi_{\{H_e,t_e\}}}}{\ip{\psi_{\{H_e,t_e\}}}} = f_\gamma(\{h_e\}) \qc \frac{\mel{\psi_{\{H_e,t_e\}}}{\hat{L}_i^{(e)}}{\psi_{\{H_e,t_e\}}}}{\ip{\psi_{\{H_e,t_e\}}}} = (L_{e})_i,
+		\end{equation}
+		且方差很小（渐进正比于 $\sqrt{\hbar}$），故可以说全纯相干态是一种半经典态。
+
+		下面介绍 LS 态。为此首先考虑 $\SU{2}$ 的相干态，这里作简要说明，关于李群的相干态有一个较清晰的参考文献\cite{Perelomov1971}。
+
+		李群 $\SU{2}$ 中任意群元具有欧拉角分解：
+		\begin{equation}
+			h(\phi,\theta,\psi) = \e{\phi \tensor{\tau}{_3}}\e{\theta \tensor{\tau}{_2}} \e{\psi \tensor{\tau}{_3}},
+		\end{equation}
+		子群 $H=\left\{ \e{\psi \tensor{\tau}{_3}} \right\} = U(1)$ 构成正规子群，商群为
+		\begin{equation}
+			\SU{2}/H = \left\{ h(\myvec{n}) = \e{\phi \tensor{\tau}{_3}}\e{\theta \tensor{\tau}{_2}} \,\middle|\, \myvec{n}=\left( \sin\theta \cos\phi, \sin\theta \sin\phi, \cos\theta \right) \in S^2 \right\} \cong S^2,
+		\end{equation}
+		其中 $\cong$ 是流形的同胚。注意到在 $j=1$ 表示下，$h(\myvec{n})$ 恰是将 $\myvec{e}_z$ 旋转到 $\myvec{n}$ 的旋转。对于 spin-$j$ 表示，定义相干态
+		\begin{equation}
+			\ket{j,\myvec{n}} \definedby h(\myvec{n}) \ket{j,j},
+		\end{equation}
+		选择 $\ket{j,j}$ 是因为它在 $H$ 的作用下不变（仅差相因子），从而相干态不依赖于 $h(\myvec{n})$ 的具体选择。相干态具有超完备性（over complete），即
+		\begin{equation}
+			\frac{2j+1}{4\uppi} \int_{S^2} \dd{\myvec{n}} \op{j,\myvec{n}} = \II_{\Hil_j},
+		\end{equation}
+		利用这组相干态可定义 Livine-Speziale 所引入的 coherent intertwiner，考虑 $\Hil_{j_1} \otimes \Hil_{j_2} \otimes \cdots \otimes \Hil_{j_N}$ 中的 intertwiner，定义 coherent intertwiner 为
+		\begin{equation}
+			i_{\{j_a\}}(\{\myvec{n}_a\}) \definedby \int_{\SU{2}^N} \left( \prod_{a=1}^N \dd{\mu_H}(h_a) \right) \bigotimes_{a=1}^{N} \rho^{j_a}(h_a) \ket{j_a,\myvec{n}_a},
+		\end{equation}
+		此定义容易推广到其中部分 $\Hil_j$ 替换为对偶空间 $\Hil_j^*$ 的情况。于是 $\Hil_v = \bigotimes_{\substack{e:v\in e}} \Hil_{j_e}^{(e,v)}$ 中有 LS coherent intertwiner
+		\begin{equation}
+			i_v(\{\myvec{n}_{(e,v)}\}) = \prod_{e:v\in e} \left( \int_{\SU{2}} \dd{\mu_H}(h_e) \right) \bigotimes_{e:v\in e}
+			\begin{cases}
+				\rho^{j_e}(h_e) \ket{j_e,\myvec{n}_{(e,v)}} , & v=t(e);\\
+				\bra{j_e,\myvec{n}_{(e,v)}} \rho^{j_e}(h_e) , & v=s(e),
+			\end{cases}
+		\end{equation}
+		则可定义 LS 态
+		\begin{equation}
+			\psi_{\gamma,\myvec{j},\{\myvec{n}_{(e,v)}\}} \definedby \psi_{s=(\gamma,\myvec{j},\{i_v(\{\myvec{n}_{(e,v)}\})\})},
+		\end{equation}
+		其中等式右端是 spin-network state。
+
+		考察两组相干态的关系。对于 $H_e \in \SL{2,\mathbb{C}}$，还有如下分解
+		\begin{equation}
+			H_e = h\left(\myvec{n}_{e,s(e)}\right) \e{-(\xi_e+\ii \eta_e)} h\left(\myvec{n}_{e,t(e)}\right)^{-1},
+		\end{equation}
+		其物理意义留待介绍 spinfoam 和 离散几何时讨论。注意到这给了我们一组 $\myvec{n}_{(e,v)}$，令实数 $j_e^0$ 和 $\sigma_e$ 定义为
+		\begin{equation}
+			2j_e^0 = \frac{\eta_e}{t_e} \qc \sigma_e = \frac{1}{2t_e},
+		\end{equation}
+		在\cite{Bianchi2009} 中给出，两组相干态之间有如下展开式
+		\begin{equation}
+			\psi_{\{H_e,t_e\}}\left(A\right) \approx \sum_{\{j_e\}}\left(\prod_{e}\left(2 j_{e}+1\right) \exp(-\frac{\left(j_{e}-j_{e}^{0}\right)^{2}}{2 \sigma_{e}}) e^{-i \xi_{e} j_{e}}\right) \psi_{\gamma, \myvec{j}, \{\myvec{n}_{(e,v)}\}}\left(A\right),
+		\end{equation}
+		因此，两组相干态互相是波包的形式。
+
+	\section{圈量子宇宙学}
+
+		如简介中所述，奇异性问题是量子引力理论应当解决的问题。
+		由于圈量子引力的完整量子动力学尚未完全解决，因此对奇异性问题，物理学家常常把圈量子引力的思路用在一些对称约化模型中，以检验圈量子引力的奇异性问题。对称约化模型由于对称条件的存在，会冻结部分物理自由度，只余下有限的自由度\cite{Bojowald:1999eh}。这方面的代表是具有空间均匀性和（或）各向同性的模型，即圈量子宇宙学。 经典层面上，宇宙学原理要求的均匀各向同性的对称性使自由度只余下一个尺度因子。
+		
+		Bojowald在\cite{Bojowald:2001xe}中的工作表明，圈量子宇宙学中不存在大爆炸奇点，后来的研究见\cite{Ashtekar:2003hd}等。此外，圈量子宇宙学给出了 Friedmann方程的量子修正，结果表明可以解决暴涨势的精细调节问题。由于量子几何效应，暴涨可以自然地开始和结束\cite{Bojowald:2002nz,Date:2004yz}。圈形量子宇宙学目前是一个较活跃的研究领域，较完善的综述见\cite{Ashtekar:2011ni}。

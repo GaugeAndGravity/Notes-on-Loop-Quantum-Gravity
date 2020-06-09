@@ -1,0 +1,282 @@
+%\usepackage[scheme=plain]{ctex}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{amsthm}
+\usepackage{framed}
+\usepackage[amsmath,hyperref,thmmarks,framed]{ntheorem}
+%\usepackage{mathrsfs} %定义了类似铜版体的\mathscr
+%\usepackage{upgreek}
+%\usepackage{textcomp}
+\usepackage{physics}
+\usepackage{cancel}
+\usepackage{geometry}
+%\usepackage{tabularx}
+%\usepackage{hyperref}
+%\usepackage{bookmark}
+\usepackage{xcolor}
+%\usepackage{graphicx}
+%\usepackage{enumitem}
+%\usepackage{fancyvrb}%能用颜文字卖萌了，2333
+%\usepackage{siunitx}%生成标准格式的国际单位
+\usepackage{tensor}
+\usepackage{tikz}
+%\usepackage{listings}
+%\usepackage{fontspec}
+%\usepackage{minted}
+%\usepackage{pifont}
+\usepackage{bm}
+\usepackage{nomencl}
+
+% \setmathfont{latinmodern-math.otf}
+
+\usetikzlibrary{arrows.meta}
+
+\newcommand{\myarrow}{-{Latex[length=5pt 6,width'=0pt 0.3]}}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	pdftitle={Notes on Loop Quantum Gravity},
+	pdfauthor={Yingjie Wang}
+}
+
+{
+	\theoremstyle{plain}
+	\theoremsymbol{\ensuremath{\clubsuit}}
+	\theoremseparator{.}
+	\theoremprework{\bigskip\hrule\smallskip}
+	\theorempostwork{\smallskip\hrule\bigskip}
+	\newtheorem{Definition}{定义}
+}
+{
+	\theoremstyle{plain}
+	\theoremheaderfont{\normalfont\bfseries}
+	\theorembodyfont{\slshape}
+	\theoremsymbol{\ensuremath{\diamondsuit}}
+	\theoremseparator{.}
+	% \theoremprework{\bigskip\hrule}
+	% \theorempostwork{\hrule\bigskip}
+	\newtheorem{Theorem}{定理}
+}
+{
+	\theoremclass{Theorem}
+	\theoremstyle{plain}
+	% \theoremheaderfont{\normalfont\bfseries}
+	% \theorembodyfont{\slshape}
+	% \theoremsymbol{\ensuremath{\diamondsuit}}
+	% \theoremseparator{.}
+	% \theoremprework{\bigskip\hrule}
+	% \theorempostwork{\hrule\bigskip}
+	\newframedtheorem{fTheorem}{Theorem}
+}
+{
+	\theoremstyle{plain}
+	\theorembodyfont{\slshape}
+	\theoremsymbol{\ensuremath{\diamondsuit}}
+	\theoremseparator{.}
+	% \theoremprework{\bigskip\hrule}
+	% \theorempostwork{\hrule\bigskip}
+	\newtheorem{Property}{命题}
+}
+{
+	\theoremstyle{plain}
+	\theorembodyfont{\slshape}
+	\theoremsymbol{\ensuremath{\diamondsuit}}
+	\theoremseparator{.}
+	\theoremprework{\bigskip\hrule}
+	\theorempostwork{\hrule\bigskip}
+	\newtheorem{lProperty}{Property}
+}
+{
+	\theoremclass{Property}
+	\theoremstyle{plain}
+	\newframedtheorem{fProperty}{Property}
+}
+{
+	\theoremstyle{plain}
+	% \theoremsymbol{\ensuremath{\heartsuit}}
+	\theoremindent0.5cm
+	% \theoremnumbering{greek}
+	\newtheorem{Lemma}{引理}
+}
+{
+	\theoremindent0cm
+	\theoremsymbol{\ensuremath{\spadesuit}}
+	\theoremnumbering{arabic}
+	\newtheorem{Corollary}[Theorem]{Corollary}
+}
+{
+	\theoremstyle{change}
+	\theorembodyfont{\upshape}
+	\theoremsymbol{\ensuremath{\ast}}
+	\theoremseparator{}
+	\newtheorem{Example}{Example}
+}
+{
+	\theoremheaderfont{\upshape\bfseries}
+	\theorembodyfont{\mdseries\itshape}
+	\theoremstyle{nonumberplain}
+	\theoremseparator{}
+	\theoremsymbol{\mbox{$\square$}}
+	\newtheorem{Proof}{证明}
+}
+{
+	\theoremindent0cm
+	\theoremsymbol{\ensuremath{\spadesuit}}
+	\theoremnumbering{arabic}
+	\theorembodyfont{\upshape}
+	\newtheorem{Remark}{注}
+}
+
+\newcommand{\myvec}[1]{\vb*{#1}} %定制矢量格式
+\newcommand{\myvu}[1]{\vu*{#1}}%单位矢量
+%\providecommand{\dd}[0]{\mathrm{d}}
+\newcommand{\qst}{\qq{s.t.}}
+\newcommand{\qsts}{\qq*{s.t.}}
+\newcommand{\tst}{\text{s.t.}}
+
+\newcommand{\RomanNumeralCaps}[1]{\MakeUppercase{\romannumeral #1}}
+\newcommand{\e}[1]{\mathrm{e}^{#1}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\nG}{\ensuremath{\mathrm{G}}}
+\newcommand{\gkappa}{\upkappa}
+
+\newcommand{\dvt}[2][]{\dv[#1]{#2}{t}} 
+\newcommand{\pdvt}[2][]{\pdv[#1]{#2}{t}} 
+\newcommand{\pd}[1]{\pdv*{}{#1}}
+\newcommand{\liej}[1]{\ensuremath{{#1}_1,\cdots,{#1}_n}}
+\newcommand{\qqiff}{\qq{iff}}
+\newcommand{\F}{\ensuremath{\mathscr{F}}}
+\newcommand{\La}{\ensuremath{\mathscr{L}}}
+\newcommand{\Lad}{\ensuremath{\tilde{\mathscr{L}}}}
+\newcommand{\Ha}{\ensuremath{\mathscr{H}}}
+\newcommand{\Had}{\ensuremath{\tilde{\mathscr{H}}}}
+\newcommand{\Ld}[1]{\ensuremath{\mathcal{L}\indices{_{#1}}}}
+\newcommand{\spaceLd}[1]{\ensuremath{\tilde{\mathcal{L}}\indices{_{#1}}}}
+\newcommand{\TT}{\ensuremath{\mathscr{T}}}
+\newcommand{\I}{\ensuremath{\mathrm{I}}}
+\newcommand{\II}{\ensuremath{I}}
+\newcommand{\J}{\ensuremath{\mathrm{J}}}
+% \newcommand{\hj}[2][-1bp]{\raisebox{#1}{\includegraphics[height=#2 bp]{hj}}}
+% \newcommand{\wl}[2][-1bp]{\raisebox{#1}{\includegraphics[height=#2 bp]{wulian}}}
+
+\newcommand{\Nabla}[1]{\tensor{\nabla}{_{#1}}}%协变导数算符
+\newcommand{\tNabla}[1]{\tensor{{\tilde{\nabla}}}{_{#1}}}%另一个协变导数算符
+\newcommand{\spaceD}[1]{\tensor{D}{_{#1}}}
+\newcommand{\Dc}[1]{\tensor{D}{_{#1}}}
+\newcommand{\AD}[1]{\tensor{\mathcal{D}}{_{#1}}}
+\newcommand{\ADd}{\mathcal{D}}
+\newcommand{\Partial}[1]{\tensor{\partial}{_{#1}}}%普通导数算符
+\newcommand{\Fd}[2][\tau]{\ensuremath{\frac{\mathrm{D_F}#2}{\dd{#1}}}}%费米导数
+\newcommand{\Fdd}[2][\tau]{\ensuremath{\mathrm{D_F}#2/\dd{#1}}}%行内费米导数
+\newcommand{\Dd}[2][\tau]{\ensuremath{\frac{\mathrm{D}#2}{\dd{#1}}}}%协变导数
+\newcommand{\Ddd}[2][\tau]{\ensuremath{\mathrm{D}#2/\dd{#1}}}%行内协变导数
+\newcommand{\ChristoffelSymbol}[3]{\tensor{\Gamma}{^{#1}_{#2}_{#3}}}
+\newcommand{\christoffelSymbol}[4]{\frac{1}{2} \tensor{g}{^{#1}^{#4}} \left( \tensor{g}{_{#4}_{#2}_{,#3}} + \tensor{g}{_{#3}_{#4}_{,#2}} - \tensor{g}{_{#2}_{#3}_{,#4}} \right) }
+\newcommand{\riemannR}[5]{\tensor{\Gamma}{^{#4}_{#1}_{#3}_{,#2}}- \tensor{\Gamma}{^{#4}_{#2}_{#3}_{,#1}}+ \ChristoffelSymbol{#5}{#3}{#1} \ChristoffelSymbol{#4}{#2}{#5}- \ChristoffelSymbol{#5}{#3}{#2} \ChristoffelSymbol{#4}{#1}{#5}}
+%\newcolumntype{Y}{>{\centering\arraybackslash}X}
+%\newcommand{\tmu}{\mspace{2mu}}
+%\newcommand{\mmacs}{\bfseries\ttfamily\itshape\color[RGB]{67,137,88}}%mma局部变量字体
+%\newcommand{\mmab}{\bfseries\ttfamily\color[RGB]{60,125,145}}%mma变量字体
+%\newcommand{\mmaundef}{\bfseries\ttfamily\color[RGB]{0,44,195}}%mma未定义
+%\newcommand{\mma}{\bfseries\ttfamily}%mma代码字体
+
+% \newcommand{\Rn}[1]{\ensuremath{\mathbb{R}^{#1}}}
+\newcommand{\SO}[1]{\ensuremath{\mathrm{SO}\left(#1\right)}}
+\newcommand{\SU}[1]{\ensuremath{\mathrm{SU}\left(#1\right)}}
+\newcommand{\OO}[1]{\ensuremath{\mathrm{O}\left(#1\right)}}
+\newcommand{\so}[1]{\ensuremath{\mathrm{so}\left( #1 \right)}}
+\newcommand{\su}[1]{\ensuremath{\mathrm{su}\left( #1 \right)}}
+\newcommand{\SL}[1]{\mathrm{SL}\left( #1 \right)}
+\newcommand{\sll}[1]{\mathrm{sl}\left( #1 \right)}
+\newcommand{\Ad}[1]{\mathrm{Ad}_{#1}}
+\newcommand{\Hom}[2]{\mathrm{Hom}\left( #1,#2 \right)}
+\newcommand{\Cyl}{\mathrm{Cyl}}
+
+\newcommand{\Lo}[1]{\ensuremath{\mathrm{Lor}\left(#1\right)}}
+\newcommand{\Riem}[1]{\ensuremath{\mathrm{Riem}\left( #1 \right)}}
+\newcommand{\superspace}[1]{\ensuremath{\mathcal{S}\left(#1\right)}}
+\newcommand{\Diff}[1]{\ensuremath{\mathrm{Diff}\left(#1\right)}}
+\newcommand{\definedby}{:=}
+
+\newcommand{\phasespace}[1]{\mathcal{#1}}
+\newcommand{\configurationspace}[1]{\mathcal{#1}}
+\newcommand{\extentedconfigurationspace}[1]{\bar{\configurationspace{#1}}}
+\newcommand{\staralgebra}[1]{\mathfrak{#1}}
+\newcommand{\Linear}[1]{\mathcal{L}\left( {#1} \right)}
+\newcommand{\pathorder}{\hat{\mathcal{P}}}
+\newcommand{\Dkin}{\mathcal{D}_{\text{kin}}}
+\newcommand{\DDiff}{\mathcal{D}_{\text{Diff}}}
+\newcommand{\Dphys}{\mathcal{D}_{\text{phys}}}
+\newcommand{\Hil}{\mathcal{H}}
+\newcommand{\Hkin}{\Hil_{\text{kin}}}
+\newcommand{\HDiff}{\Hil_{\text{Diff}}}
+\newcommand{\Hphys}{\Hil_{\text{phys}}}
+\newcommand{\masterconstraint}[1]{\ensuremath{\bm{\mathsf{#1}}}}
+\newcommand{\complex}[1]{\mathcal{#1}}
+\newcommand{\amplitude}{A}
+
+\newcommand{\form}[1]{\ensuremath{\bm{#1}}}
+\newcommand{\Ric}{\ensuremath{R}}
+\newcommand{\curR}{\ensuremath{{R}}}
+\newcommand{\spacecurR}{\ensuremath{\mathcal{R}}}
+\newcommand{\vol}{\ensuremath{\varepsilon}}
+\newcommand{\nvol}{\ensuremath{\epsilon}}
+\newcommand{\spc}{\ensuremath{\mathcal{S}}}
+\newcommand{\setofcurve}{\mathcal{C}}
+\newcommand{\setofpath}{\mathcal{P}}
+
+\newcommand{\TB}[2][{}]{\mathrm{T}_{#1}\!{#2}}
+\newcommand{\TBx}[2][{}]{\mathrm{T}_{#1} {#2}}
+\newcommand{\CTB}[2][{}]{\mathrm{T}^*_{#1}\!{#2}}
+\newcommand{\FB}[2][{}]{\mathrm{F}_{#1}\!{#2}}
+\newcommand{\Jet}[4][{}]{\ensuremath{\mathrm{Jet}_{#1}^{#2}\left( #3,#4 \right)}}
+
+\newcommand{\End}[1]{\mathrm{End}\left( #1 \right)}
+
+% \newcommand{\uphbar}{\mathchar'0026\mkern-9mu h}
+\newcommand{\uphbar}{\hbar}
+
+%\renewcommand{\CancelColor}{\color{blue!70!red}}
+
+%\newcommand*{\circled}[1]{\lower.7ex\hbox{\tikz\draw (0pt, 0pt)circle (.5em) node {\makebox[1em][c]{\small #1}};}}
+\newcommand{\card}[1]{\abs{#1}}
+
+\DeclareMathOperator{\ddiv}{div}
+\DeclareMathOperator{\ggrad}{grad}
+\DeclareMathOperator{\ccurl}{curl}
+\DeclareMathOperator{\Exp}{Exp}
+\DeclareMathOperator{\Span}{Span}
+\DeclareMathOperator{\Inv}{Inv}
+\DeclareMathOperator{\image}{im}
+
+\makeatletter
+\DeclareFontFamily{U}  {MnSymbolF}{}
+\DeclareSymbolFont{symbolsMN}{U}{MnSymbolF}{m}{n}
+\SetSymbolFont{symbolsMN}{bold}{U}{MnSymbolF}{b}{n}
+\DeclareFontShape{U}{MnSymbolF}{m}{n}{
+    <-6>  MnSymbolF5
+   <6-7>  MnSymbolF6
+   <7-8>  MnSymbolF7
+   <8-9>  MnSymbolF8
+   <9-10> MnSymbolF9
+  <10-12> MnSymbolF10
+  <12->   MnSymbolF12}{}
+\DeclareFontShape{U}{MnSymbolF}{b}{n}{
+    <-6>  MnSymbolF-Bold5
+   <6-7>  MnSymbolF-Bold6
+   <7-8>  MnSymbolF-Bold7
+   <8-9>  MnSymbolF-Bold8
+   <9-10> MnSymbolF-Bold9
+  <10-12> MnSymbolF-Bold10
+  <12->   MnSymbolF-Bold12}{}
+\DeclareMathSymbol{\tbigtimes}{\mathop}{symbolsMN}{2}
+\newcommand*{\bigtimes}{%
+  \DOTSB
+  \tbigtimes
+  \slimits@ 
+}
+\makeatother
+
+\makenomenclature
+\renewcommand{\nomname}{符号说明}

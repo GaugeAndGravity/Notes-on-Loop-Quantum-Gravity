@@ -1,0 +1,3433 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Flanagan:1996gw}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ae9b79b227ecd15dd8166f70c0d19648}{%
+           family={Flanagan},
+           familyi={F\bibinitperiod},
+           given={Eanna\bibnamedelima E.},
+           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=4517cb47549e9e42f6bfd204ca9456a7}{%
+           family={Wald},
+           familyi={W\bibinitperiod},
+           given={Robert\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{dfb107b7530afdc2fba31a43e13001e7}
+      \strng{fullhash}{259aeb251cecc27cad33219d593400a5}
+      \strng{bibnamehash}{259aeb251cecc27cad33219d593400a5}
+      \strng{authorbibnamehash}{259aeb251cecc27cad33219d593400a5}
+      \strng{authornamehash}{dfb107b7530afdc2fba31a43e13001e7}
+      \strng{authorfullhash}{259aeb251cecc27cad33219d593400a5}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Does back reaction enforce the averaged null energy condition in semiclassical gravity?}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{54}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{pages}{6233\bibrangedash 6283}
+      \range{pages}{51}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.54.6233
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9602052
+      \endverb
+      \keyw{Flanagan:1996gw}
+    \endentry
+    \entry{Hawking1973}{book}{}
+      \name{author}{2}{}{%
+        {{hash=2be8e4f9a1eec9e94013d9d674ce8962}{%
+           family={Hawking},
+           familyi={H\bibinitperiod},
+           given={S.W.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a880ca67f4358ae4822b5063ebb9135b}{%
+           family={Ellis},
+           familyi={E\bibinitperiod},
+           given={G.F.R.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{332cd70f9e9e2ea287b9ef23b17a46c8}
+      \strng{fullhash}{66e492bd7abd87d0346b72d2aa46c245}
+      \strng{bibnamehash}{66e492bd7abd87d0346b72d2aa46c245}
+      \strng{authorbibnamehash}{66e492bd7abd87d0346b72d2aa46c245}
+      \strng{authornamehash}{332cd70f9e9e2ea287b9ef23b17a46c8}
+      \strng{authorfullhash}{66e492bd7abd87d0346b72d2aa46c245}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-521-20016-5, 978-0-521-09906-6, 978-0-511-82630-6, 978-0-521-09906-6}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{month}{2}
+      \field{series}{Cambridge Monographs on Mathematical Physics}
+      \field{title}{{The Large Scale Structure of Space-Time}}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1017/CBO9780511524646
+      \endverb
+      \keyw{Hawking1973}
+    \endentry
+    \entry{wald1989}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4517cb47549e9e42f6bfd204ca9456a7}{%
+           family={Wald},
+           familyi={W\bibinitperiod},
+           given={Robert\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Chicago}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{4517cb47549e9e42f6bfd204ca9456a7}
+      \strng{fullhash}{4517cb47549e9e42f6bfd204ca9456a7}
+      \strng{bibnamehash}{4517cb47549e9e42f6bfd204ca9456a7}
+      \strng{authorbibnamehash}{4517cb47549e9e42f6bfd204ca9456a7}
+      \strng{authornamehash}{4517cb47549e9e42f6bfd204ca9456a7}
+      \strng{authorfullhash}{4517cb47549e9e42f6bfd204ca9456a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{General Relativity}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1989}
+      \field{dateera}{ce}
+      \keyw{wald1989}
+    \endentry
+    \entry{Thiemann2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{fullhash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{bibnamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authorbibnamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authornamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authorfullhash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-511-75568-2, 978-0-521-84263-1}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{series}{Cambridge Monographs on Mathematical Physics}
+      \field{title}{{Modern Canonical Quantum General Relativity}}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1017/CBO9780511755682
+      \endverb
+      \keyw{Thiemann2007}
+    \endentry
+    \entry{Rovelli1988}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b32ab73e85caa26365ad2176347b9515}{%
+           family={Rovelli},
+           familyi={R\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c24d0f59d1d858e451780649dc05cde3}{%
+           family={Smolin},
+           familyi={S\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{7b26eca81e63363d797609b1129e72a0}
+      \strng{fullhash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \strng{bibnamehash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \strng{authorbibnamehash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \strng{authornamehash}{7b26eca81e63363d797609b1129e72a0}
+      \strng{authorfullhash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{10}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{month}{9}
+      \field{title}{Knot Theory and Quantum Gravity}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{61}
+      \field{year}{1988}
+      \field{dateera}{ce}
+      \field{pages}{1155\bibrangedash 1158}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.61.1155
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.61.1155
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.61.1155
+      \endverb
+      \keyw{Rovelli1988}
+    \endentry
+    \entry{Rovelli1989}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b32ab73e85caa26365ad2176347b9515}{%
+           family={Rovelli},
+           familyi={R\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c24d0f59d1d858e451780649dc05cde3}{%
+           family={Smolin},
+           familyi={S\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7b26eca81e63363d797609b1129e72a0}
+      \strng{fullhash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \strng{bibnamehash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \strng{authorbibnamehash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \strng{authornamehash}{7b26eca81e63363d797609b1129e72a0}
+      \strng{authorfullhash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucl. Phys. B}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Loop Space Representation of Quantum General Relativity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{331}
+      \field{year}{1990}
+      \field{dateera}{ce}
+      \field{pages}{80\bibrangedash 152}
+      \range{pages}{73}
+      \verb{doi}
+      \verb 10.1016/0550-3213(90)90019-A
+      \endverb
+      \keyw{Rovelli1989}
+    \endentry
+    \entry{Rovelli1994}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b32ab73e85caa26365ad2176347b9515}{%
+           family={Rovelli},
+           familyi={R\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c24d0f59d1d858e451780649dc05cde3}{%
+           family={Smolin},
+           familyi={S\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7b26eca81e63363d797609b1129e72a0}
+      \strng{fullhash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \strng{bibnamehash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \strng{authorbibnamehash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \strng{authornamehash}{7b26eca81e63363d797609b1129e72a0}
+      \strng{authorfullhash}{5d68a4d1c733f1faa43d59e5378a1d37}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Nucl. Phys. B}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{note}{[Erratum: Nucl.Phys.B 456, 753--754 (1995)]}
+      \field{title}{{Discreteness of area and volume in quantum gravity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{442}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{pages}{593\bibrangedash 622}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1016/0550-3213(95)00150-Q
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9411005
+      \endverb
+      \keyw{Rovelli1994,[Erratum: Nucl.Phys.B 456,753--754 (1995)]}
+    \endentry
+    \entry{Ashtekar:1998ue}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=65977df4643b0b3d6904d4464d606bb7}{%
+           family={Krasnov},
+           familyi={K\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=b559c13f804351daca8886f3ce445b4c}{%
+           family={Iyer},
+           familyi={I\bibinitperiod},
+           given={Bala\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7141451728144fa144084e720639891a}{%
+           family={Bhawal},
+           familyi={B\bibinitperiod},
+           given={Biblap},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{49533346f35dbdb6cc2aaaee69461c02}
+      \strng{bibnamehash}{49533346f35dbdb6cc2aaaee69461c02}
+      \strng{authorbibnamehash}{49533346f35dbdb6cc2aaaee69461c02}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{49533346f35dbdb6cc2aaaee69461c02}
+      \strng{editorbibnamehash}{0d6eb621297be1ee8439b665c4fad5fc}
+      \strng{editornamehash}{42c5e63ec81ea46d5b30076564e51d5d}
+      \strng{editorfullhash}{0d6eb621297be1ee8439b665c4fad5fc}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Black Holes, Gravitational Radiation and the Universe}: {Essays in Honor of C.V. Vishveshwara}}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{month}{4}
+      \field{title}{{Quantum geometry and black holes}}
+      \field{usera}{M}
+      \field{userc}{english}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{pages}{149\bibrangedash 170}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/978-94-017-0934-7\_10
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9804039
+      \endverb
+      \keyw{Ashtekar:1998ue}
+    \endentry
+    \entry{Ashtekar:2018lag}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f03ceaae2518a07f856244f9ba87973d}{%
+           family={Olmedo},
+           familyi={O\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=10672471fd67d3caf19646ee06a18120}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Parampreet},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{e9b9ff98ea2cce5519d2964ff6d2e5e8}
+      \strng{bibnamehash}{e9b9ff98ea2cce5519d2964ff6d2e5e8}
+      \strng{authorbibnamehash}{e9b9ff98ea2cce5519d2964ff6d2e5e8}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{e9b9ff98ea2cce5519d2964ff6d2e5e8}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{24}
+      \field{title}{{Quantum Transfiguration of Kruskal Black Holes}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{121}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{241301}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.121.241301
+      \endverb
+      \verb{eprint}
+      \verb 1806.00648
+      \endverb
+      \keyw{Ashtekar:2018lag}
+    \endentry
+    \entry{Ashtekar:2018cay}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f03ceaae2518a07f856244f9ba87973d}{%
+           family={Olmedo},
+           familyi={O\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=10672471fd67d3caf19646ee06a18120}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Parampreet},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{e9b9ff98ea2cce5519d2964ff6d2e5e8}
+      \strng{bibnamehash}{e9b9ff98ea2cce5519d2964ff6d2e5e8}
+      \strng{authorbibnamehash}{e9b9ff98ea2cce5519d2964ff6d2e5e8}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{e9b9ff98ea2cce5519d2964ff6d2e5e8}
+      \field{extraname}{3}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{12}
+      \field{title}{{Quantum extension of the Kruskal spacetime}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{98}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{126003}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.98.126003
+      \endverb
+      \verb{eprint}
+      \verb 1806.02406
+      \endverb
+      \keyw{Ashtekar:2018cay}
+    \endentry
+    \entry{Ashtekar:2005qt}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8cdc376fc9eac52708ff178f82b2bcc8}{%
+           family={Bojowald},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{3d915d36120c3a08adbae541c7ec3f2b}
+      \strng{bibnamehash}{3d915d36120c3a08adbae541c7ec3f2b}
+      \strng{authorbibnamehash}{3d915d36120c3a08adbae541c7ec3f2b}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{3d915d36120c3a08adbae541c7ec3f2b}
+      \field{extraname}{4}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Quantum geometry and the Schwarzschild singularity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{391\bibrangedash 411}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1088/0264-9381/23/2/008
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0509075
+      \endverb
+      \keyw{Ashtekar:2005qt}
+    \endentry
+    \entry{Bohmer:2007wi}{article}{}
+      \name{author}{2}{}{%
+        {{hash=082887d2c3c1a41f17527839b0c71b16}{%
+           family={Boehmer},
+           familyi={B\bibinitperiod},
+           given={Christian\bibnamedelima G.},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=8ae3a07f60ad8e5381d2dca16eb6ed7b}{%
+           family={Vandersloot},
+           familyi={V\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{5bb2b0026468252a4142430746f84159}
+      \strng{fullhash}{de0baf96c7d6e1883c93551aaa393f1e}
+      \strng{bibnamehash}{de0baf96c7d6e1883c93551aaa393f1e}
+      \strng{authorbibnamehash}{de0baf96c7d6e1883c93551aaa393f1e}
+      \strng{authornamehash}{5bb2b0026468252a4142430746f84159}
+      \strng{authorfullhash}{de0baf96c7d6e1883c93551aaa393f1e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Loop Quantum Dynamics of the Schwarzschild Interior}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{76}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{104030}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.76.104030
+      \endverb
+      \verb{eprint}
+      \verb 0709.2129
+      \endverb
+      \keyw{Bohmer:2007wi}
+    \endentry
+    \entry{Olmedo:2017lvt}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f03ceaae2518a07f856244f9ba87973d}{%
+           family={Olmedo},
+           familyi={O\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=aca0743ea75488bf94970cdee6c09cca}{%
+           family={Saini},
+           familyi={S\bibinitperiod},
+           given={Sahil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=10672471fd67d3caf19646ee06a18120}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Parampreet},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7b91c666c70d39b608a60a9736bf70a3}
+      \strng{fullhash}{0f3d4387f4c808192da14cd4c9344082}
+      \strng{bibnamehash}{0f3d4387f4c808192da14cd4c9344082}
+      \strng{authorbibnamehash}{0f3d4387f4c808192da14cd4c9344082}
+      \strng{authornamehash}{7b91c666c70d39b608a60a9736bf70a3}
+      \strng{authorfullhash}{0f3d4387f4c808192da14cd4c9344082}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{22}
+      \field{title}{{From black holes to white holes: a quantum gravitational, symmetric bounce}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{34}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{225011}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-6382/aa8da8
+      \endverb
+      \verb{eprint}
+      \verb 1707.07333
+      \endverb
+      \keyw{Olmedo:2017lvt}
+    \endentry
+    \entry{Ashtekar:2011ni}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=10672471fd67d3caf19646ee06a18120}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Parampreet},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{c0919d3b3167c64f638157f8876ac7d1}
+      \strng{bibnamehash}{c0919d3b3167c64f638157f8876ac7d1}
+      \strng{authorbibnamehash}{c0919d3b3167c64f638157f8876ac7d1}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{c0919d3b3167c64f638157f8876ac7d1}
+      \field{extraname}{5}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Loop Quantum Cosmology: A Status Report}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{28}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{213001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/28/21/213001
+      \endverb
+      \verb{eprint}
+      \verb 1108.0893
+      \endverb
+      \keyw{Ashtekar:2011ni}
+    \endentry
+    \entry{Bianchi2017}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=1a1b88681747a896bc5517049f641463}{%
+           family={Eugenio},
+           familyi={E\bibinitperiod},
+           given={Bianchi},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fec2522c699be2257b30cf4776beee90}{%
+           family={Pullin},
+           familyi={P\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {WSP}%
+      }
+      \strng{namehash}{1a1b88681747a896bc5517049f641463}
+      \strng{fullhash}{1a1b88681747a896bc5517049f641463}
+      \strng{bibnamehash}{1a1b88681747a896bc5517049f641463}
+      \strng{authorbibnamehash}{1a1b88681747a896bc5517049f641463}
+      \strng{authornamehash}{1a1b88681747a896bc5517049f641463}
+      \strng{authorfullhash}{1a1b88681747a896bc5517049f641463}
+      \strng{editorbibnamehash}{cc89afe217c28e7e415b38266af9ab76}
+      \strng{editornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{editorfullhash}{cc89afe217c28e7e415b38266af9ab76}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Loop Quantum Gravity}: {The First 30 Years}}
+      \field{chapter}{Chapter 3}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Spinfoam Gravity}}
+      \field{usera}{M}
+      \field{userc}{english}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{97\bibrangedash 124}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1142/9789813220003\_0004
+      \endverb
+      \keyw{Bianchi2017}
+    \endentry
+    \entry{liang3}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5451d4526c974e6a3c63e869f2210a5a}{%
+           family={梁灿彬},
+           familyi={梁\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \list{location}{1}{%
+        {北京}%
+      }
+      \list{publisher}{1}{%
+        {科学出版社}%
+      }
+      \strng{namehash}{5451d4526c974e6a3c63e869f2210a5a}
+      \strng{fullhash}{5451d4526c974e6a3c63e869f2210a5a}
+      \strng{bibnamehash}{5451d4526c974e6a3c63e869f2210a5a}
+      \strng{authorbibnamehash}{5451d4526c974e6a3c63e869f2210a5a}
+      \strng{authornamehash}{5451d4526c974e6a3c63e869f2210a5a}
+      \strng{authorfullhash}{5451d4526c974e6a3c63e869f2210a5a}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{title}{微分几何入门与广义相对论}
+      \field{usera}{M}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{下册}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \keyw{liang3}
+    \endentry
+    \entry{dirac2001lectures}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3bbb1d725b24f4e979ff0d260f5e30c8}{%
+           family={P.A.M.Dirac},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications}%
+      }
+      \strng{namehash}{3bbb1d725b24f4e979ff0d260f5e30c8}
+      \strng{fullhash}{3bbb1d725b24f4e979ff0d260f5e30c8}
+      \strng{bibnamehash}{3bbb1d725b24f4e979ff0d260f5e30c8}
+      \strng{authorbibnamehash}{3bbb1d725b24f4e979ff0d260f5e30c8}
+      \strng{authornamehash}{3bbb1d725b24f4e979ff0d260f5e30c8}
+      \strng{authorfullhash}{3bbb1d725b24f4e979ff0d260f5e30c8}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780486417134}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{series}{Belfer Graduate School of Science, monograph series}
+      \field{title}{Lectures on Quantum Mechanics}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://books.google.com.hk/books?id=GVwzb1rZW9kC
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.hk/books?id=GVwzb1rZW9kC
+      \endverb
+      \keyw{dirac2001lectures}
+    \endentry
+    \entry{Baez1994}{book}{}
+      \name{author}{2}{}{%
+        {{hash=329807354727630303631f4116854467}{%
+           family={Baez},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3d4af3cba47e5bea4531ae817ffa882b}{%
+           family={Muniain},
+           familyi={M\bibinitperiod},
+           given={Javier\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific}%
+      }
+      \strng{namehash}{80252919df83baacf58a30a5e7ae39cc}
+      \strng{fullhash}{eb1392131bb925d7821ec7e28eaa821e}
+      \strng{bibnamehash}{eb1392131bb925d7821ec7e28eaa821e}
+      \strng{authorbibnamehash}{eb1392131bb925d7821ec7e28eaa821e}
+      \strng{authornamehash}{80252919df83baacf58a30a5e7ae39cc}
+      \strng{authorfullhash}{eb1392131bb925d7821ec7e28eaa821e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{series}{Series on Knots and Everything}
+      \field{title}{Gauge Fields, Knots and Gravity}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1142/2324
+      \endverb
+      \verb{eprint}
+      \verb https://www.worldscientific.com/doi/pdf/10.1142/2324
+      \endverb
+      \verb{urlraw}
+      \verb https://www.worldscientific.com/doi/abs/10.1142/2324
+      \endverb
+      \verb{url}
+      \verb https://www.worldscientific.com/doi/abs/10.1142/2324
+      \endverb
+      \keyw{Baez1994}
+    \endentry
+    \entry{Ashtekar2004}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cb5ea41dec39060bcbfd953ead8b22d6}{%
+           family={Lewandowski},
+           familyi={L\bibinitperiod},
+           given={Jerzy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{bibnamehash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{authorbibnamehash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{75dfddce30c25b3977f8fb1acc538bae}
+      \field{extraname}{6}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Background Independent Quantum Gravity: A Status Report}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{21}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{pages}{R53}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/21/15/R01
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0404018
+      \endverb
+      \keyw{Ashtekar2004}
+    \endentry
+    \entry{Ashtekar1986}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2f06fe4ddbb47261f30de59aa7259369}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2f06fe4ddbb47261f30de59aa7259369}
+      \strng{fullhash}{2f06fe4ddbb47261f30de59aa7259369}
+      \strng{bibnamehash}{2f06fe4ddbb47261f30de59aa7259369}
+      \strng{authorbibnamehash}{2f06fe4ddbb47261f30de59aa7259369}
+      \strng{authornamehash}{2f06fe4ddbb47261f30de59aa7259369}
+      \strng{authorfullhash}{2f06fe4ddbb47261f30de59aa7259369}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{New Variables for Classical and Quantum Gravity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{57}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \field{pages}{2244\bibrangedash 2247}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.57.2244
+      \endverb
+      \keyw{Ashtekar1986}
+    \endentry
+    \entry{Ashtekar1987}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2f06fe4ddbb47261f30de59aa7259369}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2f06fe4ddbb47261f30de59aa7259369}
+      \strng{fullhash}{2f06fe4ddbb47261f30de59aa7259369}
+      \strng{bibnamehash}{2f06fe4ddbb47261f30de59aa7259369}
+      \strng{authorbibnamehash}{2f06fe4ddbb47261f30de59aa7259369}
+      \strng{authornamehash}{2f06fe4ddbb47261f30de59aa7259369}
+      \strng{authorfullhash}{2f06fe4ddbb47261f30de59aa7259369}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{New Hamiltonian Formulation of General Relativity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{36}
+      \field{year}{1987}
+      \field{dateera}{ce}
+      \field{pages}{1587\bibrangedash 1602}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.36.1587
+      \endverb
+      \keyw{Ashtekar1987}
+    \endentry
+    \entry{Han2005}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1a7ce28689ea8f3f21c786d3ce68102d}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Muxin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bd38ce9a35519b0e7aa0294573a32e74}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Weiming},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c1fcc678f24ccaa7106517b58a916074}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Yongge},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{921c8a9ce546bedab9dc2df8eafec83e}
+      \strng{fullhash}{9c2d6ebb6224be633fddf230da8a6757}
+      \strng{bibnamehash}{9c2d6ebb6224be633fddf230da8a6757}
+      \strng{authorbibnamehash}{9c2d6ebb6224be633fddf230da8a6757}
+      \strng{authornamehash}{921c8a9ce546bedab9dc2df8eafec83e}
+      \strng{authorfullhash}{9c2d6ebb6224be633fddf230da8a6757}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Int. J. Mod. Phys. D}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Fundamental structure of loop quantum gravity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{16}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{1397\bibrangedash 1474}
+      \range{pages}{78}
+      \verb{doi}
+      \verb 10.1142/S0218271807010894
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0509064
+      \endverb
+      \keyw{Han2005}
+    \endentry
+    \entry{Thiemann1996aw}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e2500e447e52b94fac488fed039609c2}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e2500e447e52b94fac488fed039609c2}
+      \strng{fullhash}{e2500e447e52b94fac488fed039609c2}
+      \strng{bibnamehash}{e2500e447e52b94fac488fed039609c2}
+      \strng{authorbibnamehash}{e2500e447e52b94fac488fed039609c2}
+      \strng{authornamehash}{e2500e447e52b94fac488fed039609c2}
+      \strng{authorfullhash}{e2500e447e52b94fac488fed039609c2}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Quantum spin dynamics (QSD)}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{15}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{pages}{839\bibrangedash 873}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.1088/0264-9381/15/4/011
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9606089
+      \endverb
+      \keyw{Thiemann1996aw}
+    \endentry
+    \entry{Thiemann2003zv}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{fullhash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{bibnamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authorbibnamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authornamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authorfullhash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{The Phoenix project: Master constraint program for loop quantum gravity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{2211\bibrangedash 2248}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1088/0264-9381/23/7/002
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0305080
+      \endverb
+      \keyw{Thiemann2003zv}
+    \endentry
+    \entry{Thiemann0210094}{}{}
+      \name{author}{1}{}{%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{fullhash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{bibnamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authorbibnamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authornamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authorfullhash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \field{extraname}{4}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Proceedings, 271st WE-Heraeus Seminar on Aspects of Quantum Gravity: From Theory to Experiment Search: Bad Honnef, Germany, February 25-March 1, 2002}}
+      \field{chapter}{3}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{series}{Lect. Notes Phys.}
+      \field{title}{{Lectures on loop quantum gravity}}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{631}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{pages}{41\bibrangedash 135}
+      \range{pages}{95}
+      \verb{doi}
+      \verb 10.1007/978-3-540-45230-0\_3
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0210094
+      \endverb
+      \keyw{Thiemann0210094}
+    \endentry
+    \entry{arXiv9812024}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4f796f0a08bf6992c98ac679b510df73}{%
+           family={Giulini},
+           familyi={G\bibinitperiod},
+           given={Domenico},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fdad52e99d83d82427544a0dbeb484b5}{%
+           family={Marolf},
+           familyi={M\bibinitperiod},
+           given={Donald},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c4746374a58b38beefb05ac5c7993fba}
+      \strng{fullhash}{aa706c0b22f94bfeb32337f6f44bac4f}
+      \strng{bibnamehash}{aa706c0b22f94bfeb32337f6f44bac4f}
+      \strng{authorbibnamehash}{aa706c0b22f94bfeb32337f6f44bac4f}
+      \strng{authornamehash}{c4746374a58b38beefb05ac5c7993fba}
+      \strng{authorfullhash}{aa706c0b22f94bfeb32337f6f44bac4f}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{On the generality of refined algebraic quantization}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{16}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{pages}{2479\bibrangedash 2488}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1088/0264-9381/16/7/321
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9812024
+      \endverb
+      \keyw{arXiv9812024}
+    \endentry
+    \entry{Nakahara2003}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8090936f5d08ae201c0a38d353cbdc96}{%
+           family={Nakahara},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{8090936f5d08ae201c0a38d353cbdc96}
+      \strng{fullhash}{8090936f5d08ae201c0a38d353cbdc96}
+      \strng{bibnamehash}{8090936f5d08ae201c0a38d353cbdc96}
+      \strng{authorbibnamehash}{8090936f5d08ae201c0a38d353cbdc96}
+      \strng{authornamehash}{8090936f5d08ae201c0a38d353cbdc96}
+      \strng{authorfullhash}{8090936f5d08ae201c0a38d353cbdc96}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780750306065}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{series}{Graduate student series in physics}
+      \field{title}{Geometry, Topology and Physics, Second Edition}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://books.google.com/books?id=cH-XQB0Ex5wC
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books?id=cH-XQB0Ex5wC
+      \endverb
+      \keyw{Nakahara2003}
+    \endentry
+    \entry{munkres2000topology}{book}{}
+      \name{author}{1}{}{%
+        {{hash=488b7d632e690b1305a0123f968e9596}{%
+           family={Munkres},
+           familyi={M\bibinitperiod},
+           given={J.R.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall, Incorporated}%
+      }
+      \strng{namehash}{488b7d632e690b1305a0123f968e9596}
+      \strng{fullhash}{488b7d632e690b1305a0123f968e9596}
+      \strng{bibnamehash}{488b7d632e690b1305a0123f968e9596}
+      \strng{authorbibnamehash}{488b7d632e690b1305a0123f968e9596}
+      \strng{authornamehash}{488b7d632e690b1305a0123f968e9596}
+      \strng{authorfullhash}{488b7d632e690b1305a0123f968e9596}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780131816299}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{series}{Featured Titles for Topology}
+      \field{title}{Topology}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://books.google.com.hk/books?id=XjoZAQAAIAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.hk/books?id=XjoZAQAAIAAJ
+      \endverb
+      \keyw{munkres2000topology}
+    \endentry
+    \entry{Ashtekar1994}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cb5ea41dec39060bcbfd953ead8b22d6}{%
+           family={Lewandowski},
+           familyi={L\bibinitperiod},
+           given={Jerzy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{bibnamehash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{authorbibnamehash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{75dfddce30c25b3977f8fb1acc538bae}
+      \field{extraname}{7}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{J. Math. Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Projective techniques and functional integration for gauge theories}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{36}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{pages}{2170\bibrangedash 2191}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1063/1.531037
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9411046
+      \endverb
+      \keyw{Ashtekar1994}
+    \endentry
+    \entry{Dittrich:2004bn}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4237f0639510152ab2a1102a6a4a6226}{%
+           family={Dittrich},
+           familyi={D\bibinitperiod},
+           given={Bianca},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e3c3a4d8a59f0cbce68117e32d2998e7}
+      \strng{fullhash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{bibnamehash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{authorbibnamehash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{authornamehash}{e3c3a4d8a59f0cbce68117e32d2998e7}
+      \strng{authorfullhash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Testing the master constraint programme for loop quantum gravity. I. General framework}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{1025\bibrangedash 1066}
+      \range{pages}{42}
+      \verb{doi}
+      \verb 10.1088/0264-9381/23/4/001
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0411138
+      \endverb
+      \keyw{Dittrich:2004bn}
+    \endentry
+    \entry{Dittrich:2004bp}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4237f0639510152ab2a1102a6a4a6226}{%
+           family={Dittrich},
+           familyi={D\bibinitperiod},
+           given={Bianca},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e3c3a4d8a59f0cbce68117e32d2998e7}
+      \strng{fullhash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{bibnamehash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{authorbibnamehash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{authornamehash}{e3c3a4d8a59f0cbce68117e32d2998e7}
+      \strng{authorfullhash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Testing the master constraint programme for loop quantum gravity. II. Finite dimensional systems}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{1067\bibrangedash 1088}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1088/0264-9381/23/4/002
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0411139
+      \endverb
+      \keyw{Dittrich:2004bp}
+    \endentry
+    \entry{Dittrich:2004bq}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4237f0639510152ab2a1102a6a4a6226}{%
+           family={Dittrich},
+           familyi={D\bibinitperiod},
+           given={Bianca},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e3c3a4d8a59f0cbce68117e32d2998e7}
+      \strng{fullhash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{bibnamehash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{authorbibnamehash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{authornamehash}{e3c3a4d8a59f0cbce68117e32d2998e7}
+      \strng{authorfullhash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \field{extraname}{3}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Testing the master constraint programme for loop quantum gravity. III. SL(2,R) models}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{1089\bibrangedash 1120}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1088/0264-9381/23/4/003
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0411140
+      \endverb
+      \keyw{Dittrich:2004bq}
+    \endentry
+    \entry{Dittrich:2004br}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4237f0639510152ab2a1102a6a4a6226}{%
+           family={Dittrich},
+           familyi={D\bibinitperiod},
+           given={Bianca},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e3c3a4d8a59f0cbce68117e32d2998e7}
+      \strng{fullhash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{bibnamehash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{authorbibnamehash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{authornamehash}{e3c3a4d8a59f0cbce68117e32d2998e7}
+      \strng{authorfullhash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \field{extraname}{4}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Testing the master constraint programme for loop quantum gravity. IV. Free field theories}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{1121\bibrangedash 1142}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1088/0264-9381/23/4/004
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0411141
+      \endverb
+      \keyw{Dittrich:2004br}
+    \endentry
+    \entry{Dittrich:2004bs}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4237f0639510152ab2a1102a6a4a6226}{%
+           family={Dittrich},
+           familyi={D\bibinitperiod},
+           given={Bianca},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e3c3a4d8a59f0cbce68117e32d2998e7}
+      \strng{fullhash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{bibnamehash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{authorbibnamehash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \strng{authornamehash}{e3c3a4d8a59f0cbce68117e32d2998e7}
+      \strng{authorfullhash}{bf0481a6ff71ef0cd75972d583aaf92e}
+      \field{extraname}{5}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Testing the master constraint programme for loop quantum gravity. V. Interacting field theories}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{1143\bibrangedash 1162}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1088/0264-9381/23/4/005
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0411142
+      \endverb
+      \keyw{Dittrich:2004bs}
+    \endentry
+    \entry{Thiemann:2005zg}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{fullhash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{bibnamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authorbibnamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authornamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authorfullhash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \field{extraname}{5}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Quantum spin dynamics. VIII. The Master constraint}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{2249\bibrangedash 2266}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1088/0264-9381/23/7/003
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0510011
+      \endverb
+      \keyw{Thiemann:2005zg}
+    \endentry
+    \entry{Giesel:2006uj}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b98ac393971300509143e8f7df5e02b8}{%
+           family={Giesel},
+           familyi={G\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e2500e447e52b94fac488fed039609c2}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{0a895bda7e04b74c041469cb66b85eb3}
+      \strng{fullhash}{8a74fc1ed20c354ae2776314d8456294}
+      \strng{bibnamehash}{8a74fc1ed20c354ae2776314d8456294}
+      \strng{authorbibnamehash}{8a74fc1ed20c354ae2776314d8456294}
+      \strng{authornamehash}{0a895bda7e04b74c041469cb66b85eb3}
+      \strng{authorfullhash}{8a74fc1ed20c354ae2776314d8456294}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Algebraic Quantum Gravity (AQG). I. Conceptual Setup}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{24}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{2465\bibrangedash 2498}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1088/0264-9381/24/10/003
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0607099
+      \endverb
+      \keyw{Giesel:2006uj}
+    \endentry
+    \entry{Giesel:2006uk}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b98ac393971300509143e8f7df5e02b8}{%
+           family={Giesel},
+           familyi={G\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e2500e447e52b94fac488fed039609c2}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{0a895bda7e04b74c041469cb66b85eb3}
+      \strng{fullhash}{8a74fc1ed20c354ae2776314d8456294}
+      \strng{bibnamehash}{8a74fc1ed20c354ae2776314d8456294}
+      \strng{authorbibnamehash}{8a74fc1ed20c354ae2776314d8456294}
+      \strng{authornamehash}{0a895bda7e04b74c041469cb66b85eb3}
+      \strng{authorfullhash}{8a74fc1ed20c354ae2776314d8456294}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Algebraic Quantum Gravity (AQG). II. Semiclassical Analysis}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{24}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{2499\bibrangedash 2564}
+      \range{pages}{66}
+      \verb{doi}
+      \verb 10.1088/0264-9381/24/10/004
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0607100
+      \endverb
+      \keyw{Giesel:2006uk}
+    \endentry
+    \entry{Ashtekar:1996eg}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cb5ea41dec39060bcbfd953ead8b22d6}{%
+           family={Lewandowski},
+           familyi={L\bibinitperiod},
+           given={Jerzy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{bibnamehash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{authorbibnamehash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{75dfddce30c25b3977f8fb1acc538bae}
+      \field{extraname}{8}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Quantum theory of geometry. 1: Area operators}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{14}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{pages}{A55\bibrangedash A82}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/14/1A/006
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9602046
+      \endverb
+      \keyw{Ashtekar:1996eg}
+    \endentry
+    \entry{Ashtekar:1994wa}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cb5ea41dec39060bcbfd953ead8b22d6}{%
+           family={Lewandowski},
+           familyi={L\bibinitperiod},
+           given={Jerzy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{bibnamehash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{authorbibnamehash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{75dfddce30c25b3977f8fb1acc538bae}
+      \field{extraname}{9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{J. Geom. Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Differential geometry on the space of connections via graphs and projective limits}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{17}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{pages}{191\bibrangedash 230}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1016/0393-0440(95)00028-G
+      \endverb
+      \verb{eprint}
+      \verb hep-th/9412073
+      \endverb
+      \keyw{Ashtekar:1994wa}
+    \endentry
+    \entry{Ashtekar:1997fb}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cb5ea41dec39060bcbfd953ead8b22d6}{%
+           family={Lewandowski},
+           familyi={L\bibinitperiod},
+           given={Jerzy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{bibnamehash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{authorbibnamehash}{75dfddce30c25b3977f8fb1acc538bae}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{75dfddce30c25b3977f8fb1acc538bae}
+      \field{extraname}{10}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Adv. Theor. Math. Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Quantum theory of geometry. 2. Volume operators}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{pages}{388\bibrangedash 429}
+      \range{pages}{42}
+      \verb{doi}
+      \verb 10.4310/ATMP.1997.v1.n2.a8
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9711031
+      \endverb
+      \keyw{Ashtekar:1997fb}
+    \endentry
+    \entry{Thiemann:1996at}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e2500e447e52b94fac488fed039609c2}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e2500e447e52b94fac488fed039609c2}
+      \strng{fullhash}{e2500e447e52b94fac488fed039609c2}
+      \strng{bibnamehash}{e2500e447e52b94fac488fed039609c2}
+      \strng{authorbibnamehash}{e2500e447e52b94fac488fed039609c2}
+      \strng{authornamehash}{e2500e447e52b94fac488fed039609c2}
+      \strng{authorfullhash}{e2500e447e52b94fac488fed039609c2}
+      \field{extraname}{6}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{J. Math. Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{A Length operator for canonical quantum gravity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{39}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{pages}{3372\bibrangedash 3392}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1063/1.532445
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9606092
+      \endverb
+      \keyw{Thiemann:1996at}
+    \endentry
+    \entry{Thiemann2002}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{fullhash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{bibnamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authorbibnamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authornamehash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \strng{authorfullhash}{d27f0558efa9df1e18e45cbef6e4b01f}
+      \field{extraname}{7}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Complexifier coherent states for quantum general relativity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{2063\bibrangedash 2118}
+      \range{pages}{56}
+      \verb{doi}
+      \verb 10.1088/0264-9381/23/6/013
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0206037
+      \endverb
+      \keyw{Thiemann2002}
+    \endentry
+    \entry{Ashtekar1994nx}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cb5ea41dec39060bcbfd953ead8b22d6}{%
+           family={Lewandowski},
+           familyi={L\bibinitperiod},
+           given={Jerzy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fdad52e99d83d82427544a0dbeb484b5}{%
+           family={Marolf},
+           familyi={M\bibinitperiod},
+           given={Donald},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d528c98e86e1cbf3c27cd729819db3cc}{%
+           family={Mourao},
+           familyi={M\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{76d368028762928b9e1140d2cfef268f}
+      \strng{bibnamehash}{706e748388d8dac778ad8fa7bd008969}
+      \strng{authorbibnamehash}{706e748388d8dac778ad8fa7bd008969}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{76d368028762928b9e1140d2cfef268f}
+      \field{extraname}{11}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{J. Funct. Anal.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Coherent state transforms for spaces of connections}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{135}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{pages}{519\bibrangedash 551}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1006/jfan.1996.0018
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9412014
+      \endverb
+      \keyw{Ashtekar1994nx}
+    \endentry
+    \entry{Flori2009}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0f6d977d9f7d56ee5be8f2dd1863ab5c}{%
+           family={Flori},
+           familyi={F\bibinitperiod},
+           given={Cecilia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{0f6d977d9f7d56ee5be8f2dd1863ab5c}
+      \strng{fullhash}{0f6d977d9f7d56ee5be8f2dd1863ab5c}
+      \strng{bibnamehash}{0f6d977d9f7d56ee5be8f2dd1863ab5c}
+      \strng{authorbibnamehash}{0f6d977d9f7d56ee5be8f2dd1863ab5c}
+      \strng{authornamehash}{0f6d977d9f7d56ee5be8f2dd1863ab5c}
+      \strng{authorfullhash}{0f6d977d9f7d56ee5be8f2dd1863ab5c}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{month}{4}
+      \field{title}{{Semiclassical analysis of the Loop Quantum Gravity volume operator: Area Coherent States}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 0904.1303
+      \endverb
+      \keyw{Flori2009}
+    \endentry
+    \entry{Bahr2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2e0376b8b9f43ea649305ed651e52140}{%
+           family={Bahr},
+           familyi={B\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d27f0558efa9df1e18e45cbef6e4b01f}{%
+           family={Thiemann},
+           familyi={T\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b5df5d307b2f28c4a1372db46893a336}
+      \strng{fullhash}{43cc82f8b4a23842abbe443c000248b8}
+      \strng{bibnamehash}{43cc82f8b4a23842abbe443c000248b8}
+      \strng{authorbibnamehash}{43cc82f8b4a23842abbe443c000248b8}
+      \strng{authornamehash}{b5df5d307b2f28c4a1372db46893a336}
+      \strng{authorfullhash}{43cc82f8b4a23842abbe443c000248b8}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Gauge-invariant coherent states for loop quantum gravity. II. Non-Abelian gauge groups}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{26}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{045012}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/26/4/045012
+      \endverb
+      \verb{eprint}
+      \verb 0709.4636
+      \endverb
+      \keyw{Bahr2007}
+    \endentry
+    \entry{Bianchi2009}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2321d3b116612f733350f8c739b709d8}{%
+           family={Bianchi},
+           familyi={B\bibinitperiod},
+           given={Eugenio},
+           giveni={E\bibinitperiod}}}%
+        {{hash=53d3df48284bdd57b9717cde0639f4e8}{%
+           family={Magliaro},
+           familyi={M\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod}}}%
+        {{hash=654f28fb14a3fca81ab73c2f5a6951d2}{%
+           family={Perini},
+           familyi={P\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2431a75ca666718d59b0b6b436e3c6ff}
+      \strng{fullhash}{6468787e1bbd2aa8755397c4181075e7}
+      \strng{bibnamehash}{6468787e1bbd2aa8755397c4181075e7}
+      \strng{authorbibnamehash}{6468787e1bbd2aa8755397c4181075e7}
+      \strng{authornamehash}{2431a75ca666718d59b0b6b436e3c6ff}
+      \strng{authorfullhash}{6468787e1bbd2aa8755397c4181075e7}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Coherent spin-networks}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{82}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{024012}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.82.024012
+      \endverb
+      \verb{eprint}
+      \verb 0912.4054
+      \endverb
+      \keyw{Bianchi2009}
+    \endentry
+    \entry{Livine2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bf5b162b2514b51c002ca9c76ea0125e}{%
+           family={Livine},
+           familyi={L\bibinitperiod},
+           given={Etera\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=55d40fd6348b874783811897e5b9f00f}{%
+           family={Speziale},
+           familyi={S\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{3ee5f9b471ebc6606347a1f95694fc0e}
+      \strng{fullhash}{0c42fb1289389f727c436e83c8510f0b}
+      \strng{bibnamehash}{0c42fb1289389f727c436e83c8510f0b}
+      \strng{authorbibnamehash}{0c42fb1289389f727c436e83c8510f0b}
+      \strng{authornamehash}{3ee5f9b471ebc6606347a1f95694fc0e}
+      \strng{authorfullhash}{0c42fb1289389f727c436e83c8510f0b}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{A New spinfoam vertex for quantum gravity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{76}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{084028}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.76.084028
+      \endverb
+      \verb{eprint}
+      \verb 0705.0674
+      \endverb
+      \keyw{Livine2007}
+    \endentry
+    \entry{Perelomov1971}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e84f69cd9ead20531bfb4c8a052b8d1e}{%
+           family={Perelomov},
+           familyi={P\bibinitperiod},
+           given={A.M.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e84f69cd9ead20531bfb4c8a052b8d1e}
+      \strng{fullhash}{e84f69cd9ead20531bfb4c8a052b8d1e}
+      \strng{bibnamehash}{e84f69cd9ead20531bfb4c8a052b8d1e}
+      \strng{authorbibnamehash}{e84f69cd9ead20531bfb4c8a052b8d1e}
+      \strng{authornamehash}{e84f69cd9ead20531bfb4c8a052b8d1e}
+      \strng{authorfullhash}{e84f69cd9ead20531bfb4c8a052b8d1e}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Commun. Math. Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Coherent states for arbitrary lie groups}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{26}
+      \field{year}{1972}
+      \field{dateera}{ce}
+      \field{pages}{222\bibrangedash 236}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/BF01645091
+      \endverb
+      \keyw{Perelomov1971}
+    \endentry
+    \entry{Bojowald:1999eh}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4cb6b1e4e27e1e2738da1a1ce01b4ce8}{%
+           family={Bojowald},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=52262a5ee62799727fe33c6142bf3b54}{%
+           family={Kastrup},
+           familyi={K\bibinitperiod},
+           given={H.A.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b7da77cdfe7efd2b0e0ef67df0cdcf05}
+      \strng{fullhash}{ff4c6ec86a141c05cd7e2648765a4016}
+      \strng{bibnamehash}{ff4c6ec86a141c05cd7e2648765a4016}
+      \strng{authorbibnamehash}{ff4c6ec86a141c05cd7e2648765a4016}
+      \strng{authornamehash}{b7da77cdfe7efd2b0e0ef67df0cdcf05}
+      \strng{authorfullhash}{ff4c6ec86a141c05cd7e2648765a4016}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Quantum symmetry reduction for diffeomorphism invariant theories of connections}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{17}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{3009\bibrangedash 3043}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.1088/0264-9381/17/15/311
+      \endverb
+      \verb{eprint}
+      \verb hep-th/9907042
+      \endverb
+      \keyw{Bojowald:1999eh}
+    \endentry
+    \entry{Bojowald:2001xe}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8cdc376fc9eac52708ff178f82b2bcc8}{%
+           family={Bojowald},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \strng{fullhash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \strng{bibnamehash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \strng{authorbibnamehash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \strng{authornamehash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \strng{authorfullhash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Absence of singularity in loop quantum cosmology}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{86}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{5227\bibrangedash 5230}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.86.5227
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0102069
+      \endverb
+      \keyw{Bojowald:2001xe}
+    \endentry
+    \entry{Ashtekar:2003hd}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e28cc3e6f7f6ef55fcce6814f02de871}{%
+           family={Ashtekar},
+           familyi={A\bibinitperiod},
+           given={Abhay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8cdc376fc9eac52708ff178f82b2bcc8}{%
+           family={Bojowald},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cb5ea41dec39060bcbfd953ead8b22d6}{%
+           family={Lewandowski},
+           familyi={L\bibinitperiod},
+           given={Jerzy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{fullhash}{03a7aa63798a11da04f0d430b127c687}
+      \strng{bibnamehash}{03a7aa63798a11da04f0d430b127c687}
+      \strng{authorbibnamehash}{03a7aa63798a11da04f0d430b127c687}
+      \strng{authornamehash}{7fa84124d3805e4cfb69bd04d49eab91}
+      \strng{authorfullhash}{03a7aa63798a11da04f0d430b127c687}
+      \field{extraname}{12}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Adv. Theor. Math. Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{{Mathematical structure of loop quantum cosmology}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{7}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{pages}{233\bibrangedash 268}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.4310/ATMP.2003.v7.n2.a2
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0304074
+      \endverb
+      \keyw{Ashtekar:2003hd}
+    \endentry
+    \entry{Bojowald:2002nz}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8cdc376fc9eac52708ff178f82b2bcc8}{%
+           family={Bojowald},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \strng{fullhash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \strng{bibnamehash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \strng{authorbibnamehash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \strng{authornamehash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \strng{authorfullhash}{8cdc376fc9eac52708ff178f82b2bcc8}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Inflation from quantum geometry}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{89}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{261301}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.89.261301
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0206054
+      \endverb
+      \keyw{Bojowald:2002nz}
+    \endentry
+    \entry{Date:2004yz}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1fe7c00239dc1461ef534c65e4d6a32f}{%
+           family={Date},
+           familyi={D\bibinitperiod},
+           given={Ghanashyam},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5d2cd3cfed9d5dcafa2f474ed4129538}{%
+           family={Hossain},
+           familyi={H\bibinitperiod},
+           given={Golam\bibnamedelima Mortuza},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{eb933c82f27a9b4d3fb1b9477ccc213a}
+      \strng{fullhash}{8f534b173ade005c356384a26dc745d4}
+      \strng{bibnamehash}{8f534b173ade005c356384a26dc745d4}
+      \strng{authorbibnamehash}{8f534b173ade005c356384a26dc745d4}
+      \strng{authornamehash}{eb933c82f27a9b4d3fb1b9477ccc213a}
+      \strng{authorfullhash}{8f534b173ade005c356384a26dc745d4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Genericity of inflation in isotropic loop quantum cosmology}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{94}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{pages}{011301}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.94.011301
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/0407069
+      \endverb
+      \keyw{Date:2004yz}
+    \endentry
+    \entry{Misner1957}{article}{}
+      \name{author}{1}{}{%
+        {{hash=05c5e0e62bd36ef32b9a719149851fdc}{%
+           family={Misner},
+           familyi={M\bibinitperiod},
+           given={Charles\bibnamedelima W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{05c5e0e62bd36ef32b9a719149851fdc}
+      \strng{fullhash}{05c5e0e62bd36ef32b9a719149851fdc}
+      \strng{bibnamehash}{05c5e0e62bd36ef32b9a719149851fdc}
+      \strng{authorbibnamehash}{05c5e0e62bd36ef32b9a719149851fdc}
+      \strng{authornamehash}{05c5e0e62bd36ef32b9a719149851fdc}
+      \strng{authorfullhash}{05c5e0e62bd36ef32b9a719149851fdc}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{month}{7}
+      \field{title}{Feynman Quantization of General Relativity}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{29}
+      \field{year}{1957}
+      \field{dateera}{ce}
+      \field{pages}{497\bibrangedash 509}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.29.497
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.29.497
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.29.497
+      \endverb
+      \keyw{Misner1957}
+    \endentry
+    \entry{Regge1961}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6336629b7cde68b15197eb7b841a94e3}{%
+           family={Regge},
+           familyi={R\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{6336629b7cde68b15197eb7b841a94e3}
+      \strng{fullhash}{6336629b7cde68b15197eb7b841a94e3}
+      \strng{bibnamehash}{6336629b7cde68b15197eb7b841a94e3}
+      \strng{authorbibnamehash}{6336629b7cde68b15197eb7b841a94e3}
+      \strng{authornamehash}{6336629b7cde68b15197eb7b841a94e3}
+      \strng{authorfullhash}{6336629b7cde68b15197eb7b841a94e3}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuovo Cim.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{GENERAL RELATIVITY WITHOUT COORDINATES}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{19}
+      \field{year}{1961}
+      \field{dateera}{ce}
+      \field{pages}{558\bibrangedash 571}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/BF02733251
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF02733251
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF02733251
+      \endverb
+      \keyw{Regge1961}
+    \endentry
+    \entry{Baez1999}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2c62efec41484dab33b1d05c9fc9df4e}{%
+           family={Baez},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2c62efec41484dab33b1d05c9fc9df4e}
+      \strng{fullhash}{2c62efec41484dab33b1d05c9fc9df4e}
+      \strng{bibnamehash}{2c62efec41484dab33b1d05c9fc9df4e}
+      \strng{authorbibnamehash}{2c62efec41484dab33b1d05c9fc9df4e}
+      \strng{authornamehash}{2c62efec41484dab33b1d05c9fc9df4e}
+      \strng{authorfullhash}{2c62efec41484dab33b1d05c9fc9df4e}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Lect. Notes Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{An Introduction to spin foam models of quantum gravity and BF theory}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{543}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{25\bibrangedash 94}
+      \range{pages}{70}
+      \verb{doi}
+      \verb 10.1007/3-540-46552-9\_2
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9905087
+      \endverb
+      \keyw{Baez1999}
+    \endentry
+    \entry{Regge1968}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=16da9f31df51208f35e250f1d2edc815}{%
+           family={Ponzano},
+           familyi={P\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6336629b7cde68b15197eb7b841a94e3}{%
+           family={Regge},
+           familyi={R\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=af478cd942c7ec58dc0b0928d033479a}{%
+           family={Bloch},
+           familyi={B\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland Publishing Company}%
+      }
+      \strng{namehash}{ad746dc2a3e9538d863ad313bb85efe9}
+      \strng{fullhash}{1884588dc1d727dfb5d050e360f9bf20}
+      \strng{bibnamehash}{1884588dc1d727dfb5d050e360f9bf20}
+      \strng{authorbibnamehash}{1884588dc1d727dfb5d050e360f9bf20}
+      \strng{authornamehash}{ad746dc2a3e9538d863ad313bb85efe9}
+      \strng{authorfullhash}{1884588dc1d727dfb5d050e360f9bf20}
+      \strng{editorbibnamehash}{af478cd942c7ec58dc0b0928d033479a}
+      \strng{editornamehash}{af478cd942c7ec58dc0b0928d033479a}
+      \strng{editorfullhash}{af478cd942c7ec58dc0b0928d033479a}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Spectroscopic and Group Theoretical Methods in Physics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{SEMICLASSICAL LIMIT OF RACAH COEFFICIENTS.}
+      \field{usera}{G}
+      \field{userc}{english}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1968}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 58}
+      \range{pages}{58}
+      \keyw{Regge1968}
+    \endentry
+    \entry{Turaev1992}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8d6430e35aa37ee30368ac04c34b725b}{%
+           family={Turaev},
+           familyi={T\bibinitperiod},
+           given={V.G.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=00ab0d2f66df3545c868cf928cc8e808}{%
+           family={Viro},
+           familyi={V\bibinitperiod},
+           given={O.Y.},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{1db4414af19b0662de4dcd2c82fa17e2}
+      \strng{fullhash}{a76969cc5c2f7cff38769ddab6002ac4}
+      \strng{bibnamehash}{a76969cc5c2f7cff38769ddab6002ac4}
+      \strng{authorbibnamehash}{a76969cc5c2f7cff38769ddab6002ac4}
+      \strng{authornamehash}{1db4414af19b0662de4dcd2c82fa17e2}
+      \strng{authorfullhash}{a76969cc5c2f7cff38769ddab6002ac4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0040-9383}
+      \field{journaltitle}{Topology}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{State sum invariants of 3-manifolds and quantum 6j-symbols}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{31}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \field{pages}{865\bibrangedash 902}
+      \range{pages}{38}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0040-9383(92)90015-A
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/004093839290015A
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/004093839290015A
+      \endverb
+      \keyw{Turaev1992}
+    \endentry
+    \entry{Freidel1999}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b726b924c0ad57df48328ff5d3043609}{%
+           family={L.},
+           familyi={L\bibinitperiod},
+           given={Freidel},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2667b791652d7fdf9d9daa731b9c9db3}{%
+           family={K.},
+           familyi={K\bibinitperiod},
+           given={Krasnov},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7fdfc496c4baf5105c0d266177c2e050}
+      \strng{fullhash}{ab45eb14489fb867e58f5ef18a7b650b}
+      \strng{bibnamehash}{ab45eb14489fb867e58f5ef18a7b650b}
+      \strng{authorbibnamehash}{ab45eb14489fb867e58f5ef18a7b650b}
+      \strng{authornamehash}{7fdfc496c4baf5105c0d266177c2e050}
+      \strng{authorfullhash}{ab45eb14489fb867e58f5ef18a7b650b}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Adv. Theor. Math. Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Spin Foam Models and the Classical Action Principle}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{pages}{1183\bibrangedash 1247}
+      \range{pages}{65}
+      \keyw{Freidel1999}
+    \endentry
+    \entry{Freidel:2007py}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6fdd06003ed215419a2575866bcafcf4}{%
+           family={Freidel},
+           familyi={F\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=65977df4643b0b3d6904d4464d606bb7}{%
+           family={Krasnov},
+           familyi={K\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{6b04fe8a4ffb5885cea8691ca134ca85}
+      \strng{fullhash}{028164afa6bcdff0e809cca515ab0754}
+      \strng{bibnamehash}{028164afa6bcdff0e809cca515ab0754}
+      \strng{authorbibnamehash}{028164afa6bcdff0e809cca515ab0754}
+      \strng{authornamehash}{6b04fe8a4ffb5885cea8691ca134ca85}
+      \strng{authorfullhash}{028164afa6bcdff0e809cca515ab0754}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{A New Spin Foam Model for 4d Gravity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{25}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{125018}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/25/12/125018
+      \endverb
+      \verb{eprint}
+      \verb 0708.1595
+      \endverb
+      \keyw{Freidel:2007py}
+    \endentry
+    \entry{Barrett1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0565915cfa8b458947c17bd4380314bf}{%
+           family={Barrett},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=f051271f70ebe0a9697d372b1f140496}{%
+           family={Crane},
+           familyi={C\bibinitperiod},
+           given={Louis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{f52bf922b55e661095831e947f7168f4}
+      \strng{fullhash}{4ebbb60867d0fa1b22b6c509eb56260e}
+      \strng{bibnamehash}{4ebbb60867d0fa1b22b6c509eb56260e}
+      \strng{authorbibnamehash}{4ebbb60867d0fa1b22b6c509eb56260e}
+      \strng{authornamehash}{f52bf922b55e661095831e947f7168f4}
+      \strng{authorfullhash}{4ebbb60867d0fa1b22b6c509eb56260e}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{J. Math. Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Relativistic spin networks and quantum gravity}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{39}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{pages}{3296\bibrangedash 3302}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1063/1.532254
+      \endverb
+      \verb{eprint}
+      \verb gr-qc/9709028
+      \endverb
+      \keyw{Barrett1998}
+    \endentry
+    \entry{EPRL2008}{article}{}
+      \name{author}{4}{}{%
+        {{hash=51d965a39db5b81061ef5339a1a9a9ae}{%
+           family={Engle},
+           familyi={E\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c38500dcc9cc7bc20b9e4be96752da6e}{%
+           family={Livine},
+           familyi={L\bibinitperiod},
+           given={Etera},
+           giveni={E\bibinitperiod}}}%
+        {{hash=38207b406f524227e55153920722298f}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b32ab73e85caa26365ad2176347b9515}{%
+           family={Rovelli},
+           familyi={R\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{52b659b3610caf95a02ea58fe9552c8d}
+      \strng{fullhash}{926866ece05dbbe1560e6576f1b01803}
+      \strng{bibnamehash}{66131f33ff4fd4fb4662049dc688d308}
+      \strng{authorbibnamehash}{66131f33ff4fd4fb4662049dc688d308}
+      \strng{authornamehash}{52b659b3610caf95a02ea58fe9552c8d}
+      \strng{authorfullhash}{926866ece05dbbe1560e6576f1b01803}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Nucl. Phys. B}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{LQG vertex with finite Immirzi parameter}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{799}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{136\bibrangedash 149}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.nuclphysb.2008.02.018
+      \endverb
+      \verb{eprint}
+      \verb 0711.0146
+      \endverb
+      \keyw{EPRL2008}
+    \endentry
+    \entry{Rovelli2011}{}{}
+      \name{author}{1}{}{%
+        {{hash=b32ab73e85caa26365ad2176347b9515}{%
+           family={Rovelli},
+           familyi={R\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{editor}{9}{}{%
+        {{hash=713cf129bc1f2bcb886d6efd2bef0b06}{%
+           family={Barrett},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a1505a9bfc8be3beea23bbbd009b84b3}{%
+           family={Giesel},
+           familyi={G\bibinitperiod},
+           given={Kristina},
+           giveni={K\bibinitperiod}}}%
+        {{hash=30a0a592f48ca2639a14450b4dcda988}{%
+           family={Hellmann},
+           familyi={H\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4a5f339c1966cc1dfcacd06dfe6859f2}{%
+           family={Jonke},
+           familyi={J\bibinitperiod},
+           given={Larisa},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cefa9532ba02a6ea98f26ea82867344f}{%
+           family={Krajewski},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cb5ea41dec39060bcbfd953ead8b22d6}{%
+           family={Lewandowski},
+           familyi={L\bibinitperiod},
+           given={Jerzy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b32ab73e85caa26365ad2176347b9515}{%
+           family={Rovelli},
+           familyi={R\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3422599852c65f0a7b7b090c37ccb0f9}{%
+           family={Sahlmann},
+           familyi={S\bibinitperiod},
+           given={Hanno},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5d91f75cec38fd9bd1a8acca6ca8359e}{%
+           family={Steinacker},
+           familyi={S\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{fullhash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{bibnamehash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{authorbibnamehash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{authornamehash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{authorfullhash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{editorbibnamehash}{4795c7eb21c6db582030439308ac7ffb}
+      \strng{editornamehash}{228c0c58f6936c2e4e5638f588533bbe}
+      \strng{editorfullhash}{06f5693190ee9fbf305be06fc863e391}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Proceedings, 3rd Quantum Geometry and Quantum Gravity School}: {Zakopane, Poland, February 28-March 13, 2011}}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Zakopane lectures on loop gravity}}
+      \field{userc}{english}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{QGQGS2011}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{003}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22323/1.140.0003
+      \endverb
+      \verb{eprint}
+      \verb 1102.3660
+      \endverb
+      \keyw{Rovelli2011}
+    \endentry
+    \entry{Rovelli2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b32ab73e85caa26365ad2176347b9515}{%
+           family={Rovelli},
+           familyi={R\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=a08f7237ec6ec2ea9e910a6ea49d04ed}{%
+           family={Aldaya},
+           familyi={A\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=eec335fc21e187d8e212358bae191ca9}{%
+           family={Barcelo},
+           familyi={B\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=688f9ba9ff524616367933eed0b8ef2b}{%
+           family={Jaramillo},
+           familyi={J\bibinitperiod},
+           given={Jose\bibnamedelima Luis},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{fullhash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{bibnamehash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{authorbibnamehash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{authornamehash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{authorfullhash}{b32ab73e85caa26365ad2176347b9515}
+      \strng{editorbibnamehash}{0470e4a5f24a263e1f0b6d1cc69766a7}
+      \strng{editornamehash}{e01ef537027449d9c424f4a9509d45be}
+      \strng{editorfullhash}{0470e4a5f24a263e1f0b6d1cc69766a7}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{J. Phys. Conf. Ser.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Simple model for quantum general relativity from loop quantum gravity}}
+      \field{usera}{J}
+      \field{userc}{english}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{314}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{012006}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/314/1/012006
+      \endverb
+      \verb{eprint}
+      \verb 1010.1939
+      \endverb
+      \keyw{Rovelli2010}
+    \endentry
+    \entry{Martin-Dussaud2019}{article}{}
+      \name{author}{1}{}{%
+        {{hash=096043fb49f267cdc7a13c134e92f4fe}{%
+           family={Martin-Dussaud},
+           familyi={M\bibinithyphendelim D\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{096043fb49f267cdc7a13c134e92f4fe}
+      \strng{fullhash}{096043fb49f267cdc7a13c134e92f4fe}
+      \strng{bibnamehash}{096043fb49f267cdc7a13c134e92f4fe}
+      \strng{authorbibnamehash}{096043fb49f267cdc7a13c134e92f4fe}
+      \strng{authornamehash}{096043fb49f267cdc7a13c134e92f4fe}
+      \strng{authorfullhash}{096043fb49f267cdc7a13c134e92f4fe}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Gen. Rel. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{9}
+      \field{title}{{A Primer of Group Theory for Loop Quantum Gravity and Spin-foams}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{51}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{110}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s10714-019-2583-5
+      \endverb
+      \verb{eprint}
+      \verb 1902.08439
+      \endverb
+      \keyw{Martin-Dussaud2019}
+    \endentry
+    \entry{Rovelli:2010qx}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b32ab73e85caa26365ad2176347b9515}{%
+           family={Rovelli},
+           familyi={R\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9460aca1cea1658c9c502ffca279b473}{%
+           family={Smerlak},
+           familyi={S\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7b26eca81e63363d797609b1129e72a0}
+      \strng{fullhash}{3843e86175220d41a655b55c60f4c5d3}
+      \strng{bibnamehash}{3843e86175220d41a655b55c60f4c5d3}
+      \strng{authorbibnamehash}{3843e86175220d41a655b55c60f4c5d3}
+      \strng{authornamehash}{7b26eca81e63363d797609b1129e72a0}
+      \strng{authorfullhash}{3843e86175220d41a655b55c60f4c5d3}
+      \field{extraname}{4}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{In quantum gravity, summing is refining}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{29}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{055004}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/29/5/055004
+      \endverb
+      \verb{eprint}
+      \verb 1010.5437
+      \endverb
+      \keyw{Rovelli:2010qx}
+    \endentry
+    \entry{Bianchi2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2321d3b116612f733350f8c739b709d8}{%
+           family={Bianchi},
+           familyi={B\bibinitperiod},
+           given={Eugenio},
+           giveni={E\bibinitperiod}}}%
+        {{hash=53d3df48284bdd57b9717cde0639f4e8}{%
+           family={Magliaro},
+           familyi={M\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod}}}%
+        {{hash=654f28fb14a3fca81ab73c2f5a6951d2}{%
+           family={Perini},
+           familyi={P\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2431a75ca666718d59b0b6b436e3c6ff}
+      \strng{fullhash}{6468787e1bbd2aa8755397c4181075e7}
+      \strng{bibnamehash}{6468787e1bbd2aa8755397c4181075e7}
+      \strng{authorbibnamehash}{6468787e1bbd2aa8755397c4181075e7}
+      \strng{authornamehash}{2431a75ca666718d59b0b6b436e3c6ff}
+      \strng{authorfullhash}{6468787e1bbd2aa8755397c4181075e7}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Spinfoams in the holomorphic representation}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{82}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{124031}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.82.124031
+      \endverb
+      \verb{eprint}
+      \verb 1004.4550
+      \endverb
+      \keyw{Bianchi2010}
+    \endentry
+    \entry{Barrett2009}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0565915cfa8b458947c17bd4380314bf}{%
+           family={Barrett},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d2289cbf3d55d1ecb0d01badf8ee6478}{%
+           family={Dowdall},
+           familyi={D\bibinitperiod},
+           given={R.J.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2a5fbc83e749dfbc79d87b453299d11b}{%
+           family={Fairbairn},
+           familyi={F\bibinitperiod},
+           given={Winston\bibnamedelima J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4326f3b33dae05731d58e8d80a3ef7f1}{%
+           family={Gomes},
+           familyi={G\bibinitperiod},
+           given={Henrique},
+           giveni={H\bibinitperiod}}}%
+        {{hash=30a0a592f48ca2639a14450b4dcda988}{%
+           family={Hellmann},
+           familyi={H\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{f52bf922b55e661095831e947f7168f4}
+      \strng{fullhash}{d169773bc743d965977d53ea46c22108}
+      \strng{bibnamehash}{0e435b2d313c04a590615c8b2254171a}
+      \strng{authorbibnamehash}{0e435b2d313c04a590615c8b2254171a}
+      \strng{authornamehash}{f52bf922b55e661095831e947f7168f4}
+      \strng{authorfullhash}{d169773bc743d965977d53ea46c22108}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{J. Math. Phys.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Asymptotic analysis of the EPRL four-simplex amplitude}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{50}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{112504}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.3244218
+      \endverb
+      \verb{eprint}
+      \verb 0902.1170
+      \endverb
+      \keyw{Barrett2009}
+    \endentry
+    \entry{Han2011rf}{article}{}
+      \name{author}{2}{}{%
+        {{hash=313ab73ead55efa5425a7ac749b41283}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Mu-Xin},
+           giveni={M\bibinithyphendelim X\bibinitperiod}}}%
+        {{hash=c9df1eb35e76af80baab97700c757ca4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Mingyi},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b530c8e34ba253f7b01145b533efdb80}
+      \strng{fullhash}{536740d4c0d80a57edd1d83af098befa}
+      \strng{bibnamehash}{536740d4c0d80a57edd1d83af098befa}
+      \strng{authorbibnamehash}{536740d4c0d80a57edd1d83af098befa}
+      \strng{authornamehash}{b530c8e34ba253f7b01145b533efdb80}
+      \strng{authorfullhash}{536740d4c0d80a57edd1d83af098befa}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Asymptotics of Spinfoam Amplitude on Simplicial Manifold: Euclidean Theory}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{29}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{165004}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/29/16/165004
+      \endverb
+      \verb{eprint}
+      \verb 1109.0500
+      \endverb
+      \keyw{Han2011rf}
+    \endentry
+    \entry{Han2011re}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1a7ce28689ea8f3f21c786d3ce68102d}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Muxin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c9df1eb35e76af80baab97700c757ca4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Mingyi},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{921c8a9ce546bedab9dc2df8eafec83e}
+      \strng{fullhash}{c982845be78d439e6edb7138d46a284e}
+      \strng{bibnamehash}{c982845be78d439e6edb7138d46a284e}
+      \strng{authorbibnamehash}{c982845be78d439e6edb7138d46a284e}
+      \strng{authornamehash}{921c8a9ce546bedab9dc2df8eafec83e}
+      \strng{authorfullhash}{c982845be78d439e6edb7138d46a284e}
+      \field{extraname}{3}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{{Asymptotics of Spinfoam Amplitude on Simplicial Manifold: Lorentzian Theory}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{30}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{165012}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/30/16/165012
+      \endverb
+      \verb{eprint}
+      \verb 1109.0499
+      \endverb
+      \keyw{Han2011re}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

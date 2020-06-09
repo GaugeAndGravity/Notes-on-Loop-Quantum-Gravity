@@ -1,0 +1,53 @@
+\documentclass[11pt,a4paper]{ctexbook}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+% \usepackage{natbib}
+\usepackage[style=gb7714-2015,backref=true]{biblatex}
+% \usepackage{doi}
+\usepackage{upgreek}
+\input{mystyle.tex}
+
+\geometry{
+	a4paper,
+	% scale=0.75
+}
+
+\title{圈量子引力简介}
+\author{王英洁}
+
+% \bibliographystyle
+% \bibliographystyle{plain}
+% \bibliographystyle{spbasic}
+
+\addbibresource{bib/lqg.bib}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+
+	\printnomenclature
+
+	% % \input{notes/ADM.tex}
+	% % \input{notes/QGD.tex}
+	% \input{notes/Palatini.tex}
+	% \input{notes/Ashtekar.tex}
+	\input{chapters/intro.tex}
+	%\input{chapters/floats.tex}
+	%\input{chapters/math.tex}
+	%\input{chapters/citations.tex}
+	\input{chapters/canonicalgravity.tex}
+	\input{chapters/lqg_pre.tex}
+	\input{chapters/lqg_kin.tex}
+	\input{chapters/lqg_constrain.tex}
+	\input{chapters/lqg_application.tex}
+	\input{chapters/spinfoam.tex}
+	% \input{chapters/fermion.tex}
+
+	% \bibliography{bib/ustc}
+	\addcontentsline{toc}{chapter}{参考文献}
+	\printbibliography
+
+\end{document}

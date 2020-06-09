@@ -1,0 +1,205 @@
+% !TeX root = ../main.tex
+
+\chapter{费米子耦合}
+
+	在之前的章节中分别建立了正则圈量子引力及 spinfoam 模型，但都是纯引力的理论，还未与物质场耦合。我们知道，除引力外，目前标准模型包括了 杨-米尔斯 规范场、费米子、希格斯玻色子。正则圈量子引力与规范群为 $G$ 的规范场耦合时只需将 Ashtekar 联络 $A$ 替换为规范群为 $\SU{2} \times G$ 的联络 $(A , A_{\text{YM}})$\cite{Rovelli2004,Thiemann2007}，而 spinfoam 模型与规范场的耦合也有了很多讨论，如\cite{Alexander2011,Mikovic2002,Speziale2007mt}。正则圈量子引力耦合费米子和标量场的方法类似，是将旋量 $\psi$ 或标量 $\phi$ 标记在图的顶点上，定义扩充的柱函数\cite{Rovelli2004,Han2005,Thiemann2007}，主要难点在于处理哈密顿算符。spinfoam 模型与费米子和标量场耦合的方式也相似，是将旋量或标量标记在对偶顶点 $v$ 上。本文介绍 spinfoam 模型与费米子的耦合。
+
+	2010年Bianchi、韩慕辛、Rovelli等人首次给出了spinfoam 模型与费米子耦合的定义，但只用于2-旋量\cite{Bianchi2010bn}，2011年韩慕辛和 Rovelli 定义了 spinfoam 与 狄拉克 4-旋量的耦合\cite{Han2011}，本文采用后者。
+
+	经典的狄拉克作用量为
+	\begin{equation}
+		S_F \definedby \int_M \frac{\ii}{2} \left( \bar{\psi} \tensor{\gamma}{^a} \tensor{D}{_a} \psi - \overline{\tensor{D}{_a} \psi} \tensor{\gamma}{^a} \psi \right) - m_0 \bar{\psi} \psi,\label{eq-Dirac_action}
+	\end{equation}
+	其中 $\tensor{\gamma}{^a} \definedby \tensor{\gamma}{^I} \tensor{e}{^a_I}$，而 $\tensor{D}{_\mu}$ 是旋量丛上的协变导数
+	\begin{equation}
+		\tensor{D}{_a} \psi = \Partial{a} \psi + \frac{1}{2} \tensor{A}{_a^I^J} \tensor{S}{_I_J} \psi,
+	\end{equation}
+	其中
+	\begin{equation}
+		\tensor{A}{_a^I^J} \definedby \tensor{\vol}{^I^J^K} \tensor{A}{_a_K}
+	\end{equation}
+	是对偶的 Ashtekar 联络，$\tensor{S}{^I^J} \definedby \frac{1}{4}\left[ \tensor{\gamma}{^I}, \tensor{\gamma}{^J} \right]$ 是洛伦兹群的生成元。%首先考虑对 $M$ 作三角剖分 $\complex{K}$ 后，将作用量~\eqref{eq-Dirac_action} 离散化。设旋量场离散化为每个对偶顶点 $v$ 处标记一个 $\psi_v$，我们把~\eqref{eq-Dirac_action} 分成三项，\cite{Han2011}中给出第一项的离散化为
+	% \begin{equation}
+	% 	S_1 = 2 \ii \sum_{e\in E(\complex{K}^*)} V_e \bar{\psi}_{s(e)} \tensor{\gamma}{^I} \tensor{n}{_I}(e) \left( G_e \psi_{t(e)} - \psi_{s(e)} \right),\label{eq-S1}
+	% \end{equation}
+	% 其中 $V_e$ 是与 $e$ 对偶的四面体的体积，$\tensor{n}{^I}(e) = \tensor{e}{^I_a} \tensor{n}{^a}(e)$ 是 $e$ 在 $s(e)$ 处的单位切矢，而 $G_e$ 是沿 $e^{-1}$ 的 holonomy
+	% \begin{equation}
+	% 	G_e \definedby \pathorder \exp(\frac{1}{2} \int_e \tensor{A}{_a^I^J} \tensor{S}{_I_J}),
+	% \end{equation}
+	% 现证明~\eqref{eq-S1} 的连续极限，\cite{Han2011} 原文中的证明是不太精确的，这里本文给出仔细的证明。
+	% \begin{Proof}
+	% 	选择这样的区域 $\Omega$，它足够小，使得场及场的导数在 $\Omega$ 上变化不大，并设 $\complex{K}$ 细分到使得 $\Omega$ 包含很多个 $\complex{K}$ 中的 4-单形 $\Delta_v$。将 $e$ 参数化为 $e(s)$，使 $\tensor{e}{^I_a} \tensor{{\dot{e}}}{^a}$ 是内部空间的单位矢量，$s\in [0,l(e)]$，则 $l(e)$ 是在连续极限下趋于零的小量，有
+	% 	\begin{equation}
+	% 		\begin{split}
+	% 			G_e \psi_{t(e)} &\simeq \left( \II + \frac{1}{2} l(e) \tensor{n}{^a}(e) \tensor{A}{_a^I^J} \tensor{S}{_I_J} \right) \left( \psi_{s(e)} + l(e) \tensor{n}{^a}(e) \left( \Partial{a} \psi \right)_{s(e)} \right)\\
+	% 			&\simeq \psi_{s(e)} + l(e) \tensor{n}{^a}(e) \left( \tensor{D}{_a} \psi \right)_{s(e)},
+	% 		\end{split}
+	% 	\end{equation}
+	% 	故连续极限下
+	% 	\begin{equation}
+	% 		\begin{split}
+	% 			S_1(\Omega) & \simeq 2\ii \sum_{e\in E(\complex{K}^*) \cap\, \Omega} V_e \bar{\psi}_{s(e)} \tensor{\gamma}{^I} \tensor{n}{_I}(e) l(e) \tensor{n}{^a}(e) \left( \tensor{D}{_a} \psi \right)_{s(e)}\\
+	% 			& = 2\ii \sum_{e\in E(\complex{K}^*) \cap\, \Omega} V_e \bar{\psi}_{s(e)} \tensor{\gamma}{^I} \tensor{n}{_I}(e) l(e) \tensor{n}{^J}(e) \tensor{e}{^a_J}(s(e)) \left( \tensor{D}{_a} \psi \right)_{s(e)}\\
+	% 			& \simeq 2\ii \bar{\psi}_{\Omega} \tensor{\gamma}{^I} \left( \tensor{D}{_a} \psi \right)_{\Omega} \tensor{e}{^a_J}(\Omega) \sum_{e\in E(\complex{K}^*) \cap\, \Omega} V_e \tensor{n}{_I}(e) l(e) \tensor{n}{^J}(e),\label{eq-S1_continuous}
+	% 		\end{split}
+	% 	\end{equation}
+	% 	其中最后一行用到了 $\psi$ ，$\tensor{D}{_a} \psi$和 $\tensor{e}{^a_I}$ 在 $\Omega$ 内变化不大的性质。
+	% 	考察
+	% 	\begin{equation}
+	% 		\sum_{e\in E(\complex{K}^*) \cap\, \Omega} V_e \tensor{n}{_I}(e) l(e) \tensor{n}{^J}(e),
+	% 	\end{equation}
+	% 	注意到它在4维转动下不变，知它正比于 $\tensor{\delta}{^J_I}$；再对 $I$，$J$ 缩并得到 $\mathrm{Vol}(\Omega)$，故
+	% 	\begin{equation}
+	% 		\sum_{e\in E(\complex{K}^*) \cap\, \Omega} V_e \tensor{n}{_I}(e) l(e) \tensor{n}{^J}(e) = \frac{1}{4} \mathrm{Vol}(\Omega) \tensor{\delta}{^J_I},
+	% 	\end{equation}
+	% 	则代入~\eqref{eq-S1_continuous} 得
+	% 	\begin{equation}
+	% 		S_1(\Omega) \simeq \frac{\ii}{2} \mathrm{Vol}(\Omega) \bar{\psi}_{\Omega} \tensor{\gamma}{^a} \left( \tensor{D}{_a} \psi \right)_{\Omega},
+	% 	\end{equation}
+	% 	对整个 $\complex{K}$ 则为
+	% 	\begin{equation}
+	% 		S_1 \simeq \frac{\ii}{2} \sum_{\Omega} \mathrm{Vol}(\Omega) \bar{\psi}_{\Omega} \tensor{\gamma}{^a} \left( \tensor{D}{_a} \psi \right)_{\Omega},
+	% 	\end{equation}
+	% 	即~\eqref{eq-Dirac_action} 的第一项。
+	% \end{Proof}
+
+	% 第二项为复共轭项，容易直接写出
+	% \begin{equation}
+	% 	S_2 = -2 \ii \sum_{e\in V(\complex{K}^*)} V_e \overline{\left( G_e \psi_{t(e)} - \psi_{s(e)} \right)} \tensor{\gamma}{^I} \tensor{n}{_I}(e) \psi_{s(e)},
+	% \end{equation}
+	% 而第三项质量项也易写出
+	% \begin{equation}
+	% 	S_3= - m_0 \sum_{v\in E(\complex{K}^*)} V_v \bar{\psi}_v \psi_v,
+	% \end{equation}
+	% 其中 $V_v$ 是与 $v$ 对偶的 4-单形的四维体积。则三项加起来，得到离散化的作用量
+	% \begin{equation}
+	% 	\begin{split}
+	% 		&S_F[\psi_v, g_e]\\
+	% 		={}& 2\ii \sum_{e\in E(\complex{K}^*)} V_e \left( \bar{\psi}_{s(e)} \tensor{\gamma}{^I} \tensor{n}{_I}(e) G_e \psi_{t(e)} - \bar{\psi}_{t(e)} G_e^{-1} \tensor{\gamma}{^I} \tensor{n}{_I}(e) \psi_{s(e)} \right) - m_0 \sum_{v\in V(\complex{K}^*)} V_v \bar{\psi}_v \psi_v\\
+	% 		={}& \sum_{e\in E(\complex{K}^*)} S_e[\psi_{s(e)},\psi_{t(e)},g_e] + \sum_{v\in V(\complex{K}^*)} S_v[\psi_v],
+	% 	\end{split}
+	% \end{equation}
+	% 其中 $g_e \in \SL{2,\mathbb{C}}$，$G_e$ 是 $g_e$ 在狄拉克旋量上的表示。由于有局部洛伦兹协变性，我们可以
+
+	在\cite{Han2011} 中定义了 spinfoam 与费米子的耦合为
+	\begin{equation}
+		\begin{split}
+			Z(\complex{K}) \definedby{}& \sum_{\{j_f\}} \prod_{\substack{(e,f)\\e\in f}} \int_{S^2} \dd{\myvec{n}_{ef}} \prod_{\substack{(v,e)\\v\in e}} \int_{\SL{2,\mathbb{C}}} \dd{g}_{ve} \prod_{v\in V(\complex{K}^*)}\int \left[ \mathcal{D} \psi_v \mathcal{D} \bar{\psi}_v \right] \prod_{f\in F(\complex{K}^*)} \left( 2j_f + 1 \right) \times\\
+			&\prod_{e\in E(\complex{K}^*)} \amplitude_e[\psi_{s(e)},\psi_{t(e)},g_{ve},j_f,\myvec{n}_{ef}] \prod_{v\in V(\complex{K}^*)} \amplitude_v[\psi_v,j_f,g_{ve},\myvec{n}_{ef}],\label{eq-spinfoam_fermion}
+		\end{split}
+	\end{equation}
+	其中 $G_e$ 是 $g_{s(e),e}g_{e,t(e)}$ 在狄拉克旋量上的表示，$\left[ \mathcal{D} \psi_v \mathcal{D} \bar{\psi}_v \right]$ 是格拉斯曼积分，
+	\begin{equation}
+		\begin{gathered}
+			\amplitude_e[\psi_{s(e)},\psi_{t(e)},g_{ve},j_f,\myvec{n}_{ef}] \definedby \e{\ii S_e},\\
+			\amplitude_v[\psi_v,j_f,g_{ve},\myvec{n}_{ef}] \definedby \mel{j_f,\myvec{n}_{ef}}{Y_\beta^\dagger g_{ev} g_{ve'} Y_\beta}{j_f,\myvec{n}_{e'f}} \e{\ii S_v},
+		\end{gathered}
+	\end{equation}
+	而 $S_e$，$S_v$ 是费米子的 spinfoam 作用量
+	\begin{equation}
+		\begin{gathered}
+			S_e[\psi_{s(e)},\psi_{t(e)},g_{ve},j_f,\myvec{n}_{ef}] \definedby 2 \ii V_e \left( \bar{\psi}_{s(e)} \tensor{\gamma}{^I} \tensor{n}{_I}(e) G_e \psi_{t(e)} - \bar{\psi}_{t(e)} G_e^{-1} \tensor{\gamma}{^I} \tensor{n}{_I}(e) \psi_{s(e)} \right),\\
+			S_v[\psi_v,j_f,g_{ve},\myvec{n}_{ef}] \definedby -m_0 V_v \bar{\psi}_v \psi_v,
+		\end{gathered}
+	\end{equation}
+	其中 $V_e$ 的定义为，对连接 $e$ 的四个 $f$ 任取三个，定义
+	\begin{equation}
+		V_e \definedby \frac{\sqrt{2}}{3} \sqrt{\abs{\myvec{A}_{f_1} \vdot \left( \myvec{A}_{f_2} \cross \myvec{A}_{f_3} \right)}} \qc \myvec{A}_{f} \definedby \beta j_f \myvec{n}_{ef},\label{eq-Ve}
+	\end{equation}
+	而 $V_v$ 的定义是，固定内部空间的矢量 $\tensor{t}{^I} = \tensor{\xi}{^I_0} = (1,0,0,0)$，则有洛伦兹代数的 $\so{3}$ 或 $\su{2}$ 李子代数，记基底为 $L_i$，则定义二重矢量
+	\begin{equation}
+		B_{ef} \definedby j_f \tensor*{n}{_{ef}^i} L_i \qc B_{vf} \definedby \mathfrak{g}_{ve} B_{ef} \mathfrak{g}_{ev},
+	\end{equation}
+	其中 $\mathfrak{g}$ 表示 $g\in \SL{2,\mathbb{C}}$ 的矢量表示，并定义
+	\begin{equation}
+		V_v \definedby \frac{1}{20} \sum_{(f,f')} V_v(f,f') = \frac{1}{20} \sum_{(f,f')} \tensor{\vol}{_I_J_K_L} \tensor*{B}{^I^J_v_f} \tensor*{B}{^K^L_{vf'}}.\label{eq-Vv}
+	\end{equation}
+	\cite{Han2011} 中紧接着讨论了该费米子耦合模型的关联函数，PCT 对称性，狄拉克算子等物理性质，但并没有讨论半经典极限，至今为止的其他文献也都没有讨论，但其实由于旋量场的量纲特殊性，它并不带来新的困难。
+
+	在 spinfoam 中，半经典极限为引入参数 $\lambda$，作放缩 $j_f\mapsto \lambda j_f$，并令 $\lambda\rightarrow \infty$，这在物理解释上是将长度尺度扩大 $\sqrt{\lambda}$，则由于狄拉克旋量场具有 $[L]^{-\frac{3}{2}}$ 量纲，应同时令 $\psi \mapsto \lambda^{-\frac{3}{4}} \psi$。我们定义如下半经典极限：
+	\begin{equation}
+		j_f \mapsto \lambda j_f, \psi \mapsto \lambda^{-\frac{3}{4}} \psi, \lambda \rightarrow \infty,\label{eq-semiclassical_limit}
+	\end{equation}
+	考察~\eqref{eq-spinfoam_fermion} 在此极限下的行为。容易验证
+	\begin{equation}
+		S_e \mapsto S_e \qc S_v \mapsto S_v,
+	\end{equation}
+	即费米子并不参与半经典极限。引力部分的半经典极限可直接引用\cite{Han2011re}的计算，结果为 Regge 几何，且可重建标架 $\tensor{e}{^I_a}(e)$，此时 $V_e$ 在半经典极限下确实是四面体 $t_e$ 的体积，$V_v$ 在半经典极限下是 $\Delta_v$ 的四维体积，而且~\eqref{eq-Vv} 中的 $V_v(f,f')$ 与 $(f,f')$ 的选择无关，取平均可以去掉。
+
+	进一步考察~\eqref{eq-spinfoam_fermion} 是否给出 Regge 几何上的离散费米子。注意到
+	\begin{equation}
+		\begin{split}
+			&\prod_{e\in E(\complex{K}^*)} \amplitude_e[\psi_{s(e)},\psi_{t(e)},g_{ve},j_f,\myvec{n}_{ef}] \prod_{v\in V(\complex{K}^*)} \amplitude_v[\psi_v,j_f,g_{ve},\myvec{n}_{ef}]\\
+			={}& \prod_{v\in V(\complex{K}^*)} \mel{j_f,\myvec{n}_{ef}}{Y_\beta^\dagger g_{ev} g_{ve'} Y_\beta}{j_f,\myvec{n}_{e'f}} \e{\ii \left( \sum_e S_e + \sum_v S_v \right)}\\
+			\simeq{}& \e{\ii S_{\text{Regge}}} \e{\ii \left( \sum_e S_e + \sum_v S_v \right)},
+		\end{split}
+	\end{equation}
+	我们需要考察
+	\begin{equation}
+		S[\psi_v] = \sum_{e} S_e + \sum_v S_v
+	\end{equation}
+	是否在连续极限下是~\eqref{eq-Dirac_action}。首先，
+	\begin{equation}
+		\sum_{v\in V(\complex{K}^*)} S_v = -m_0 \sum_{v\in V(\complex{K}^*)} V_v \bar{\psi}_v \psi_v
+	\end{equation}
+	在连续极限下回到
+	\begin{equation}
+		-m_0 \int_M \bar{\psi}\psi
+	\end{equation}
+	是没有问题的，关键是检查 $\sum_{e} S_e$，我们证明连续极限下
+	\begin{equation}
+		\sum_{e \in E(\complex{K}^*)} S_e \rightarrow \int_M \frac{\ii}{2} \left( \bar{\psi} \tensor{\gamma}{^a} \tensor{D}{_a} \psi - \overline{\tensor{D}{_a} \psi} \tensor{\gamma}{^a} \psi \right).
+	\end{equation}
+	\begin{Proof}
+		\begin{equation}
+			\begin{split}
+				&\sum_{e \in E(\complex{K}^*)} S_e\\
+				={}& 2 \ii \sum_{e \in E(\complex{K}^*)} V_e \left( \bar{\psi}_{s(e)} \tensor{\gamma}{^I} \tensor{n}{_I}(e) G_e \psi_{t(e)} - \bar{\psi}_{t(e)} G_e^{-1} \tensor{\gamma}{^I} \tensor{n}{_I}(e) \psi_{s(e)} \right)\\
+				={}& 2 \ii \sum_{e \in E(\complex{K}^*)} V_e \left[ \bar{\psi}_{s(e)} \tensor{\gamma}{^I} \tensor{n}{_I}(e) \left( G_e \psi_{t(e)} - \psi_{s(e)} \right) - \left( \bar{\psi}_{t(e)} G_e^{-1} - \bar{\psi}_{s(e)} \right) \tensor{\gamma}{^I} \tensor{n}{_I}(e) \psi_{s(e)} \right],
+			\end{split}
+		\end{equation}
+		注意到
+		\begin{equation}
+			G_e = \pathorder \exp(\int_e \tensor{A}{_a^I^J}\frac{1}{2} \tensor{S}{_I_J}) \simeq \II + \frac{1}{2} l(e) \tensor{n}{^a}(e) \tensor{A}{_a^I^J} \tensor{S}{_I_J},
+		\end{equation}
+		其中 $l(e)$ 是 $e$ 边长，$\tensor{n}{^a}(e)$ 是 $e$ 在 $s(e)$ 处的单位切矢，有
+		\begin{equation}
+			\begin{split}
+				G_e \psi_{t(e)} - \psi_{s(e)} &\simeq \left( \II + \frac{1}{2} l(e) \tensor{n}{^a}(e) \tensor{A}{_a^I^J} \tensor{S}{_I_J} \right) \left( \psi_{s(e)} + l(e) \tensor{n}{^a}(e) \left( \Partial{a} \psi \right)_{s(e)} \right) - \psi_{s(e)}\\
+				&\simeq l(e) \tensor{n}{^a}(e) \left( \tensor{D}{_a} \psi \right)_{s(e)},
+			\end{split}
+		\end{equation}
+		同理
+		\begin{equation}
+			\bar{\psi}_{t(e)} G_e^{-1} - \bar{\psi}_{s(e)} \simeq l(e) \tensor{n}{^a}(e) \overline{\tensor{D}{_a} \psi}_{s(e)},
+		\end{equation}
+		故
+		\begin{equation}
+			\sum_{e\in E(\complex{K}^*)} S_e \simeq 2\ii \sum_{e\in E(\complex{K}^*)} V_e l(e) \tensor{n}{^a}(e) \tensor{\gamma}{^I} \tensor{n}{_I}(e) \left( \bar{\psi} \tensor{\gamma}{^I} \tensor{D}{_a} \psi - \overline{\tensor{D}{_a} \psi} \tensor{\gamma}{^I} \psi \right)_{s(e)},
+		\end{equation}
+		假设 $\complex{K}$ 已经细分到可以将 $M$ 划分为许多区域 $\Omega_i$，其中每一个 $\Omega_i$ 足够小，旋量场引力场及它们的导数都可视为恒定，但每一个 $\Omega_i$ 仍包含了大量的4-单形 $\Delta_v$。则
+		\begin{equation}
+			\sum_{e\in E(\complex{K}^*)} S_e \simeq 2\ii \sum_i \left( \bar{\psi} \tensor{\gamma}{^I} \tensor{D}{_a} \psi - \overline{\tensor{D}{_a} \psi} \tensor{\gamma}{^I} \psi \right)_{\Omega_i} \tensor{e}{^b_I}(\Omega_i) \sum_{e\in E(\complex{K}^*) \cap \Omega_i} V_e l(e) \tensor{n}{^a}(e) \tensor{n}{_b}(e),
+		\end{equation}
+		考察
+		\begin{equation}
+			\sum_{e\in E(\complex{K}^*) \cap \Omega_i} V_e l(e) \tensor{n}{^a}(e) \tensor{n}{_b}(e),
+		\end{equation}
+		由于 $\Omega_i$ 包含大量 $\Delta_v$ ，该式可以视为具有4维转动不变性，故正比于 $\tensor{\delta}{^a_b}$；再缩并 $a$ 和 $b$，得到 $\mathrm{Vol}(\Omega_i)$，故
+		\begin{equation}
+			\sum_{e\in E(\complex{K}^*) \cap \Omega_i} V_e l(e) \tensor{n}{^a}(e) \tensor{n}{_b}(e) = \frac{1}{4} \mathrm{Vol}(\Omega_i) \tensor{\delta}{^a_b},
+		\end{equation}
+		\begin{equation}
+			\begin{split}
+				\sum_{e\in E(\complex{K}^*)} S_e &\simeq \frac{\ii}{2} \sum_i \left( \bar{\psi} \tensor{\gamma}{^a} \tensor{D}{_a} \psi - \overline{\tensor{D}{_a} \psi} \tensor{\gamma}{^a} \psi \right)_{\Omega_i} \mathrm{Vol}(\Omega_i)\\
+				&\rightarrow \frac{\ii}{2} \int_M \bar{\psi} \tensor{\gamma}{^a} \tensor{D}{_a} \psi - \overline{\tensor{D}{_a} \psi} \tensor{\gamma}{^a} \psi,
+			\end{split}
+		\end{equation}
+		这正是要证的结果。
+	\end{Proof}
+	以上论证可总结为
+	\begin{Theorem}
+		\eqref{eq-spinfoam_fermion} 在 \eqref{eq-semiclassical_limit} 极限下，旋量部分不参与半经典极限，引力部分给出 Regge 几何，而 $S_F$ 在连续极限下拥有正确的形式，故确实是定义在 Regge 几何上的离散化狄拉克费米子。综上所述，\eqref{eq-spinfoam_fermion} 具有正确的半经典极限。
+	\end{Theorem}
+
+	本文作者计划将继续结合\cite{Schroeren:2012eu}，考察spinfoam 费米子的退相干理论，并同时尝试掌握主约束算符方法，将其应用于正则圈量子引力与费米子的耦合。

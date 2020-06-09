@@ -1,0 +1,579 @@
+% !TeX root = ../main.tex
+
+\chapter{引力理论的正则表述}
+
+	\label{chp-canonical_gravity}
+	\section{ADM formulation}
+	
+		\label{sec_adm}
+		为了研究时间演化及对引力进行量子化，我们需要考虑广义相对论的哈密顿描述。我们主要依照文献 \cite{wald1989,liang3,Thiemann2007} 展开。在拉格朗日描述下，考虑 $n$ 维光滑可定向流形 $M$ ，记$M$ 上的洛伦兹度规的集合为 $\Lo{M}$， 由于微分同胚不变性的规范对称性，广义相对论的位型空间为 $\superspace{M} \definedby \Lo{M}/\Diff{M}$。理论的拉氏量为
+		\begin{equation}
+			\form{\La}_{\text{EH}}[j^2 g] \definedby \frac{1}{2\gkappa} \curR(j^2 g) \form{\vol},
+		\end{equation}
+		其中 $\gkappa = 8\uppi \nG$ 是耦合常数，$j^2 g$ 是场 $g$ 的 2-jet，$\curR[j^2 g]$ 是标量曲率，$\form{\vol}$ 是与 $g$ 适配的体元。也可采用标量密度 $\Lad_{\text{EH}}$ 表示，
+		\begin{gather}
+			\form{\La}_{\text{EH}}[j^2 g] = \Lad_{\text{EH}} \form{\nvol},\\
+			\Lad_{\text{EH}} = \frac{1}{2\gkappa} f \curR(j^2 g),
+		\end{gather}
+		其中 $\form{\nvol}$ 是任意定向相容体元，$f$ 是满足 $\form{\vol} = f \form{\nvol}$ 的正函数。例如，在局部坐标系 $\left\{ x^\mu \right\}$ 下，若坐标系为右手系，即 $n$ 形式 $\dd{x^1} \wedge \cdots \wedge \dd{x^n}$ 与定向相容，则可取定 $\form{\nvol} = \dd{x^1} \wedge \cdots \wedge \dd{x^n}$，此时 $f=\sqrt{-\det g}$，其中 $\det g$ 指坐标系下 $\left( \tensor{g}{_\mu_\nu} \right)$ 的行列式。于是此时有
+		\begin{equation}
+			\Lad_{\text{EH}} = \frac{1}{2\gkappa} \sqrt{-\det g} \curR(j^2 g).
+		\end{equation}
+
+		\nomenclature{$M$}{光滑流形，通常指时空}
+		\nomenclature{$\Lo{M}$}{$M$上的洛伦兹度规的集合}
+		\nomenclature{$\Diff{M}$}{$M$的微分同胚群}
+		\nomenclature{$\superspace{M}$}{$M$上的超空间，即度规的微分同胚等价类的集合}
+		\nomenclature{$\La$}{拉氏量}
+		\nomenclature{$\form{\vol}$}{适配体元}
+		\nomenclature{$\form{\nvol}$}{体元}
+		\nomenclature{$\gkappa$}{$\gkappa=8\uppi \nG$}
+		\nomenclature{$\nG$}{牛顿引力常数}
+		\nomenclature{$\curR$}{标量曲率}
+		\nomenclature{$\wedge$}{外积}
+		% \nomenclature{$\form{\alpha},\form{\beta},\cdots$}{微分形式}
+		\nomenclature{$j^k f$}{$f$ 的 k-jet}
+
+		易证明，Einstein-Hilbert 作用量
+		\begin{equation}
+			S_{\text{EH}}[g] = \frac{1}{2\gkappa} \int_M \curR[g] 
+		\end{equation}
+		的运动方程为真空 Einstein 方程
+		\begin{equation}
+			Ric - \frac{1}{2} \curR g = 0,
+		\end{equation}
+		或采取抽象指标形式，写作
+		\begin{equation}
+			\tensor{\Ric}{_a_b} - \frac{1}{2} \curR \tensor{g}{_a_b} = 0.
+		\end{equation}
+		以下张量全部采用抽象指标记号，改用 $\tensor{g}{_a_b}$ 表示度规张量，而 $g$ 表示其行列式。
+
+		现在考虑哈密顿描述，这要求我们把时间从时空中分离出来。%，原因如下。一般来说，在经典力学的拉格朗日描述中，运动 $\beta$ 是流形 $M$ 上的光滑曲线 $\beta \colon \mathbb{R} \rightarrow M$，拉氏量定义在 $\Jet{1}{\mathbb{R}}{M} \cong \mathbb{R} \times \TB{M}$ 上；而经典场论的拉格朗日描述中，场 $\psi$ 是流形间的光滑映射 $\psi \colon M \rightarrow N$，拉氏量定义在 $\Jet{k}{M}{N}$ 上。再考虑哈密顿力学，由于 $\mathbb{R} \times \TB{M}$ 是 $M$ 上的矢量丛，可定义 Legendre 变换 $f \colon \mathbb{R} \times \TB{M} \rightarrow \mathbb{R} \times \CTB{M}$；可对场论而言，$\Jet{k}{M}{N}$ 一般并非矢量丛。即便我们考虑物理中的实际情形，$N$ 取为矢量空间 $V$ ，$\Jet{k}{M}{V} \cong M \times \Jet[x]{k}{M}{V}, x\in M$ 作为 $V$ 上的丛依然不是矢量丛。解决方法是依然把时间从时空中抽离，假定时空是整体双曲的，则对时空有拓扑上的要求： $M \cong \mathbb{R} \times \spc$，其中 $\spc$ 是 $3$ 维流形\cite{wald1989}，有 $\Jet{k}{M}{V} \cong \mathbb{R} \times \spc \times \Jet[x]{k}{M}{V}$ 是 $\spc \times V$ 上的矢量丛。动力学表述为 $\spc \times V$ 的截面的时间演化。
+		\nomenclature{$\TB{M}$}{流形 $M$ 的切丛}
+		\nomenclature{$\CTB{M}$}{流形 $M$ 的余切丛}
+		%\nomenclature{$\beta$}{一般指光滑曲线}
+		% \nomenclature{$\Jet{k}{M}{N}$}{Jet丛}
+		\nomenclature{$\spc_t$}{$t$时刻的空间，是一张超曲面}
+		设时空 $\left( M, g \right)$ 整体双曲，则对时空有拓扑上的要求： $M \cong \mathbb{R} \times \spc$，其中 $\spc$ 是 $3$ 维流形\cite{wald1989}。设有微分同胚 $\phi \colon M \rightarrow \mathbb{R} \times \spc$，称为一个分层（foliation）。注意到任取 $\psi \in \Diff{M}$，$\phi \circ \psi$ 依然是分层，分层的集合与 $\Diff{M}$ 一一对应。记 $\spc_t \definedby \phi^{-1}(\left\{ t \right\} \times \spc)$，这是类空超曲面，称为 $t$ 时刻的空间。记自然投影 $\pi \colon \mathbb{R} \times \spc \rightarrow \mathbb{R}$, $\pi_{\spc} \colon \mathbb{R} \times \spc \rightarrow \spc$，则有时间函数 $t \definedby \pi \circ \phi \colon M \rightarrow \mathbb{R}$。此时 $\spc_t$ 就是等 $t$ 面。$\pi_{\spc} \circ \phi$ 可以将 $\TB{\spc}$ 拖回到 $M$ 上，其元素称为空间矢量，截面称为空间矢量场；进而可以定义空间张量丛和空间张量场。\footnote{我们之后不区分 $\spc$ 上的张量和将它拖回到 $M$ 上得到的 $M$ 上的空间张量。}另外，超曲面族 $\left\{ \spc_t \right\}$ 还定义了法余矢丛，其中每个余矢量正比于该点的 $\dd{t}$。
+
+		考虑 $g$ 的 $3+1$ 分解。我们记 $\tensor{n}{_a}$ 是单位法余矢场，即 $\tensor{n}{^a} \tensor{n}{_a} = -1$，则可以验证
+		\begin{equation}
+			\tensor{h}{_a_b} \definedby \tensor{g}{_a_b} + \tensor{n}{_a} \tensor{n}{_b}
+		\end{equation}
+		是空间对称张量，且它是 $g$ 在 $\TB{\spc_t}$ 上的限制，我们称其为 $g$ 所诱导的空间度规，这是我们引入的第一个空间量。%TODO: 投影映射h^a_b
+		再考虑“时间部分”，我们引入矢量场
+		\begin{equation}
+			\tensor{t}{^a} \definedby \left( \pi \circ \phi \right)^* \tensor{\left( \pdv{t} \right)}{^a},
+		\end{equation}
+		其中 $\tensor{\left( \pdv*{t} \right)}{^a}$ 是 $\mathbb{R}$ 中的自然坐标基矢场。则有
+		\begin{equation}
+			\tensor{t}{^a} \Nabla{a} t = -1, \label{eqt}
+		\end{equation}
+		$\tensor{t}{^a}$ 的积分曲线汇（作为观测者世界线）标志了在微分同胚 $\phi$ 下不同时空点如何“对齐”为“同一空间点”，它们定义了一个参考系。在每点 $p\in \spc_t$ 作直和分解
+		\begin{equation}
+			\tensor{t}{^a} = N \tensor{n}{^a} + \tensor{N}{^a} \qc N>0 \qc \tensor{N}{^a} \in \TBx[p]{\spc_t}, \label{eqtsplit}
+		\end{equation}
+		称 $N$ 为时移函数（lapse function），$\tensor{N}{^a}$ 为位移矢量（shift vector）场，这是我们引入的第2、3个空间量。由~\eqref{eqt} 容易算得
+		\begin{equation}
+			\tensor{n}{_a} = - N \Nabla{a} t, \label{eqn}
+		\end{equation}
+
+		\nomenclature{$\tensor{h}{_a_b}$}{空间诱导度规}
+		\nomenclature{$\tensor{n}{_a}$}{一般指法余矢}
+		\nomenclature{$N$}{时移函数（lapse function）}
+		\nomenclature{$\tensor{N}{^a}$}{位移矢量（shift vector）}
+
+		现在我们来说明，给定 $\phi$，即有了 $\left\{ \spc_t \right\}$、$t$ 和 $\tensor{t}{^a}$ 的条件下，空间量 $\left( \tensor{h}{_a_b} , N, \tensor{N}{_a} \right)$ 和 时空量 $\tensor{g}{_a_b}$ 互相确定，因而 $\left( \tensor{h}{_a_b} , N, \tensor{N}{_a} \right)$ 可以作为位型变量。由 $\tensor{g}{_a_b}$ 给出 $\left( \tensor{h}{_a_b} , N, \tensor{N}{_a} \right)$ 的过程已经在上面写出，而给定 $\left( \tensor{h}{_a_b} , N, \tensor{N}{_a} \right)$ 后，首先将空间张量 $\tensor{h}{_a_b}$ 视作 $\spc$ 上的度量张量，取逆再拖回到 $M$ 上得空间张量 $\tensor{h}{^a^b}$。由~\eqref{eqtsplit} 知
+		\begin{equation}
+			\tensor{n}{^a} = \frac{1}{N} \left( \tensor{t}{^a} - \tensor{N}{^a} \right),
+		\end{equation}
+		其中 $\tensor{N}{^a} = \tensor{h}{^a^b} \tensor{N}{_b}$ 。则
+		\begin{equation}
+			\tensor{g}{^a^b} = -\tensor{n}{^a} \tensor{n}{^b} + \tensor{h}{^a^b} = - \frac{1}{N^2} \left( \tensor{t}{^a} - \tensor{N}{^a} \right) \left( \tensor{t}{^b} - \tensor{N}{^b} \right) + \tensor{h}{^a^b}.
+		\end{equation}
+
+		描述每张超曲面 $\spc_t$ 的除了描述内蕴几何的 $\tensor{h}{_a_b}$ 之外还有描述它如何嵌入 $M$ 的外曲率 $\tensor{K}{_a_b}$，定义为
+		\begin{equation}
+			\tensor{K}{_a_b} \definedby \tensor{h}{_a^c} \Nabla{c} \tensor{n}{_b},
+		\end{equation}
+		我们即将看到它与 $\tensor{h}{_a_b}$ 的共轭动量的联系。这从以下命题即可初见端倪：
+		\begin{Property}
+			\begin{equation}
+				\tensor{K}{_a_b} = \frac{1}{2} \Ld{n} \tensor{h}{_a_b},
+			\end{equation}
+			其中 $\Ld{n}$ 表示沿 $\tensor{n}{^a}$ 的李导数。
+		\end{Property}
+		这里略去证明，可参见\cite{wald1989,liang3,Thiemann2007} 等任何相关教材。%TODO: 符号表
+		还需定义空间量的时间导数，沿 $\tensor{t}{^a}$ 的李导数是好的候选者，但空间张量的李导数未必还是空间张量，为此定义 $\spaceLd{v} \tensor{T}{^{a\cdots}_{b \cdots}}$ 为 $\Ld{v} \tensor{T}{^{a\cdots}_{b \cdots}}$ 的空间投影，即
+		\begin{equation}
+			\spaceLd{v} \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}} \definedby \tensor{h}{^{a_1}_{c_1}} \cdots \tensor{h}{^{a_k}_{c_k}} \tensor{h}{^{d_1}_{b_1}} \cdots \tensor{h}{^{d_l}_{b_l}} \Ld{v} \tensor{T}{^{c_1 \cdots c_k}_{d_1 \cdots d_l}}, \label{eq-spaceLd}
+		\end{equation}
+		然后即可定义
+		\begin{equation}
+			\tensor{\dot{T}}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}} \definedby \spaceLd{t} \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}} = N \spaceLd{n} \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}} + \spaceLd{N} \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}}, \label{eq-timedot}
+		\end{equation}
+		则得到
+		\begin{equation}
+			\tensor{\dot{h}}{_a_b} = 2N \tensor{K}{_a_b} + 2 \spaceD{{(a}} \tensor{N}{_{b)}},
+		\end{equation}
+		其中 $\spaceD{a}$ 是 $\spc_t$ 上与 $\tensor{h}{_a_b}$ 相容的联络。
+
+		\nomenclature{$\tensor{K}{_a_b}$}{外曲率}
+		\nomenclature{$\Ld{v}\tensor{T}{^{\cdots}_{\cdots}}$}{张量$\tensor{T}{^{\cdots}_{\cdots}}$沿矢量$\tensor{v}{^a}$的李导数}
+		\nomenclature{$\spaceLd{v} \tensor{T}{^{\cdots}_{\cdots}}$}{李导数的空间投影，见~\eqref{eq-spaceLd}}
+		\nomenclature{$\tensor{\dot{T}}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}}$}{空间张量$\tensor{{T}}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}}$的时间导数，见~\eqref{eq-timedot}}
+
+		现在，我们把 $\Lad_{\text{EH}} = \frac{1}{2\gkappa} \sqrt{- \det g} \curR$ 用空间量表示。需要借助 Gauss 方程
+		\begin{equation}
+			\tensor{\spacecurR}{_a_b_c^d} = \tensor{h}{_a^k} \tensor{h}{_b^l} \tensor{h}{_c^m} \tensor{h}{_n^d} \tensor{\curR}{_k_l_m^n} - 2 \tensor{K}{_{c[a}} \tensor{K}{_{b]}^d}, \label{eqgauss}
+		\end{equation}
+		其中 $\tensor{\spacecurR}{_a_b_c^d}$ 是3维流形 $\spc_t$ 上空间度规 $\tensor{h}{_a_b}$ 对应的曲率；$\tensor{T}{_{[\cdots]}}$ 表示对张量 $T$ 反称化。略去所有计算过程，我们得到
+		\begin{equation}
+			\Lad = \frac{1}{2\gkappa} \sqrt{h} N \left( \spacecurR - K^2 + \tensor{K}{_a_b} \tensor{K}{^a^b} \right), \label{eq-L_split}
+		\end{equation}
+		其中 $h$ 是 $\tensor{h}{_a_b}$ 的分量矩阵的行列式， $\spacecurR$ 是 $\spc_t$ 上的标量曲率，由 $\tensor{h}{_a_b}$ 及其二阶空间导数确定，而 $\tensor{K}{_a_b}$ 通过
+		\begin{equation}
+			\tensor{K}{_a_b} = \frac{1}{2N} \left( \tensor{\dot{h}}{_a_b} - 2 \tensor{D}{_{(a}} \tensor{N}{_{b)}} \right)
+		\end{equation}
+		由 $\tensor{\dot{h}}{_a_b}, N, \tensor{N}{_a}, \spaceD{a}$ 决定，并有 $K = \tensor{h}{^a^b} \tensor{K}{_a_b}$。这说明~\eqref{eq-L_split} 的确是位型变量 $\left( \tensor{h}{_a_b} , N, \tensor{N}{_a} \right)$ 及其时间导数及空间导数的函数。可求得共轭动量
+		\begin{gather}
+			\pi_N = \pdv{\Lad}{\dot{N}} = 0 \qc \tensor{\pi}{^a} = \pdv{\Lad}{\tensor{\dot{N}}{_a}} = 0, \label{eq-constrain12}\\
+			\tensor{\pi}{^a^b} = \pdv{\Lad}{\tensor{\dot{h}}{_a_b}} = \frac{1}{2\gkappa} \sqrt{h} \left( \tensor{K}{^a^b} - K \tensor{h}{^a^b} \right), \label{eq-pi}
+		\end{gather}
+		其中 $\pi_N$, $\tensor{\pi}{^a}$, $\tensor{\pi}{^a^b}$ 分别是与 $N$, $\tensor{N}{_a}$, $\tensor{h}{_a_b}$ 共轭的动量。\eqref{eq-constrain12} 给出两个初级约束。去掉一些边界项后，有哈密顿量
+		\begin{equation}
+			H[N,\tensor{N}{_a}, \tensor{h}{_a_b}, \tensor{\pi}{^a^b}] = \frac{1}{2\gkappa} \int_{\spc} \dd[3]{x} \left( N C + \tensor{N}{_a} \tensor{V}{^a} \right), \label{eq-ADM_H}
+		\end{equation}
+		其中
+		\begin{gather}
+			C \definedby - \frac{\sqrt{h}}{2\gkappa} \spacecurR + \frac{2\gkappa}{\sqrt{h}} \left( \tensor{\pi}{_a_b} \tensor{\pi}{^a^b} - \frac{1}{2} \pi^2 \right),\\
+			\tensor{V}{^a} \definedby -2 \spaceD{b} \tensor{\pi}{^a^b}.
+		\end{gather}
+		对 $N, \tensor{N}{_a}$ 变分给出两个次级约束，称为标量约束和矢量约束
+		\begin{equation}
+			C = 0 \qc \tensor{V}{^a} = 0, \label{eq-constrain34}
+		\end{equation}
+		可以证明~\eqref{eq-constrain12},~\eqref{eq-constrain34}已经穷尽了所有约束。
+
+		\nomenclature{$\pi_N$}{$N$对应的共轭动量}
+		\nomenclature{$\tensor{\pi}{^a}$}{$\tensor{N}{_a}$对应的共轭动量}
+		\nomenclature{$\tensor{\pi}{^a^b}$}{$\tensor{h}{_a_b}$对应的共轭动量}
+		\nomenclature{$H$}{哈密顿量}
+		\nomenclature{$C$}{标量约束}
+		\nomenclature{$\tensor{V}{^a}$}{矢量约束}
+
+		定义smeared 约束
+		\begin{equation}
+			C(f) \definedby \int_{\spc} \dd[3]{x} C f  \qc V ({v}) \definedby \int_{\spc} \dd[3]{x} \tensor{V}{_a} \tensor{v}{^a},
+		\end{equation}
+		其中 $f\in C^\infty(\spc), v\in \Gamma(\TB{\spc})$ 满足适当的边界条件，可以算得泊松括号
+		\begin{equation}
+			\begin{split}
+				\left\{ V({u}), V({v}) \right\} &= 2\gkappa V(\Ld{{u}} {v}),\\
+				\left\{ V({v}), C(f) \right\} &= 2\gkappa C(v(f)),\\
+				\left\{ C(f), C(f') \right\} &= 2\gkappa V(f\tensor{D}{^a}f'-f' \tensor{D}{^a}f),
+			\end{split}
+		\end{equation}
+		又因
+		\begin{equation}
+			H = \frac{1}{2\gkappa} \left( C(N) + V(\myvec{N}) \right),
+		\end{equation}
+		知 $H,C,V$ 两两泊松括号弱等于零（在约束面上为零），并且是约束的线性组合，故 ADM 形式的广义相对论是第一类约束系统。
+
+		\nomenclature{$C(f)$}{smeared 标量约束}
+		\nomenclature{$V(v)$}{smeared 矢量约束}
+		% \nomenclature{$\left\{ A, B \right\}$}{泊松括号}
+
+		% \begin{Proof}
+		% 	利用
+		% 	\begin{gather}
+		% 		\var(\sqrt{h} \spacecurR) = \sqrt{h} \left( \tensor{\spacecurR}{_a_b} - \frac{1}{2} \spacecurR \tensor{h}{_a_b} \right) \var{\tensor{h}{^a^b}} + \sqrt{h} \tensor{D}{^a} \left( \tensor{D}{^b} \var{\tensor{h}{_a_b}} - \tensor{h}{^c^d} \tensor{D}{_a} \var{\tensor{h}{_c_d}} \right),\\
+		% 		\var h = h \tensor{h}{^a^b} \var \tensor{h}{_a_b},\\
+		% 		\var{\tensor{h}{^a^b}} = - \tensor{h}{^a^c} \tensor{h}{^b^d} \var{\tensor{h}{_c_d}},
+		% 	\end{gather}
+		% 	标量约束的变分
+		% 	\begin{equation}
+		% 		\var C(f) = \underbrace{- \frac{1}{2\gkappa} \var \int_{\spc} \dd[3]{x} \sqrt{h} \spacecurR f}_{\mathrm{I}} + \underbrace{2\gkappa \var \int_{\spc} \frac{f}{h} \left( \tensor{\pi}{_a_b} \tensor{\pi}{^a^b} - \frac{1}{2} \pi^2 \right)}_{\mathrm{II}},
+		% 	\end{equation}
+		% 	\begin{align*}
+		% 		\mathrm{I} &= - \frac{1}{2\gkappa} \int_{\spc} f \left[ \left( \tensor{\spacecurR}{_a_b} - \frac{1}{2} \spacecurR \tensor{h}{_a_b} \right) \var{\tensor{h}{^a^b}} + \tensor{D}{^a} \left( \tensor{D}{^b} \var{\tensor{h}{_a_b}} - \tensor{h}{^c^d} \tensor{D}{_a} \var{\tensor{h}{_c_d}} \right) \right]\\
+		% 		&= - \frac{1}{2\gkappa} \int_{\spc} -f \left[ \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right) \var{\tensor{h}{_a_b}} \right] - \left( \tensor{D}{^b} \var{\tensor{h}{_a_b}} - \tensor{h}{^c^d} \tensor{D}{_a} \var{\tensor{h}{_c_d}} \right) \tensor{D}{^a} f\\ \displaybreak[1]
+		% 		&= \frac{1}{2\gkappa} \int_{\spc} \left[ f \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right) - \left( \tensor{D}{^b} \tensor{D}{^a} f - \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f  \right) \right] \var{\tensor{h}{_a_b}},\\
+		% 		\mathrm{II} &= 2\gkappa \var \int_{\spc} \dd[3]{x} \frac{f}{\sqrt{h}} \left( \tensor{h}{_a_c} \tensor{h}{_b_d} \tensor{\pi}{^a^b} \tensor{\pi}{^c^d} - \frac{1}{2} \tensor{h}{_a_b} \tensor{h}{_c_d} \tensor{\pi}{^a^b} \tensor{\pi}{^c^d} \right)\\
+		% 		&= 2\gkappa \int_{\spc} \dd[3]{x} \frac{f}{\sqrt{h}} \left( -\frac{1}{2} \tensor{h}{^a^b} \var{\tensor{h}{_a_b}} \right) \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right)\\
+		% 		& \qquad \phantom{1} + \frac{f}{\sqrt{h}} \left[ \left( 2 \tensor{h}{_a_c} \var \tensor{h}{_b_d} - \tensor{h}{_c_d} \var \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} \tensor{\pi}{^c^d} + \left( \tensor{h}{_a_c} \tensor{h}{_b_d} - \frac{1}{2} \tensor{h}{_a_b} \tensor{h}{_c_d} \right) 2 \tensor{\pi}{^c^d} \var \tensor{\pi}{^a^b} \right]\\
+		% 		&= 2\gkappa \int_{\spc} \dd[3]{x} \frac{f}{\sqrt{h}} \bigg\{ \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \var \tensor{h}{_a_b}\\
+		% 		& \qquad \phantom{1} + 2 \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \var{\tensor{\pi}{^a^b}} \bigg\},
+		% 	\end{align*}
+		% 	故
+		% 	\begin{equation*}
+		% 		\begin{split}
+		% 			\fdv{C(f)}{\tensor{h}{_a_b}} &= \frac{\sqrt{h}}{2\gkappa} \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f - \tensor{D}{^b} \tensor{D}{^a} f \right) + f \bigg\{ \frac{\sqrt{h}}{2\gkappa} \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right)\\
+		% 			&\qquad \phantom{1} + \frac{2\gkappa}{\sqrt{h}} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\},\\
+		% 			\fdv{C(f)}{\tensor{\pi}{^a^b}} &= \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right),
+		% 		\end{split}
+		% 	\end{equation*}
+		% 	于是
+		% 	\begin{align*}
+		% 		\left\{ C(f), C(f') \right\} &= 2\gkappa \int_{\spc} \dd[3]{x} \left( \fdv{C(f)}{\tensor{h}{_a_b}} \fdv{C(f')}{\tensor{\pi}{^a^b}} - \fdv{C(f')}{\tensor{h}{_a_b}} \fdv{C(f)}{\tensor{\pi}{^a^b}} \right)\\
+		% 		&= 4\gkappa \int_{\spc} \dd[3]{x} f' \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f - \tensor{D}{^b} \tensor{D}{^a} f \right) \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\
+		% 		& \qquad \phantom{1} + f f' \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \bigg\{ \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b}\right)\\ \displaybreak[1]
+		% 		&\qquad \phantom{1} + \frac{4\gkappa^2}{h} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\}\\ \displaybreak[1]
+		% 		&\qquad \phantom{1} - f \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f' - \tensor{D}{^b} \tensor{D}{^a} f' \right) \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\ \displaybreak[1]
+		% 		& \qquad \phantom{1} - f f' \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \bigg\{ \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b}\right)\\ \displaybreak[1]
+		% 		&\qquad \phantom{1} + \frac{4\gkappa^2}{h} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\}\\ \displaybreak[1]
+		% 		&= - 4\gkappa \int_{\spc} \dd[3]{x} \frac{\pi}{2} \left( f' \tensor{D}{_c} \tensor{D}{^c} f - f \tensor{D}{_c} \tensor{D}{^c} f' \right)\\\displaybreak[1]
+		% 		&\qquad \phantom{1} + \left( f' \tensor{D}{^b} \tensor{D}{^a} f - f \tensor{D}{^b} \tensor{D}{^a} f' \right) \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\\displaybreak[1]
+		% 		&= - 4\gkappa \int_{\spc} \dd[3]{x} \left( f' \tensor{D}{^b} \tensor{D}{^a} f - f \tensor{D}{^b} \tensor{D}{^a} f' \right) \tensor{\pi}{_a_b} \\
+		% 		&= 4\gkappa \int_{\spc} \dd[3]{x} f' \left( \tensor{D}{^a} f \right) \tensor{D}{^b} \tensor{\pi}{_a_b} - f \left( \tensor{D}{^a} f' \right) \tensor{D}{^b} \tensor{\pi}{_a_b}\\
+		% 		&= 2\gkappa V(f\tensor{D}{^a}f' - f'\tensor{D}{^a}f)
+		% 	\end{align*}
+		% 	而矢量约束的变分
+		% 	\begin{align*}
+		% 		\var{V(v)} &= \var( -2 \int_{\spc} \dd[3]{x} \tensor{v}{_a} \tensor{D}{_b} \tensor{\pi}{^a^b} )\\
+		% 		&= \var(2 \int_{\spc} \dd[3]{x} \left( \tensor{D}{_b} \tensor{v}{_a} \right) \tensor{\pi}{^a^b})\\
+		% 		&= \var(\int_{\spc} \dd[3]{x} \tensor{\pi}{^a^b} \Ld{v} \tensor{h}{_a_b})\\
+		% 		&= \int_{\spc} \dd[3]{x} \left( \Ld{v} \tensor{h}{_a_b} \right) \var{\tensor{\pi}{^a^b}} - \left( \Ld{v} \tensor{\pi}{^a^b} \right) \var{\tensor{h}{_a_b}} + \Ld{v} \left( \tensor{\pi}{^a^b} \var{\tensor{h}{_a_b}} \right)\\
+		% 		&= \int_{\spc} \dd[3]{x} \left( \Ld{v} \tensor{h}{_a_b} \right) \var{\tensor{\pi}{^a^b}} - \left( \Ld{v} \tensor{\pi}{^a^b} \right) \var{\tensor{h}{_a_b}}\\
+		% 		&\qquad \phantom{1} + \tensor{v}{^c} \tensor{D}{_c} \left( \tensor{\pi}{^a^b} \var{\tensor{h}{_a_b}} \right) + \tensor{\pi}{^a^b} \var{\tensor{h}{_a_b}} \tensor{D}{_c} \tensor{v}{^c}\\
+		% 		&= \int_{\spc} \dd[3]{x} \left( \Ld{v} \tensor{h}{_a_b} \right) \var{\tensor{\pi}{^a^b}} - \left( \Ld{v} \tensor{\pi}{^a^b} \right) \var{\tensor{h}{_a_b}} + \tensor{D}{_c} \left( \tensor{v}{^c} \tensor{\pi}{^a^b} \var{\tensor{h}{_a_b}} \right),
+		% 	\end{align*}
+		% 	得
+		% 	\begin{align*}
+		% 		\displaybreak[1]
+		% 		\fdv{V(v)}{\tensor{h}{_a_b}} &= - \Ld{v} \tensor{\pi}{^a^b},\\
+		% 		\fdv{V(v)}{\tensor{\pi}{^a^b}} &= \Ld{v} \tensor{h}{_a_b},
+		% 	\end{align*}
+		% 	故
+		% 	\begin{align*}
+		% 		\left\{ V(u), V(v) \right\} &= 2\gkappa \int_{\spc} \dd[3]{x} \left( \fdv{V(u)}{\tensor{h}{_a_b}} \fdv{V(v)}{\tensor{\pi}{^a^b}} - \fdv{V(v)}{\tensor{h}{_a_b}} \fdv{V(u)}{\tensor{\pi}{^a^b}} \right)\\ \displaybreak[1]
+		% 		&= -2\gkappa \int_{\spc} \dd[3]{x} \left( \Ld{u} \tensor{\pi}{^a^b} \right) \Ld{v} \tensor{h}{_a_b} - \left( \Ld{v} \tensor{\pi}{^a^b} \right) \Ld{u} \tensor{h}{_a_b}\\
+		% 		&= -2\gkappa \int_{\spc} \dd[3]{x} \Ld{u} \left( \tensor{\pi}{^a^b} \Ld{v} \tensor{h}{_a_b} \right) - \Ld{v} \left( \tensor{\pi}{^a^b} \Ld{u} \tensor{h}{_a_b} \right)\\ \displaybreak[1]
+		% 		&\qquad \phantom{1} - \tensor{\pi}{^a^b} \Ld{u} \Ld{v} \tensor{h}{_a_b} - \tensor{\pi}{^a^b} \Ld{v} \Ld{u} \tensor{h}{_a_b}\\ \displaybreak[1]
+		% 		&= 2\gkappa \int_{\spc} \dd[3]{x} \tensor{\pi}{^a^b} \Ld{[u,v]} \tensor{h}{_a_b}\\ \displaybreak[1]
+		% 		&= 2\gkappa V([u,v]),\\
+		% 		\left\{ V(v), C(f) \right\} &= 2\gkappa \int_{\spc} \dd[3]{x} \left( \fdv{V(v)}{\tensor{h}{_a_b}} \fdv{C(f)}{\tensor{\pi}{^a^b}} - \fdv{C(f)}{\tensor{h}{_a_b}} \fdv{V(v)}{\tensor{\pi}{^a^b}} \right)\\
+		% 		&= 2\gkappa \int_{\spc} \dd[3]{x} \left( -\Ld{v} \tensor{\pi}{^a^b} \right) \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\
+		% 		&\qquad \phantom{1} - \left( \Ld{v} \tensor{h}{_a_b} \right) \frac{\sqrt{h}}{2\gkappa} \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f - \tensor{D}{^b} \tensor{D}{^a} f \right)\\
+		% 		&\qquad \phantom{1} - \left( \Ld{v} \tensor{h}{_a_b} \right) f \bigg\{ \frac{\sqrt{h}}{2\gkappa} \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right)\\ \displaybreak[1]
+		% 		&\qquad\quad \phantom{1} + \frac{2\gkappa}{\sqrt{h}} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\}\\ \displaybreak[1]
+		% 		&= -2\gkappa \int_{\spc} \dd[3]{x} \frac{4\gkappa}{\sqrt{h}} \left( \tensor{v}{^c} \tensor{D}{_c} \tensor{\pi}{^a^b} - \tensor{\pi}{^a^c} \tensor{D}{_c} \tensor{v}{^b} - \tensor{\pi}{^b^c} \tensor{D}{_c} \tensor{v}{^a} + \tensor{\pi}{^a^b} \tensor{D}{_c} \tensor{v}{^c} \right)\\
+		% 		&\qquad \phantom{1} \times \left[ f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \right]\\ \displaybreak[1]
+		% 		&\qquad \phantom{1} + \frac{\sqrt{h}}{\gkappa} \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f - \tensor{D}{^b} \tensor{D}{^a} f \right) \tensor{D}{_a} \tensor{v}{_b}\\ \displaybreak[1]
+		% 		&\qquad \phantom{1} + 2 \left( \tensor{D}{_a} \tensor{v}{_b} \right) f \bigg\{ \frac{\sqrt{h}}{2\gkappa} \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right)\\ \displaybreak[1]
+		% 		&\qquad\quad \phantom{1} + \frac{2\gkappa}{\sqrt{h}} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\}\\
+		% 		&= -2\gkappa \int_{\spc} \dd[3]{x} \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{v}{^c} \tensor{D}{_c} \tensor{\pi}{^a^b}\\
+		% 		&\qquad - \frac{8\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{^a^c} \tensor{\pi}{_a^b} - \frac{1}{2} \pi \tensor{\pi}{^b^c} \right) \tensor{D}{_c} \tensor{v}{_b}\\
+		% 		&\qquad + \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{^a^b} \tensor{\pi}{_a_b} - \frac{1}{2} \pi^2 \right) \tensor{D}{_c} \tensor{v}{^c}\\
+		% 		&\qquad + \frac{\sqrt{h}}{\gkappa} {\color{blue} \left[ \left( \tensor{D}{_c} \tensor{D}{^c} f \right) \tensor{D}{_a} \tensor{v}{^a} - \left( \tensor{D}{^b} \tensor{D}{^a} f \right) \tensor{D}{_a} \tensor{v}{_b} \right]}\\
+		% 		&\qquad + \frac{\sqrt{h}}{\gkappa}\left( {\color{blue} \tensor{\spacecurR}{^a^b}} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right) {\color{blue} \tensor{v}{_b} \tensor{D}{_a} f}\\
+		% 		&\qquad + \frac{4\gkappa}{\sqrt{h}} f \bigg[ - \frac{1}{2} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) \tensor{D}{_c} \tensor{v}{^c}\\ \displaybreak[1]
+		% 		&\qquad\quad + 2 \left( \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \frac{1}{2} \pi \tensor{\pi}{^a^b} \right) \tensor{D}{_a} \tensor{v}{_b} \bigg]\\
+		% 		&= -2\gkappa \int_{\spc} \dd[3]{x} \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{v}{^c} \tensor{D}{_c} \tensor{\pi}{^a^b}\\ \displaybreak[1]
+		% 		&\qquad + \frac{2\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{^a^b} \tensor{\pi}{_a_b} - \frac{1}{2} \pi^2 \right) \tensor{D}{_c} \tensor{v}{^c} - \frac{\sqrt{h}}{2\gkappa} \spacecurR v(f)\\
+		% 		&= 2\gkappa \int_{\spc} \dd[3]{x} \frac{2\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} \tensor{D}{_c} \tensor{v}{^c}\\
+		% 		&\qquad + \frac{4\gkappa}{\sqrt{h}} \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} \tensor{v}{^c} \tensor{D}{_c} f\\
+		% 		&\qquad + \frac{4\gkappa}{\sqrt{h}} f \tensor{\pi}{^a^b} \tensor{v}{^c} \tensor{D}{_c} \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) - \frac{\sqrt{h}}{2\gkappa} \spacecurR v(f)
+		% 	\end{align*}
+		% \end{Proof}
+
+		还可讨论标量约束和矢量约束生成的规范变换。任给一个用 $\tensor{h}{_a_b}, \tensor{\pi}{^a^b}$ 构造的张量，例如 $\tensor{t}{_a_b}$，可以算出
+		\begin{equation}
+			\begin{split}
+				\left\{ V(v), \tensor{t}{_a_b} \right\} &\approx 2\gkappa \Ld{v} \tensor{t}{_a_b},\\
+				\left\{ C(N) , \tensor{t}{_a_b} \right\} & \approx 2 \gkappa N \spaceLd{n} \tensor{t}{_a_b},
+			\end{split}
+		\end{equation}
+		故也常称标量约束为哈密顿约束。
+
+	\section{量子几何动力学（QGD）}\label{section-QGD}
+
+		接下来对上一节得到的广义相对论的哈密顿表述进行正则量子化，得到量子几何动力学（Quantum Geometrodynamics）。但由于体现规范对称性的两个第一类约束的存在，我们需要先介绍这样的约束系统的量子化方法。
+	
+		第一类约束哈密顿系统的量子化最早由狄拉克发展\cite{dirac2001lectures}，其核心是先连同规范自由度一起量子化得到 $\Hil_{\text{kin}}$，然后将经典约束方程 $\{ C_I = 0 \}_{I \in \mathcal{I}}$ 变为物理状态应满足的方程 $\left\{ \hat{C}_I \ket{\psi} = 0 \right\}_{I \in \mathcal{I}}$，即定义物理态空间 $\Hil_{\text{phy}}$ 是所有 $\ker \hat{C}_I$ 之交。
+	
+		对于 ADM 形式的广义相对论来说，$N$ 和 $\tensor{N}{_a}$ 只是拉氏乘子，位型变量为$\tensor{h}{_a_b}$，即空间几何的动力学。可选择 $\Hil_{\text{kin}}$ 为某种 “$L^2(\Riem{\spc})$”，其中 $\Riem{\spc}$ 表示 $\spc$ 上黎曼度规的集合，并采用标准的 Schr\"odinger 表示
+		\begin{equation}
+			\begin{split}
+				\tensor{\hat{h}}{_a_b} \ket{\psi} &\leftrightarrow \tensor{h}{_a_b} \psi(h),\\
+				\tensor{\hat{\pi}}{^a^b} \ket{\psi} & \leftrightarrow - \ii \uphbar \fdv{\tensor{h}{_a_b}} \psi(h).
+			\end{split}
+		\end{equation}
+		$\tensor{\hat{V}}{^a} \ket{\psi} =0$ 定义了空间微分同胚不变的态空间 $\Hil_{\text{Diff}}$，再通过哈密顿约束
+		\begin{equation}
+			\hat{C} \ket{\psi} =0 \label{eq-WDeq}
+		\end{equation}
+		得到物理态空间。这便是量子几何动力学，方程~\eqref{eq-WDeq} 即为著名的 Wheeler DeWitt 方程。
+	
+		但这一方法存在很多问题，例如一开始 $\Hil_{\text{kin}}$ 就难以定义；在标准 Schr\"o\-dinger 表示下 $\hat{C}$ 是否是定义良好的算符也不清楚。当经典层面已经有了高度对称性约化，例如宇宙学的情况下，才能很好地使用 Wheeler DeWitt 方程。
+		
+		%但由于存在一些不足，尤其是在物理状态上定义的 Hilbert 空间结构需要额外附加，会导致一些问题。在解决其问题上取得进展的方法有几何量子化，coherent states 路径积分，$C^*$ 代数方法，Algebraic Quantization，Refined Algebraic Quantization等。这里参考 \cite{Thiemann0210094, Thiemann2007,arXiv9812024} 对 Refined Algebraic Quantization简要概括：
+		
+		% \begin{enumerate}
+		% 	\item \emph{相空间与约束}
+	
+		% 			量子化程序的出发点是给定相空间 $\left( \phacespace{M}, \{\cdot, \cdot\} \right)$ ，哈密顿量 $H$ 及一些第一类约束。
+	
+		% 	\item \emph{选择极化}
+			
+		% 			相空间的极化是指选定 $\phacespace{M}$ 的一个拉格朗日子流形 $\configurationspace{C}$。物理上感兴趣的情况下，$\phacespace{M} \cong \CTB{\configurationspace{Q}}$，则取 $\configurationspace{C} = \configurationspace{Q}$ 即可。以下默认是这种情况。
+	
+		% 	\item \emph{kinematical Poisson Subalgebra}
+		% \end{enumerate}
+
+	\section{Palatini作用量和Holst作用量}
+
+		Palatini作用量是 Hilbert 作用量的改写，在流形上引入标架来替代度规。\cite{Baez1994,Ashtekar2004}
+
+		设 $\left( V, \tensor{\eta}{_I_J} \right)$ 是一个带有选定洛伦兹度规的四维矢量空间，称为内部空间（internal space），其中 $I,J,\cdots$ 是 $V$ 上的抽象指标，以与 $M$ 上的区分。我们考虑 $\TB{M}$ 的平凡化，设有矢量丛同构 $e \colon M \times V \rightarrow \TB{M}$，$e(x) \definedby e(x,\cdot)$ 是从 $V$ 到 $\TBx[x]{M}$ 的线性同构。按照抽象指标记号，将它记为 $\tensor{e}{^a_I}(x)$，称为 $M$ 上的标架场（frame field，4维情况又特别地称为tetrads）。逐点取逆得到丛同构 $e^{-1} \colon \TB{M} \rightarrow M \times V$，$e^{-1}(x) \definedby e^{-1}(x,\cdot)$ 按照抽象指标记号写为 $\tensor{e}{^I_a}(x)$，称为对偶标架场，则有
+		\begin{equation}
+			\tensor{e}{^a_I} \tensor{e}{^I_b} = \tensor{\delta}{^a_b} \qc \tensor{e}{^I_a} \tensor{e}{^a_J} = \tensor{\delta}{^I_J}.
+		\end{equation}
+		若满足
+		\begin{equation}
+			\tensor{g}{_a_b} = \tensor{\eta}{_I_J} \tensor{e}{^I_a} \tensor{e}{^J_b},
+		\end{equation}
+		则称标架场是正交归一的。
+
+		\nomenclature{$\tensor{\eta}{_I_J}$}{内部空间上固定的洛伦兹度规}
+		\nomenclature{$\tensor{e}{^a_I}$}{标架场}
+		\nomenclature{$\tensor{e}{^I_a}$}{对偶标架场}
+
+		我们可以选择 $V$ 上的基底 $\left\{ \tensor{\xi}{^I_\mu} \right\}$ 及其对偶基 $\left\{ \tensor{\xi}{^\mu_I} \right\}$，其中 $\mu=0,1,2,3$，使得 $\tensor{\eta}{_I_J} \definedby \tensor{\eta}{_\mu_\nu} \tensor{\xi}{^\mu_I} \tensor{\xi}{^\nu_J} = -\tensor{\xi}{^0_I} \tensor{\xi}{^0_J} + \sum_i \tensor{\xi}{^i_I} \tensor{\xi}{^i_J}$，其中 $i=1,2,3$，并定义
+		\begin{equation}
+			\tensor{e}{^a_\mu} \definedby \tensor{\xi}{^I_\mu} \tensor{e}{^a_I},
+		\end{equation}
+		则 $\left\{ \tensor{e}{^a_\mu} \right\}$ 构成 $M$ 上每点的正交基底。
+
+		正交归一标架丛 $\FB{M}$ 上的联络等价于其伴丛上的联络。将 $\tensor{\xi}{^I_\mu}$ 视为 $\SO{3,1}$ 矢量丛 $E = M \times V$ 上截面的基底，将任意截面展开为 $\tensor{v}{^I} = \tensor{v}{^\mu} \tensor{\xi}{^I_\mu}$，定义标准平直联络
+		\begin{equation}
+			\Partial{a} \tensor{v}{^I} \definedby \left( \Partial{a} \tensor{v}{^\mu} \right) \tensor{\xi}{^I_\mu},
+		\end{equation}
+		任何联络（或称协变导数）可表为
+		\begin{equation}
+			\Nabla{a} \tensor{v}{^I} = \Partial{a} \tensor{v}{^I} + \tensor{\omega}{_a^I_J} \tensor{v}{^J},\label{eq-spin_connection}
+		\end{equation}
+		其中 $\tensor{\omega}{_a^I_J}$ 是 $\so{3,1}$ 值一形式，称为 spin connection。设 $\TB{M}$ 上的联络为
+		\begin{equation}
+			\Nabla{a} \tensor{v}{^b} = \Partial{a} \tensor{v}{^b} + \ChristoffelSymbol{b}{a}{c} \tensor{v}{^c},\label{eq-ChristoffelSymbol}
+		\end{equation}
+		$\tensor{e}{^I_a}$ 可视为 $E \otimes \CTB{M}$ 上的截面，规定取坐标基底和截面基底 $\tensor{\xi}{^I_\mu}$ 下分量定义偏导算符，而协变导数通过满足莱布尼兹律的方式推广到各种张量积丛，有
+		\begin{equation}
+			\Nabla{a} \tensor{v}{^I} = \tensor{e}{^I_b} \Nabla{a} \tensor{v}{^b} + \tensor{v}{^b} \Nabla{a} \tensor{e}{^I_b},
+		\end{equation}
+		由~\eqref{eq-spin_connection},\eqref{eq-ChristoffelSymbol} 可得
+		\begin{equation}
+			\Nabla{a} \tensor{e}{^I_b} = \Partial{a} \tensor{e}{^I_b} - \ChristoffelSymbol{c}{a}{b} \tensor{e}{^I_c} + \tensor{\omega}{_a^I_J} \tensor{e}{^J_b}.
+		\end{equation}
+		对矢量值一形式 $\tensor{v}{^I_a}$，定义外微分
+		\begin{equation}
+			\tensor{\dd{}}{_a} {\tensor{v}{^I_b}} \definedby 2 \Partial{{[a}} \tensor{v}{^I_{b]}} \equiv \tensor{\xi}{^I_\mu} \tensor{\dd{}}{_a} {\tensor{v}{^\mu_b}},
+		\end{equation}
+		以及协变外微分
+		\begin{equation}
+			\tensor{D}{_a} \tensor{v}{^I_b} \definedby 2 \Nabla{{[a}} \tensor{v}{^I_{b]}} \equiv \tensor{\dd{}}{_a} \tensor{v}{^I_a} + \tensor{\omega}{_a^I_J} \wedge \tensor{v}{^J_b},
+		\end{equation}
+		其中 $\tensor{\omega}{_a^I_J} \wedge \tensor{v}{^J_b} \definedby 2 \tensor{\omega}{_{[a}^I_{|J|}} \tensor{v}{^J_{b]}}$。定义挠率形式为
+		\begin{equation}
+			\tensor{T}{^I_a_b} \definedby \tensor{D}{_a} \tensor{e}{^I_b} = \tensor{\dd{}}{_a} \tensor{e}{^I_b} + \tensor{\omega}{_a^I_J} \wedge \tensor{e}{^J_b},
+		\end{equation}
+		及曲率二形式
+		\begin{equation}
+			\tensor{F}{_a_b_I^J} \definedby \tensor{D}{_{a}} \tensor{\omega}{_{b}_I^J} = \tensor{\dd{}}{_a} \tensor{\omega}{_b_I^J} + \tensor{\omega}{_a_I^K} \wedge \tensor{\omega}{_b_K^J}.
+		\end{equation}
+
+		定义 Palatini作用量
+		\begin{equation}
+			S_{\text{Palatini}} [e,\omega] \definedby \frac{1}{4\gkappa} \int_M \tensor{\vol}{_I_J_K_L} \tensor{e}{^I_a} \wedge \tensor{e}{^J_b} \wedge \tensor{F}{_c_d^K^L},
+		\end{equation}
+		其中 $\tensor{\vol}{_I_J_K_L}$ 是 $V$ 上与 $\tensor{\eta}{_I_J}$ 适配的体元。对 $\tensor{\omega}{_a^I_J}$ 变分可得
+		\begin{equation}
+			\tensor{D}{_a} \tensor{e}{^I_b} = 0,
+		\end{equation}
+		此运动方程即要求联络无挠，此条件由 $\tensor{e}{^I_a}$ 唯一确定了相容联络 $\tensor{\omega}{_a^I_J}$。当无挠条件满足时，容易验证 Palatini 作用量变回 Hilbert-Einstein 作用量
+		\begin{equation}
+			S_{\text{Palatini}} [e,\omega(e)] = \frac{1}{2\gkappa}\int_M R[e],
+		\end{equation}
+		其中
+		\begin{equation}
+			R[e] = R[g(e)] = \tensor{F}{_a_b^I^J} \tensor{e}{^a_I} \tensor{e}{^b_J},
+		\end{equation}
+		故无需详细计算即知对 $e$ 变分可得 Einstein 场方程。
+
+		\nomenclature{$\tensor{\nabla}{_a}$}{协变导数}
+		\nomenclature{$\tensor{\omega}{_a^I_J}$}{spin connection}
+		\nomenclature{$\tensor{D}{_a}$}{协变外微分，或旋量场的协变导数}
+		\nomenclature{$\tensor{F}{_a_b_I^J}$}{曲率二形式}
+
+		注意到 Palatini 作用量引入了一个 $\SO{3,1}$ 局域规范对称性
+		\begin{equation}
+			\left( \tensor{e}{^I_a}, \tensor{\omega}{_a^I_J} \right) \mapsto \left( \tensor{\Lambda}{_J^I} \tensor{e}{^J_a}, \tensor{\Lambda}{_K^I} \tensor{\omega}{_a^K_L} \tensor{\Lambda}{^L_J} + \tensor{\Lambda}{_K^I} \tensor{\dd{}}{_a} \tensor{\Lambda}{^K_J} \right),
+		\end{equation}
+		或更紧凑地写为
+		\begin{equation}
+			(e,\omega) \mapsto \left( \Lambda^{-1} e, \Lambda^{-1} \omega \Lambda + \Lambda^{-1} \dd{\Lambda} \right),
+		\end{equation}
+		这引入一个第二类约束。
+
+		在圈量子引力中十分重要的是 Palatini 作用量的 Holst 修正
+		\begin{equation}
+			\begin{split}
+				S_{\text{Holst}} &\definedby S_{\text{Palatini}} - \frac{1}{2\gkappa} \int_M \frac{1}{\beta} \tensor{e}{^I_a} \wedge \tensor{e}{^J_b} \wedge \tensor{F}{_c_d_I_J}\\
+				&= - \frac{1}{2\gkappa} \int_M \tr[\left( *\left( e \wedge e \right) + \frac{1}{\beta} \left( e \wedge e \right) \right) \wedge F],\label{eq-Holst_action}
+			\end{split}
+		\end{equation}
+		容易验证后一项是拓扑项，不改变运动方程。$\beta$ 称为 Barbero-Immiriz 参数。
+
+		\nomenclature{$\beta$}{Barbero-Immiriz 参数}
+
+	\section{Ashtekar 变量}
+
+		Abhay Ashtekar 在1986年给出了广义相对论的一组新的正则变量\cite{Ashtekar1986,Ashtekar1987}，使约束表达式得到了大幅简化，便于考虑量子引力，后来成为了圈量子引力 的基础。以下参照 \cite{Ashtekar2004} 予以简单介绍，相关内容也可参考\cite{liang3,Thiemann2007,Baez1994}。
+
+		从 Holst 作用量出发，我们考虑 $3+1$ 分解，其含义与之前第\ref{sec_adm}节中相同，即选择时空的分层 $\phi \colon M \rightarrow \mathbb{R} \times \spc$，将物理量分解。每点的直和分解 $\TBx[x]{M} = \Span\left\{ \tensor{n}{^a}(x) \right\} \oplus \TBx[x]{\spc}$ 被 $\tensor{e}{^I_a}$ 映为 $V = \Span\left\{ \tensor{n}{^I}(x) \right\} \oplus V_{\spc}(x)$，其中 $\tensor{n}{^I} = \tensor{e}{^I_a} \tensor{n}{^a}$。注意到法矢场 $\tensor{n}{^a}$ 仅与 $\phi$ 和 $\tensor{g}{_a_b}$ 有关，而同一个 $\tensor{g}{_a_b}$ 对应的 $\tensor{e}{^I_a}$ 还存在 $\SO{3,1}$ 规范自由度，为了方便可以部分固定规范，即固定内部矢量场 $\tensor{n}{^I}$，例如本文中取为第零基矢 $\tensor{\xi}{^I_0}$。则规范群约化为 $\SO{3}$ 。每点的 $V_{\spc}$ 同构于一固定的三维线性空间 $W$，于是在标架 $\tensor{e}{^a_I}$ 将 $\TB{M}$ 平凡化为 $E=M\times V$ 后，时空的 $3+1$ 分解又将其（局部地）直和分解为 $\left( M \times \mathbb{R} \right) \oplus \left( M \times W \right)$。用 $i,j,k,\cdots$ 作为 $W$ 上的抽象指标，记 $\tensor{q}{^i_I}(x)$ 为 $V_{\spc}$ 到 $W$ 的同构映射。记 $\tensor{h}{^I_J} = \tensor{\delta}{^I_J} + \tensor{n}{^I} \tensor{n}{_J}$ 为 $V$ 到 $V_{\spc}$ 的投影映射，$\tensor{h}{_I_J} = \tensor{\eta}{_I_K} \tensor{h}{^K_J}$ 即 $V_{\spc}$ 上的诱导黎曼度规，它等于 $\tensor{e}{^a_I} \tensor{e}{^b_J} \tensor{h}{_a_b}$。我们知道 $\tensor{\vol}{_a_b_c} \definedby \tensor{n}{^d} \tensor{\vol}{_d_a_b_c}$ 给出 $\spc$ 上的诱导体元，其标架版本为 $\tensor{\vol}{_I_J_K} \definedby \tensor{n}{^L} \tensor{\vol}{_L_I_J_K}$。通过同构 $\tensor{q}{^i_I}$ 及其逆 $\tensor{q}{^I_i}$ 有 $\tensor{h}{^i_I} \definedby \tensor{q}{^i_J} \tensor{h}{^J_I}$ 及 $W$ 上的度规 $\tensor{h}{_i_j} \definedby \tensor{q}{^I_i} \tensor{q}{^J_j} \tensor{h}{_I_J}$ 与体元 $\tensor{\vol}{_i_j_k} \definedby \tensor{q}{^I_i} \tensor{q}{^J_j} \tensor{q}{^K_k} \tensor{\vol}{_I_J_K}$。
+		
+		称 $\tensor{e}{^a_i} \definedby \tensor{h}{^a_b} \tensor{e}{^b_I} \tensor{q}{^I_i}$ 为空间标架。接下来分解 $\tensor{\omega}{_a^I^J}$，定义
+		\begin{equation}
+			\tensor{K}{^I_a} \definedby \tensor{h}{^b_a} \tensor{n}{_J} \tensor{\omega}{_b^I^J} \qc \tensor{K}{^i_a} \definedby \tensor{q}{^i_I} \tensor{K}{^I_a},
+		\end{equation}
+		及
+		\begin{equation}
+			\tensor{\omega}{^I_a} \definedby \tensor{h}{^b_a} \tensor{n}{_J} \tensor[^\star]{\omega}{_b^I^J} \qc \tensor{\omega}{^i_a} \definedby \tensor{q}{^i_I} \tensor{\omega}{^I_a},
+		\end{equation}
+		其中 $\star$ 是 $V$ 上的 Hodge 对偶，
+		\begin{equation}
+			\tensor[^\star]{\omega}{_a^I^J} = \frac{1}{2} \tensor{\vol}{^I^J^K^L} \tensor{\omega}{_a_K_L}.
+		\end{equation}
+
+		\begin{Remark}
+			取 $\tensor{\xi}{^i_\alpha} := \tensor{q}{^i_I} \tensor{\xi}{^I_\alpha}$, $\alpha=1,2,3$ 为 $W$ 上的基底。令 $( \tensor{\tau}{_\alpha} )\tensor{{}}{^i_j} := \tensor{\vol}{^i_k_j} \tensor{\xi}{^k_\alpha}$，则三个 $\tensor{{\tau}}{_\alpha^i_j}$ 是 $\so{3}$ 的基底，$\tensor{\tau}{_i^j_k} := \tensor{\tau}{_\alpha^j_k} \tensor{\xi}{^\alpha_i}$ 是从 $W$ 到 $\so{3}$ 的同构。则 $\tensor{\omega}{_a^i_j} = \tensor{\omega}{^k_a} \tensor{\tau}{_k^i_j}$ 是 $\so{3}$ 值联络。
+		\end{Remark}
+		
+		\begin{Property}
+			当 $\tensor{\omega}{_a^I_J}$ 是与 $\tensor{e}{^I_a}$ 相容的洛伦兹联络时，$\tensor{\omega}{^k_a} \tensor{\tau}{_k^i_j} = \tensor{\vol}{^i_k_j}\tensor{\omega}{^k_a}$ 是与 $\tensor{e}{^i_a}$ 相容的 $\so{3}$ 值联络，$\tensor{K}{^i_a} = \tensor{e}{^i_d} \tensor{h}{^c_a} \tensor{h}{^d_b} \Nabla{c} \tensor{n}{^b}$ 是外曲率的标架形式。
+		\end{Property}
+
+		定义 Ashtekar 联络
+		\begin{equation}
+			\tensor{A}{^i_a} \definedby \tensor{\omega}{^i_a} + \beta \tensor{K}{^i_a},
+		\end{equation}
+		可以算得
+		\begin{Property}
+			以 Ashtekar 联络为位型变量，相应的共轭动量为
+			\begin{equation}
+				\tensor{\tilde{P}}{^a_i} \definedby \frac{1}{\gkappa \beta} \tensor{\tilde{E}}{^a_i},
+			\end{equation}
+			其中
+			\begin{equation}
+				\tensor{\tilde{E}}{^a_i} = \sqrt{\abs{\det h}} \tensor{e}{^a_i} = \det(e) \tensor{e}{^a_i}
+			\end{equation}
+			是权为1的密度化的 3 标架。
+		\end{Property}
+
+		\nomenclature{$\tensor{A}{^i_a}$}{Ashtekar 联络}
+		\nomenclature{$\tensor{\tilde{P}}{^a_i}$}{与 Ashtekar 联络共轭的动量}
+		\nomenclature{$\tensor{\tilde{E}}{^a_i}$}{权为1的密度化的 3 标架}
+
+		联络 $\tensor{A}{^i_a}$ 或 $\tensor{A}{_a^i_j} = \tensor{\vol}{^i_k_j} \tensor{A}{^k_a}$ 对应新的导数算子 $\AD{a}$，记其曲率为
+		\begin{equation}
+			\begin{split}
+				\tensor{F}{_a_b_i^j} &\definedby \tensor{\vol}{_i_k^j} \tensor{\dd{}}{_a} \tensor{A}{^k_b} + \left( \tensor{\vol}{_i_l^k} \tensor{A}{^l_a} \right) \wedge \left( \tensor{\vol}{_k_m^j} \tensor{A}{^m_b} \right)\\
+				&= \tensor{\vol}{_i_k^j} \tensor{\dd{}}{_a} \tensor{A}{^k_b} + \tensor{A}{^j_a} \wedge \tensor{A}{_i_b},
+			\end{split}
+		\end{equation}
+		或
+		\begin{equation}
+			\tensor{F}{^i_a_b} = \tensor{\dd{}}{_a} \tensor{A}{^i_b} + \tensor{\vol}{^i_j_k} \tensor{A}{^j_a} \wedge \tensor{A}{^k_a}.
+		\end{equation}
+
+		\nomenclature{$\AD{a}$}{Ashtekar 联络对应的协变导数}
+		\nomenclature{$\tensor{F}{^i_a_b}$}{Ashtekar 联络对应的曲率}
+
+		\begin{Property}
+			在Ashtekar 变量下，Holst 作用量改写为
+			\begin{equation}
+				S = \int_{\mathbb{R}} \dd{t} \int_{\spc_t} \dd[3]{x} \left( \tensor{\tilde{P}}{^a_i} \tensor{\dot{A}}{^i_a} - \Had(\tensor{A}{^i_a}, \tensor{\tilde{P}}{^a_i}, N, \tensor{N}{^a}, \tensor{\Lambda}{^i}) \right),
+			\end{equation}
+			哈密顿量
+			\begin{equation}
+				H = \int_{\spc} \dd[3]{x} \Had := \int_{\spc} \dd[3]{x} \left( \tensor{\Lambda}{^i} \tensor{G}{_i} + \tensor{N}{^a} \tensor{V}{_a} + N C \right),
+			\end{equation}
+			其中三个约束
+			\begin{equation}
+				\begin{split}
+					\tensor{G}{_i} &= \AD{a} \tensor{\tilde{P}}{^a_i} = \Partial{a} \tensor{\tilde{P}}{^a_i} + \tensor{\vol}{_i_j^k} \tensor{A}{^j_a} \tensor{\tilde{P}}{^a_k},\\
+					\tensor{V}{_a} &= \tensor{\tilde{P}}{^b_i} \tensor{F}{^i_a_b} - \frac{1+\beta^2}{\beta} \tensor{K}{^i_a} \tensor{G}{_i},\\
+					C &= \frac{\gkappa \beta^2}{2\sqrt{\abs{\det h}}} \tensor{\tilde{P}}{^a_i} \tensor{\tilde{P}}{^b_j} \left[ \tensor{\vol}{^i^j_k} \tensor{F}{^k_a_b} - \left( 1+ \beta^2 \right) \tensor{K}{^i_a} \wedge \tensor{K}{^j_b} \right]\\
+					& \qquad + \gkappa \left( 1 +\beta^2 \right) \tensor{G}{^i} \Partial{a} \left( \frac{\tensor{\tilde{P}}{^a_i}}{\sqrt{\abs{\det h}}} \right)\label{eq-constrains_in_Ashtekar_connection}
+				\end{split}
+			\end{equation}
+			是 Gauss 约束（规范对称引入的新约束）、矢量约束、标量约束，而
+			\begin{equation}
+				\tensor{\Lambda}{^i} := \tensor{q}{^i_I} \tensor{t}{^a} \tensor{n}{_J} \tensor[^\star]{\omega}{_a^I^J}
+			\end{equation}
+			和 $\tensor{N}{^a},N$ 是拉氏乘子。
+		\end{Property}
+
+		由于 $\tensor{A}{^i_a}$ 和 $\tensor{\tilde{P}}{^a_i}$ 是共轭变量，其泊松括号为
+		\begin{equation}
+			\left\{ \tensor{A}{^i_a}(x) , \tensor{\tilde{P}}{^b_j}(y) \right\} = \tensor{\delta}{^i_j} \tensor{\delta}{^b_a} \delta(x,y),
+		\end{equation}
+		定义 smeared 约束
+		\begin{equation}
+			G(\Lambda) := \int_{\spc} \dd[3]{x} \tensor{\Lambda}{^i} \tensor{G}{_i},\label{eq-smeared_Gauss_constrain}
+		\end{equation}
+		它是局部 $\SO{3}$ 规范变换
+		的生成元，即
+		\begin{Property}
+			\begin{equation}
+				\left\{ \tensor{A}{^i_a}, G(\Lambda) \right\} = - \AD{a} \tensor{\Lambda}{^i} \qc \left\{ \tensor{\tilde{P}}{^a_i}, G(\Lambda) \right\} = \tensor{\vol}{_i_j^k} \tensor{\Lambda}{^j} \tensor{\tilde{P}}{^a_k}.
+			\end{equation}
+		\end{Property}
+		$\tensor{V}{_a}$ 和 $C$ 都包含一部分 $\SO{3}$ 规范变换，一种方便的做法是重新定义 smeared 微分同胚约束
+		\begin{equation}
+			C_{\text{Diff}}(v) := \int_{\spc} \dd[3]{x} \left( \tensor{v}{^a} \tensor{\tilde{P}}{^b_i} \tensor{F}{^i_a_b} - \tensor{v}{^a} \tensor{A}{^i_a} \tensor{G}{_i} \right)
+		\end{equation}
+		代替矢量约束，可以算得
+		\begin{Property}
+			\begin{equation}
+				\left\{ \tensor{A}{^i_a} , C_{\text{Diff}}(v) \right\} = \Ld{v} \tensor{A}{^i_a} \qc \left\{ \tensor{\tilde{P}}{^a_i}, C_{\text{Diff}}(v) \right\} = \Ld{v} \tensor{\tilde{P}}{^a_i},
+			\end{equation}
+		\end{Property}
+		并在 smeared 标量约束中去掉 $\tensor{G}{_i}$ 项，即
+		\begin{equation}
+			C_{\text{H}}(f) = \int_{\spc} \dd[3]{x} f(x) \tilde{C}(x) := \frac{\gkappa \beta^2}{2} \int_{\spc} \dd[3]{x} f \frac{\tensor{\tilde{P}}{^a_i} \tensor{\tilde{P}}{^b_j}}{\sqrt{\abs{\det h}}} \left[ \tensor{\vol}{^i^j_k} \tensor{F}{^k_a_b} - \left( 1+ \beta^2 \right) \tensor{K}{^i_a} \wedge \tensor{K}{^j_b} \right],
+		\end{equation}
+		称为哈密顿约束，有如下约束代数
+		\begin{Property}
+			\begin{equation}
+				\begin{split}
+					\left\{ G(\Lambda), G(\Lambda') \right\} &= G\left( \left[ \Lambda, \Lambda' \right] \right),\\
+					\left\{ G(\Lambda), C_{\text{Diff}}(v) \right\} &= - G(\Ld{v} \Lambda),\\
+					\left\{ G(\Lambda), C_{\text{H}}(f) \right\} &= 0,\\
+					\left\{ C_{\mathrm{Diff}}(u), C_{\text{Diff}}(v) \right\} &= C_{\text{Diff}}([u,v]),\\
+					\left\{ C_{\text{Diff}}(v), C_{\text{H}}(f) \right\} &= - C_{\text{H}}(v(f)),\\
+					\left\{ C_{\text{H}}(f), C_{\text{H}}(f') \right\} &= - C_{\text{Diff}}(S(f,f')) - G\left(\tensor{S}{^a}(f,f') \tensor{A}{^i_a} \right)\\
+					&\qquad\qquad - \left( 1+\beta^2 \right) G\left( \frac{\left[ \tilde{P}(f), \tilde{P}(f') \right]}{\abs{\det q}} \right),\label{eq-constrain_algebra}
+				\end{split}
+			\end{equation}
+			其中
+			\begin{equation}
+				\tensor{S}{^a}(f,f') := f \tensor{D}{^a} f' - f' \tensor{D}{^a} f,
+			\end{equation}
+			而 $\tilde{P}(f)$ 指的是 $\tensor{\tilde{P}}{^a_i} \tensor{D}{_a} f$。
+		\end{Property}
+
+		\nomenclature{$G(\Lambda)$}{smeared 高斯约束}
+		\nomenclature{$C_{\text{Diff}}(v)$}{smeared 微分同胚约束}
+
+		至此，我们基本构建了 Ashtekar 变量下的哈密顿理论，以 Ashtekar 联络 $\tensor{A}{^i_a}$ 和动量 $\tensor{\tilde{P}}{^a_i}$ 为正则变量，约束方程加上（为哈密顿量补上边界项的）哈密顿方程即等价于 Einstein 场方程。于是，广义相对论被改写为了一个具有紧致规范群的规范理论，可以参考非阿贝尔规范理论已有的工具进行量子引力的探索，这就是圈量子引力的由来。
+		
+		最早 Ashtekar 于 1986 年所发表的 Ashtekar 变量\cite{Ashtekar1986}是选择 $\beta = -\ii$ 的情况，此时可以注意到约束的表达式极为简洁：
+		\begin{equation}
+			\begin{split}
+				\tensor{G}{_i} &= \AD{a} \tensor{\tilde{P}}{^a_i},\\
+				\tensor{V}{_a} &= \tensor{\tilde{P}}{^b_i} \tensor{F}{^i_a_b},\\
+				C &= \frac{\gkappa \beta^2}{2\sqrt{\abs{\det h}}} \tensor{\tilde{P}}{^a_i} \tensor{\tilde{P}}{^b_j} \tensor{\vol}{^i^j_k} \tensor{F}{^k_a_b},\label{eq-remannian_constrain}
+			\end{split}
+		\end{equation}
+		但缺点是要引入复联络，相当于考虑复化的广义相对论。为了得到物理的信息，需要引入“实性条件”，即把物理状态限制在复相空间中的一个截面上，以保证由 Ashtekar 变量诱导的 $\tensor{h}{_a_b}$ 和 $\tensor{K}{_a_b}$ 为实张量。在研究过程中物理学家们发现，实性条件给量子化带来了大量困难，于是 1994 年 Barbero 引入了上文所述的实值 Barbero-Immiriz 参数 $\beta$ 代替 $-\ii$，于是有了实变量理论。实 Ashtekar 变量理论与复 Ashtekar 变量理论相比，虽然约束表达式多出了被称为“Lorentz 项”的附加项，复杂了一些，但消除了实性条件，综合来看要更简洁方便一些，因此普遍采用实变量理论。

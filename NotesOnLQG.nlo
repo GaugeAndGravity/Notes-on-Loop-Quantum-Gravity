@@ -1,0 +1,68 @@
+\nomenclatureentry{a$M$@[{$M$}]\begingroup 光滑流形，通常指时空\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\Lo{M}$@[{$\Lo{M}$}]\begingroup $M$上的洛伦兹度规的集合\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\Diff{M}$@[{$\Diff{M}$}]\begingroup $M$的微分同胚群\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\superspace{M}$@[{$\superspace{M}$}]\begingroup $M$上的超空间，即度规的微分同胚等价类的集合\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\La$@[{$\La$}]\begingroup 拉氏量\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\form{\vol}$@[{$\form{\vol}$}]\begingroup 适配体元\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\form{\nvol}$@[{$\form{\nvol}$}]\begingroup 体元\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\gkappa$@[{$\gkappa$}]\begingroup $\gkappa=8\uppi \nG$\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\nG$@[{$\nG$}]\begingroup 牛顿引力常数\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\curR$@[{$\curR$}]\begingroup 标量曲率\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\wedge$@[{$\wedge$}]\begingroup 外积\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$j^k f$@[{$j^k f$}]\begingroup $f$ 的 k-jet\nomeqref {2.4}|nompageref}{9}
+\nomenclatureentry{a$\TB{M}$@[{$\TB{M}$}]\begingroup 流形 $M$ 的切丛\nomeqref {2.7}|nompageref}{10}
+\nomenclatureentry{a$\CTB{M}$@[{$\CTB{M}$}]\begingroup 流形 $M$ 的余切丛\nomeqref {2.7}|nompageref}{10}
+\nomenclatureentry{a$\spc_t$@[{$\spc_t$}]\begingroup $t$时刻的空间，是一张超曲面\nomeqref {2.7}|nompageref}{10}
+\nomenclatureentry{a$\tensor{h}{_a_b}$@[{$\tensor{h}{_a_b}$}]\begingroup 空间诱导度规\nomeqref {2.12}|nompageref}{10}
+\nomenclatureentry{a$\tensor{n}{_a}$@[{$\tensor{n}{_a}$}]\begingroup 一般指法余矢\nomeqref {2.12}|nompageref}{10}
+\nomenclatureentry{a$N$@[{$N$}]\begingroup 时移函数（lapse function）\nomeqref {2.12}|nompageref}{10}
+\nomenclatureentry{a$\tensor{N}{^a}$@[{$\tensor{N}{^a}$}]\begingroup 位移矢量（shift vector）\nomeqref {2.12}|nompageref}{10}
+\nomenclatureentry{a$\tensor{K}{_a_b}$@[{$\tensor{K}{_a_b}$}]\begingroup 外曲率\nomeqref {2.19}|nompageref}{11}
+\nomenclatureentry{a$\Ld{v}\tensor{T}{^{\cdots}_{\cdots}}$@[{$\Ld{v}\tensor{T}{^{\cdots}_{\cdots}}$}]\begingroup 张量$\tensor{T}{^{\cdots}_{\cdots}}$沿矢量$\tensor{v}{^a}$的李导数\nomeqref {2.19}|nompageref}{11}
+\nomenclatureentry{a$\spaceLd{v} \tensor{T}{^{\cdots}_{\cdots}}$@[{$\spaceLd{v} \tensor{T}{^{\cdots}_{\cdots}}$}]\begingroup 李导数的空间投影，见~\eqref{eq-spaceLd}\nomeqref {2.19}|nompageref}{11}
+\nomenclatureentry{a$\tensor{\dot{T}}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}}$@[{$\tensor{\dot{T}}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}}$}]\begingroup 空间张量$\tensor{{T}}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}}$的时间导数，见~\eqref{eq-timedot}\nomeqref {2.19}|nompageref}{11}
+\nomenclatureentry{a$\pi_N$@[{$\pi_N$}]\begingroup $N$对应的共轭动量\nomeqref {2.28}|nompageref}{12}
+\nomenclatureentry{a$\tensor{\pi}{^a}$@[{$\tensor{\pi}{^a}$}]\begingroup $\tensor{N}{_a}$对应的共轭动量\nomeqref {2.28}|nompageref}{12}
+\nomenclatureentry{a$\tensor{\pi}{^a^b}$@[{$\tensor{\pi}{^a^b}$}]\begingroup $\tensor{h}{_a_b}$对应的共轭动量\nomeqref {2.28}|nompageref}{12}
+\nomenclatureentry{a$H$@[{$H$}]\begingroup 哈密顿量\nomeqref {2.28}|nompageref}{12}
+\nomenclatureentry{a$C$@[{$C$}]\begingroup 标量约束\nomeqref {2.28}|nompageref}{12}
+\nomenclatureentry{a$\tensor{V}{^a}$@[{$\tensor{V}{^a}$}]\begingroup 矢量约束\nomeqref {2.28}|nompageref}{12}
+\nomenclatureentry{a$C(f)$@[{$C(f)$}]\begingroup smeared 标量约束\nomeqref {2.31}|nompageref}{13}
+\nomenclatureentry{a$V(v)$@[{$V(v)$}]\begingroup smeared 矢量约束\nomeqref {2.31}|nompageref}{13}
+\nomenclatureentry{a$\tensor{\eta}{_I_J}$@[{$\tensor{\eta}{_I_J}$}]\begingroup 内部空间上固定的洛伦兹度规\nomeqref {2.36}|nompageref}{14}
+\nomenclatureentry{a$\tensor{e}{^a_I}$@[{$\tensor{e}{^a_I}$}]\begingroup 标架场\nomeqref {2.36}|nompageref}{14}
+\nomenclatureentry{a$\tensor{e}{^I_a}$@[{$\tensor{e}{^I_a}$}]\begingroup 对偶标架场\nomeqref {2.36}|nompageref}{14}
+\nomenclatureentry{a$\tensor{\nabla}{_a}$@[{$\tensor{\nabla}{_a}$}]\begingroup 协变导数\nomeqref {2.50}|nompageref}{15}
+\nomenclatureentry{a$\tensor{\omega}{_a^I_J}$@[{$\tensor{\omega}{_a^I_J}$}]\begingroup spin connection\nomeqref {2.50}|nompageref}{15}
+\nomenclatureentry{a$\tensor{D}{_a}$@[{$\tensor{D}{_a}$}]\begingroup 协变外微分，或旋量场的协变导数\nomeqref {2.50}|nompageref}{15}
+\nomenclatureentry{a$\tensor{F}{_a_b_I^J}$@[{$\tensor{F}{_a_b_I^J}$}]\begingroup 曲率二形式\nomeqref {2.50}|nompageref}{15}
+\nomenclatureentry{a$\beta$@[{$\beta$}]\begingroup Barbero-Immiriz 参数\nomeqref {2.53}|nompageref}{16}
+\nomenclatureentry{a$\tensor{A}{^i_a}$@[{$\tensor{A}{^i_a}$}]\begingroup Ashtekar 联络\nomeqref {2.59}|nompageref}{17}
+\nomenclatureentry{a$\tensor{\tilde{P}}{^a_i}$@[{$\tensor{\tilde{P}}{^a_i}$}]\begingroup 与 Ashtekar 联络共轭的动量\nomeqref {2.59}|nompageref}{17}
+\nomenclatureentry{a$\tensor{\tilde{E}}{^a_i}$@[{$\tensor{\tilde{E}}{^a_i}$}]\begingroup 权为1的密度化的 3 标架\nomeqref {2.59}|nompageref}{17}
+\nomenclatureentry{a$\AD{a}$@[{$\AD{a}$}]\begingroup Ashtekar 联络对应的协变导数\nomeqref {2.61}|nompageref}{17}
+\nomenclatureentry{a$\tensor{F}{^i_a_b}$@[{$\tensor{F}{^i_a_b}$}]\begingroup Ashtekar 联络对应的曲率\nomeqref {2.61}|nompageref}{17}
+\nomenclatureentry{a$G(\Lambda)$@[{$G(\Lambda)$}]\begingroup smeared 高斯约束\nomeqref {2.73}|nompageref}{19}
+\nomenclatureentry{a$C_{\text{Diff}}(v)$@[{$C_{\text{Diff}}(v)$}]\begingroup smeared 微分同胚约束\nomeqref {2.73}|nompageref}{19}
+\nomenclatureentry{a$\tensor{\tau}{_i} = \frac{\ii}{2} \tensor{\sigma}{_i}$@[{$\tensor{\tau}{_i} = \frac{\ii}{2} \tensor{\sigma}{_i}$}]\begingroup $\su{2}$的一组正交归一基底\nomeqref {3.0}|nompageref}{21}
+\nomenclatureentry{a$\configurationspace{A}$@[{$\configurationspace{A}$}]\begingroup 经典位型空间，$\su{2}$值联络的集合\nomeqref {4.2}|nompageref}{27}
+\nomenclatureentry{a$h_c(A)$@[{$h_c(A)$}]\begingroup 联络$A$沿 $c$ 的 holonomy\nomeqref {4.2}|nompageref}{27}
+\nomenclatureentry{a$\tensor{P}{_i}(S)$@[{$\tensor{P}{_i}(S)$}]\begingroup 面$S$上的flux\nomeqref {4.5}|nompageref}{28}
+\nomenclatureentry{a$f_\gamma$@[{$f_\gamma$}]\begingroup 图 $\gamma$ 上的柱函数\nomeqref {4.11}|nompageref}{30}
+\nomenclatureentry{a$E(\gamma)$@[{$E(\gamma)$}]\begingroup 图 $\gamma$ 的边的集合\nomeqref {4.11}|nompageref}{30}
+\nomenclatureentry{a$V(\gamma)$@[{$V(\gamma)$}]\begingroup 图 $\gamma$ 的顶点的集合\nomeqref {4.11}|nompageref}{30}
+\nomenclatureentry{a$\Cyl_\gamma^k$@[{$\Cyl_\gamma^k$}]\begingroup 图 $\gamma$ 上 $k$阶可微的柱函数的集合\nomeqref {4.11}|nompageref}{30}
+\nomenclatureentry{a$\Cyl^k$@[{$\Cyl^k$}]\begingroup $k$阶可微的柱函数的集合\nomeqref {4.11}|nompageref}{30}
+\nomenclatureentry{a$L_i,R_i$@[{$L_i,R_i$}]\begingroup $\SU{2}$上的左不变矢量场和右不变矢量场\nomeqref {4.11}|nompageref}{30}
+\nomenclatureentry{a$\staralgebra{B}$@[{$\staralgebra{B}$}]\begingroup holonomy-flux 代数\nomeqref {4.12}|nompageref}{30}
+\nomenclatureentry{a$\gamma$@[{$\gamma$}]\begingroup 图\nomeqref {4.14}|nompageref}{31}
+\nomenclatureentry{a$\Gamma$@[{$\Gamma$}]\begingroup 图的集合\nomeqref {4.14}|nompageref}{31}
+\nomenclatureentry{a$\bar{\configurationspace{A}}$@[{$\bar{\configurationspace{A}}$}]\begingroup 量子位型空间\nomeqref {4.18}|nompageref}{32}
+\nomenclatureentry{a$T_s$@[{$T_s$}]\begingroup spin-network function\nomeqref {4.33}|nompageref}{35}
+\nomenclatureentry{a$\mu_{\text{A-L}}$@[{$\mu_{\text{A-L}}$}]\begingroup Ashtekar-Lewandowski 测度\nomeqref {4.33}|nompageref}{35}
+\nomenclatureentry{a$\Hkin$@[{$\Hkin$}]\begingroup kinematical 希尔伯特空间\nomeqref {4.38}|nompageref}{36}
+\nomenclatureentry{a$\Hil_\gamma$@[{$\Hil_\gamma$}]\begingroup 图 $\gamma$ 上的kinematical 希尔伯特空间\nomeqref {4.38}|nompageref}{36}
+\nomenclatureentry{a$\Hkin^0$@[{$\Hkin^0$}]\begingroup $\Hkin$中规范不变的态空间\nomeqref {5.22}|nompageref}{42}
+\nomenclatureentry{a$\DDiff^*$@[{$\DDiff^*$}]\begingroup 微分同胚约束的解空间\nomeqref {5.30}|nompageref}{43}
+\nomenclatureentry{a$\masterconstraint{M}$@[{$\masterconstraint{M}$}]\begingroup 主约束\nomeqref {5.36}|nompageref}{45}
+\nomenclatureentry{a$D^j,\tensor{D}{^j_m_n}$@[{$D^j,\tensor{D}{^j_m_n}$}]\begingroup Wigner D矩阵\nomeqref {7.51}|nompageref}{62}
