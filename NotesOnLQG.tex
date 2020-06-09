@@ -1,4 +1,8 @@
-\documentclass[11pt,a4paper]{ctexbook}
+\documentclass[11pt]{ctexbook}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%需先运行 makeindex NotesOnLQG.nlo -s nomencl.ist -o NotesOnLQG.nls，后运行 latexmk -xelatex 或 xelatex+biber+xelatex*2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -29,15 +33,8 @@
 	\tableofcontents
 
 	\printnomenclature
-
-	% % \input{notes/ADM.tex}
-	% % \input{notes/QGD.tex}
-	% \input{notes/Palatini.tex}
-	% \input{notes/Ashtekar.tex}
+	
 	\input{chapters/intro.tex}
-	%\input{chapters/floats.tex}
-	%\input{chapters/math.tex}
-	%\input{chapters/citations.tex}
 	\input{chapters/canonicalgravity.tex}
 	\input{chapters/lqg_pre.tex}
 	\input{chapters/lqg_kin.tex}
