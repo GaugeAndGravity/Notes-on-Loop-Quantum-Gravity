@@ -1,3 +1,5 @@
+*.pdf
+
 *.aux
 *.log
 *.out
@@ -5,6 +7,7 @@
 *.bcf
 *.nlo
 *.nls
+*.bbl
 *.thm
 *.xdv
 *.fls
