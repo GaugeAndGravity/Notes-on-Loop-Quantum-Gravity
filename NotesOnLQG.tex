@@ -2,7 +2,8 @@
 \documentclass[11pt]{ctexbook}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%需先运行 makeindex NotesOnLQG.nlo -s nomencl.ist -o NotesOnLQG.nls，后运行 latexmk -xelatex 或 xelatex+biber+xelatex*2
+%需先运行latexmk -xelatex 或 xelatex+biber+xelatex*2                                   %
+%后运行makeindex NotesOnLQG.nlo -s nomencl.ist -o NotesOnLQG.nls，然后再运行一遍xelatex %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{amsmath}
@@ -17,6 +18,7 @@
 
 \geometry{
 	a4paper,
+	centering
 	% scale=0.75
 }
 
