@@ -5,11 +5,21 @@
             "tools": ["latexmk-xelatex"]
         },
         {
-            "name": "texcount",
+            "name": "makeindex -> xelatex",
             "tools": [
-                "texcount"
+                "makeindex",
+                "xelatex"
             ]
-        }
+        },
+        {
+            "name": "xelatex -> biber -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "biber",
+                "xelatex",
+                "xelatex"
+            ]
+        },
     ],
     "latex-workshop.latex.tools": [
         {
@@ -27,14 +37,25 @@
             "env": {}
         },
         {
-            "name": "texcount",
-            "command": "texcount",
+            "name": "makeindex",
+            "command": "makeindex NotesOnLQG.nlo -s nomencl.ist -o NotesOnLQG.nls"
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
             "args": [
-                "%DOCFILE%.tex",
-                "-merge",
-                "-v",
-                "-html",
-                "-out=%DOCFILE%_count.html"
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-shell-escape",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
             ]
         }
     ]
