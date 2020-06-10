@@ -7,7 +7,7 @@
 1. 你可以直接下载release；
 2. 你可以clone此项目，自己编译一遍。
 
-### 编译 ![](https://www.zhihu.com/equation?tex=\LaTeX) 文件方式
+### 编译 ![LaTeX](https://www.zhihu.com/equation?tex=\LaTeX) 文件方式
 
 ### 命令行
 
