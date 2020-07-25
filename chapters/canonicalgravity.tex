@@ -6,7 +6,7 @@
 	\section{ADM formulation}
 	
 		\label{sec_adm}
-		为了研究时间演化及对引力进行量子化，我们需要考虑广义相对论的哈密顿描述。我们主要依照文献 \cite{wald1989,liang3,Thiemann2007} 展开。在拉格朗日描述下，考虑 $n$ 维光滑可定向流形 $M$ ，记$M$ 上的洛伦兹度规的集合为 $\Lo{M}$， 由于微分同胚不变性的规范对称性，广义相对论的位型空间为 $\superspace{M} \definedby \Lo{M}/\Diff{M}$。理论的拉氏量为
+		为了研究时间演化及对引力进行量子化，我们需要考虑广义相对论的哈密顿描述。我们主要依照文献 \inlinecite{wald1989,liang3,Thiemann2007} 展开。在拉格朗日描述下，考虑 $n$ 维光滑可定向流形 $M$ ，记$M$ 上的洛伦兹度规的集合为 $\Lo{M}$， 由于微分同胚不变性的规范对称性，广义相对论的位型空间为 $\superspace{M} \definedby \Lo{M}/\Diff{M}$。理论的拉氏量为
 		\begin{equation}
 			\form{\La}_{\text{EH}}[j^2 g] \definedby \frac{1}{2\gkappa} \curR(j^2 g) \form{\vol},
 		\end{equation}
@@ -103,7 +103,7 @@
 			\end{equation}
 			其中 $\Ld{n}$ 表示沿 $\tensor{n}{^a}$ 的李导数。
 		\end{Property}
-		这里略去证明，可参见\cite{wald1989,liang3,Thiemann2007} 等任何相关教材。%TODO: 符号表
+		这里略去证明，可参见\inlinecite{wald1989,liang3,Thiemann2007} 等任何相关教材。%TODO: 符号表
 		还需定义空间量的时间导数，沿 $\tensor{t}{^a}$ 的李导数是好的候选者，但空间张量的李导数未必还是空间张量，为此定义 $\spaceLd{v} \tensor{T}{^{a\cdots}_{b \cdots}}$ 为 $\Ld{v} \tensor{T}{^{a\cdots}_{b \cdots}}$ 的空间投影，即
 		\begin{equation}
 			\spaceLd{v} \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}} \definedby \tensor{h}{^{a_1}_{c_1}} \cdots \tensor{h}{^{a_k}_{c_k}} \tensor{h}{^{d_1}_{b_1}} \cdots \tensor{h}{^{d_l}_{b_l}} \Ld{v} \tensor{T}{^{c_1 \cdots c_k}_{d_1 \cdots d_l}}, \label{eq-spaceLd}
@@ -428,7 +428,7 @@
 
 	\section{Ashtekar 变量}
 
-		Abhay Ashtekar 在1986年给出了广义相对论的一组新的正则变量\cite{Ashtekar1986,Ashtekar1987}，使约束表达式得到了大幅简化，便于考虑量子引力，后来成为了圈量子引力 的基础。以下参照 \cite{Ashtekar2004} 予以简单介绍，相关内容也可参考\cite{liang3,Thiemann2007,Baez1994}。
+		Abhay Ashtekar 在1986年给出了广义相对论的一组新的正则变量\cite{Ashtekar1986,Ashtekar1987}，使约束表达式得到了大幅简化，便于考虑量子引力，后来成为了圈量子引力 的基础。以下参照 \inlinecite{Ashtekar2004} 予以简单介绍，相关内容也可参考\inlinecite{liang3,Thiemann2007,Baez1994}。
 
 		从 Holst 作用量出发，我们考虑 $3+1$ 分解，其含义与之前第\ref{sec_adm}节中相同，即选择时空的分层 $\phi \colon M \rightarrow \mathbb{R} \times \spc$，将物理量分解。每点的直和分解 $\TBx[x]{M} = \Span\left\{ \tensor{n}{^a}(x) \right\} \oplus \TBx[x]{\spc}$ 被 $\tensor{e}{^I_a}$ 映为 $V = \Span\left\{ \tensor{n}{^I}(x) \right\} \oplus V_{\spc}(x)$，其中 $\tensor{n}{^I} = \tensor{e}{^I_a} \tensor{n}{^a}$。注意到法矢场 $\tensor{n}{^a}$ 仅与 $\phi$ 和 $\tensor{g}{_a_b}$ 有关，而同一个 $\tensor{g}{_a_b}$ 对应的 $\tensor{e}{^I_a}$ 还存在 $\SO{3,1}$ 规范自由度，为了方便可以部分固定规范，即固定内部矢量场 $\tensor{n}{^I}$，例如本文中取为第零基矢 $\tensor{\xi}{^I_0}$。则规范群约化为 $\SO{3}$ 。每点的 $V_{\spc}$ 同构于一固定的三维线性空间 $W$，于是在标架 $\tensor{e}{^a_I}$ 将 $\TB{M}$ 平凡化为 $E=M\times V$ 后，时空的 $3+1$ 分解又将其（局部地）直和分解为 $\left( M \times \mathbb{R} \right) \oplus \left( M \times W \right)$。用 $i,j,k,\cdots$ 作为 $W$ 上的抽象指标，记 $\tensor{q}{^i_I}(x)$ 为 $V_{\spc}$ 到 $W$ 的同构映射。记 $\tensor{h}{^I_J} = \tensor{\delta}{^I_J} + \tensor{n}{^I} \tensor{n}{_J}$ 为 $V$ 到 $V_{\spc}$ 的投影映射，$\tensor{h}{_I_J} = \tensor{\eta}{_I_K} \tensor{h}{^K_J}$ 即 $V_{\spc}$ 上的诱导黎曼度规，它等于 $\tensor{e}{^a_I} \tensor{e}{^b_J} \tensor{h}{_a_b}$。我们知道 $\tensor{\vol}{_a_b_c} \definedby \tensor{n}{^d} \tensor{\vol}{_d_a_b_c}$ 给出 $\spc$ 上的诱导体元，其标架版本为 $\tensor{\vol}{_I_J_K} \definedby \tensor{n}{^L} \tensor{\vol}{_L_I_J_K}$。通过同构 $\tensor{q}{^i_I}$ 及其逆 $\tensor{q}{^I_i}$ 有 $\tensor{h}{^i_I} \definedby \tensor{q}{^i_J} \tensor{h}{^J_I}$ 及 $W$ 上的度规 $\tensor{h}{_i_j} \definedby \tensor{q}{^I_i} \tensor{q}{^J_j} \tensor{h}{_I_J}$ 与体元 $\tensor{\vol}{_i_j_k} \definedby \tensor{q}{^I_i} \tensor{q}{^J_j} \tensor{q}{^K_k} \tensor{\vol}{_I_J_K}$。
 		
@@ -550,7 +550,7 @@
 					\left\{ G(\Lambda), G(\Lambda') \right\} &= G\left( \left[ \Lambda, \Lambda' \right] \right),\\
 					\left\{ G(\Lambda), C_{\text{Diff}}(v) \right\} &= - G(\Ld{v} \Lambda),\\
 					\left\{ G(\Lambda), C_{\text{H}}(f) \right\} &= 0,\\
-					\left\{ C_{\mathrm{Diff}}(u), C_{\text{Diff}}(v) \right\} &= C_{\text{Diff}}([u,v]),\\
+					\left\{ C_{\text{Diff}}(u), C_{\text{Diff}}(v) \right\} &= C_{\text{Diff}}([u,v]),\\
 					\left\{ C_{\text{Diff}}(v), C_{\text{H}}(f) \right\} &= - C_{\text{H}}(v(f)),\\
 					\left\{ C_{\text{H}}(f), C_{\text{H}}(f') \right\} &= - C_{\text{Diff}}(S(f,f')) - G\left(\tensor{S}{^a}(f,f') \tensor{A}{^i_a} \right)\\
 					&\qquad\qquad - \left( 1+\beta^2 \right) G\left( \frac{\left[ \tilde{P}(f), \tilde{P}(f') \right]}{\abs{\det q}} \right),\label{eq-constrain_algebra}
