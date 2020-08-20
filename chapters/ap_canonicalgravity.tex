@@ -32,6 +32,11 @@
 					\var{\tensor{g}{_a_b}} = - \tensor{g}{_a_c} \tensor{g}{_b_d} \var{\tensor{g}{^c^d}} \qc \var{\tensor{g}{^a^b}} = - \tensor{g}{^a^c} \tensor{g}{^b^d} \var{\tensor{g}{_c_d}}.
 				\end{split}
 			\end{equation}
+
+			注意到
+			\begin{equation}
+				\var{\Lad} = \underbrace{\sqrt{-g} \tensor{g}{^a^b} \var{\tensor{R}{_a_b}}}_{\RomanNumeralCaps{1}} + \underbrace{\sqrt{-g} \tensor{R}{_a_b} \var{\tensor{g}{^a^b}}}_{\RomanNumeralCaps{2}}
+			\end{equation}
 			考虑与 $\tensor{g}{_a_b}(\lambda)$ 适配的导数算符 $\tensor{\myvaried{\nabla}}{_a}$，假定与 $\Nabla{a}$ 相差 $\tensor{C}{^c_a_b}(\lambda)$，即
 			\begin{equation}
 				\left( \Nabla{a} - \tensor{\myvaried{\nabla}}{_a} \right) \tensor{\omega}{_b} = \tensor{C}{^c_a_b}(\lambda) \tensor{\omega}{_c},
@@ -59,13 +64,28 @@
 			\end{gather}
 			由于 $\tensor{C}{^c_a_b}(0)=0$，求导得
 			\begin{equation}
-				\var{\tensor{R}{_a_b}} = - 2 \Nabla{{[a}} \var \tensor{C}{^c_{c]}_b} = \Nabla{c} \tensor{C}{^c_a_b} - \Nabla{a} \tensor{C}{^c_c_b},
+				\var{\tensor{R}{_a_b}} = - 2 \Nabla{{[a}} \var \tensor{C}{^c_{c]}_b} = \Nabla{c} \var \tensor{C}{^c_a_b} - \Nabla{a} \var \tensor{C}{^c_c_b},\label{eq-varR_varC}
 			\end{equation}
 			而由~\eqref{eq-Clambda}得
 			\begin{equation}
 				\begin{split}
-					\var{\tensor{C}{^c_a_b}} ={} & \frac{1}{2} \var\tensor{g}{^c^d} \left( \Nabla{a} \tensor{g}{_b_d} + \Nabla{b} \tensor{g}{_a_d} - \Nabla{d} \tensor{g}{_a_b} \right) + \frac{1}{2} \tensor{g}{^c^d} \left( \Nabla{a} \var \tensor{g}{_b_d} + \Nabla{b} \var \tensor{g}{_a_d} - \Nabla{d} \var \tensor{g}{_a_b} \right)\\
-					={} & \frac{1}{2} \tensor{g}{^c^d} \left( \Nabla{a} \var \tensor{g}{_b_d} + \Nabla{b} \var \tensor{g}{_a_d} - \Nabla{d} \var \tensor{g}{_a_b} \right),
+					\var{\tensor{C}{^c_a_b}} &= \frac{1}{2} \var\tensor{g}{^c^d} \left( \Nabla{a} \tensor{g}{_b_d} + \Nabla{b} \tensor{g}{_a_d} - \Nabla{d} \tensor{g}{_a_b} \right) + \frac{1}{2} \tensor{g}{^c^d} \left( \Nabla{a} \var \tensor{g}{_b_d} + \Nabla{b} \var \tensor{g}{_a_d} - \Nabla{d} \var \tensor{g}{_a_b} \right)\\
+					&= \frac{1}{2} \tensor{g}{^c^d} \left( \Nabla{a} \var \tensor{g}{_b_d} + \Nabla{b} \var \tensor{g}{_a_d} - \Nabla{d} \var \tensor{g}{_a_b} \right),\\
+					\var{\tensor{C}{^c_c_b}} &= \frac{1}{2} \tensor{g}{^c^d} \left( \Nabla{c} \var \tensor{g}{_b_d} + \Nabla{b} \var \tensor{g}{_c_d} - \Nabla{d} \var \tensor{g}{_c_b} \right)\\
+					&= \frac{1}{2} \tensor{g}{^c^d} \Nabla{b} \var \tensor{g}{_c_d},
+				\end{split}
+			\end{equation}
+			代入~\eqref{eq-varR_varC} 得
+			\begin{equation}
+				\begin{split}
+					\var{\tensor{R}{_a_b}} &= \frac{1}{2} \tensor{g}{^c^d} \Nabla{c} \left( \Nabla{a} \var \tensor{g}{_b_d} + \Nabla{b} \var \tensor{g}{_a_d} - \Nabla{d} \var \tensor{g}{_a_b} \right) - \frac{1}{2} \tensor{g}{^c^d} \Nabla{a} \Nabla{b} \var \tensor{g}{_c_d}\\
+					&= \frac{1}{2} \tensor{g}{^c^d} \left( \Nabla{c} \Nabla{a} \var \tensor{g}{_b_d} + \Nabla{c} \Nabla{b} \var \tensor{g}{_a_d} - \Nabla{c} \Nabla{d} \var \tensor{g}{_a_b} - \Nabla{a} \Nabla{b} \var \tensor{g}{_c_d} \right),
+				\end{split}
+			\end{equation}
+			则
+			\begin{equation}
+				\begin{split}
+					\var{R} = 
 				\end{split}
 			\end{equation}
 		\end{Proof}
