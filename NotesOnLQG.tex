@@ -16,7 +16,7 @@
 
 \geometry{
 	a4paper,
-	centering
+	% centering
 	% scale=0.75
 }
 
@@ -29,20 +29,26 @@
 
 \addbibresource{bib/lqg.bib}
 
+\includeonly{chapters/canonicalgravity,chapters/ap_canonicalgravity}
+
 \begin{document}
 	\maketitle
 	\tableofcontents
 
 	\printnomenclature
 	
-	\input{chapters/intro.tex}
-	\input{chapters/canonicalgravity.tex}
-	\input{chapters/lqg_pre.tex}
-	\input{chapters/lqg_kin.tex}
-	\input{chapters/lqg_constrain.tex}
-	\input{chapters/lqg_application.tex}
-	\input{chapters/spinfoam.tex}
-	% \input{chapters/fermion.tex}
+	\include{chapters/intro}
+	\include{chapters/canonicalgravity}
+	\include{chapters/lqg_pre}
+	\include{chapters/lqg_kin}
+	\include{chapters/lqg_constrain}
+	\include{chapters/lqg_application}
+	\include{chapters/spinfoam}
+	% \include{chapters/fermion.tex}
+
+	\appendix
+
+	\include{chapters/ap_canonicalgravity}
 
 	% \bibliography{bib/ustc}
 	\printbibliography[heading=bibintoc]

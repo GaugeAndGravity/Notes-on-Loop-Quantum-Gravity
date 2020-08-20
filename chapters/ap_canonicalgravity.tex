@@ -1,0 +1,71 @@
+% !TeX root = ../NotesOnLQG.tex
+
+\chapter{第\ref{chp-canonical_gravity}章中的计算}
+
+	\section{ADM formulation}
+
+		\begin{Property}
+			\label{pro_EEq}
+			易证明，Einstein-Hilbert 作用量
+			\begin{equation}
+				S_{\text{EH}}[g] = \frac{1}{2\gkappa} \int_M \curR[g] 
+			\end{equation}
+			的运动方程为真空 Einstein 方程
+			\begin{equation}
+				Ric - \frac{1}{2} \curR g = 0,
+			\end{equation}
+			或采取抽象指标形式，写作
+			\begin{equation}
+				\tensor{\Ric}{_a_b} - \frac{1}{2} \curR \tensor{g}{_a_b} = 0.
+			\end{equation}
+		\end{Property}
+
+		\begin{Proof}
+			\label{prf_EEq}
+			考虑时空 $(M,\tensor{g}{_a_b})$ 及 $M$ 上的一族度规 $\tensor{g}{_a_b}(\lambda)$，满足 $\tensor{g}{_a_b}(0)=\tensor{g}{_a_b}$，则任何依赖度规的量 $T$ 的变分为
+			\begin{equation}
+				\var T\left( \tensor{g}{_a_b} \right) \definedby \left. \dv{T\left( \tensor{g}{_a_b}(\lambda) \right)}{\lambda}  \right|_{\lambda=0},
+			\end{equation}
+			对 $\tensor{\delta}{^a_b} = \tensor{g}{^a^c} \tensor{g}{_c_b}$ 两边变分得关系
+			\begin{equation}
+				\begin{split}
+					\var{\tensor{g}{_a_b}} = - \tensor{g}{_a_c} \tensor{g}{_b_d} \var{\tensor{g}{^c^d}} \qc \var{\tensor{g}{^a^b}} = - \tensor{g}{^a^c} \tensor{g}{^b^d} \var{\tensor{g}{_c_d}}.
+				\end{split}
+			\end{equation}
+			考虑与 $\tensor{g}{_a_b}(\lambda)$ 适配的导数算符 $\tensor{\myvaried{\nabla}}{_a}$，假定与 $\Nabla{a}$ 相差 $\tensor{C}{^c_a_b}(\lambda)$，即
+			\begin{equation}
+				\left( \Nabla{a} - \tensor{\myvaried{\nabla}}{_a} \right) \tensor{\omega}{_b} = \tensor{C}{^c_a_b}(\lambda) \tensor{\omega}{_c},
+			\end{equation}
+			通过 $\tensor{\myvaried{\nabla}}{_a} \tensor{g}{_b_c}(\lambda) = 0$ ，与计算克氏符类似，可算得
+			\begin{equation}
+				\tensor{C}{^c_a_b}(\lambda) = \frac{1}{2} \tensor{g}{^c^d}(\lambda) \left( \Nabla{a} \tensor{g}{_b_d}(\lambda) + \Nabla{b} \tensor{g}{_a_d}(\lambda) - \Nabla{d} \tensor{g}{_a_b}(\lambda) \right),\label{eq-Clambda}
+			\end{equation}
+			进而考虑 $\tensor{\myvaried{\nabla}}{_a}$ 相应的黎曼张量 $\tensor{R}{_a_b_c^d}(\lambda)$，按照定义，有
+			\begin{equation}
+				\begin{split}
+					\tensor{R}{_a_b_c^d}(\lambda) \tensor{\omega}{_d} ={}& 2 \tensor{\myvaried{\nabla}}{_{[a}} \tensor{\myvaried{\nabla}}{_{b]}} \tensor{\omega}{_c}\\
+					={}& \tensor{\myvaried{\nabla}}{_a} \left( \Nabla{b} \tensor{\omega}{_c} - \tensor{C}{^d_b_c}(\lambda) \tensor{\omega}{_d} \right) - \tensor{\myvaried{\nabla}}{_b} \left( \Nabla{a} \tensor{\omega}{_c} - \tensor{C}{^d_a_c}(\lambda) \tensor{\omega}{_d} \right)\\
+					={}& \left( {\color{red}\Nabla{a} \Nabla{b}\tensor{\omega}{_c}} - {\color{blue}\tensor{C}{^d_a_b}(\lambda) \Nabla{d} \tensor{\omega}{_c}} - \tensor{C}{^d_a_c}(\lambda) \Nabla{b} \tensor{\omega}{_d} \right)\\
+					& {}- \left[ \Nabla{a} \left( \tensor{C}{^d_b_c}(\lambda) \tensor{\omega}{_d} \right) - {\color{green}\tensor{C}{^e_a_b}(\lambda) \tensor{C}{^d_e_c}(\lambda) \tensor{\omega}{_d}} - \tensor{C}{^e_a_c}(\lambda) \tensor{C}{^d_b_e}(\lambda) \tensor{\omega}{_d} \right]\\
+					& {}- \left( {\color{red}\Nabla{b} \Nabla{a}\tensor{\omega}{_c}} - {\color{blue}\tensor{C}{^d_b_a}(\lambda) \Nabla{d} \tensor{\omega}{_c}} - \tensor{C}{^d_b_c}(\lambda) \Nabla{a} \tensor{\omega}{_d} \right)\\
+					& {} + \left[ \Nabla{b} \left( \tensor{C}{^d_a_c}(\lambda) \tensor{\omega}{_d} \right) - {\color{green}\tensor{C}{^e_b_a}(\lambda) \tensor{C}{^d_e_c}(\lambda) \tensor{\omega}{_d}} - \tensor{C}{^e_b_c}(\lambda) \tensor{C}{^d_a_e}(\lambda) \tensor{\omega}{_d} \right]\\
+					={} & {\color{red} \tensor{R}{_a_b_c^d} \tensor{\omega}{_d}} - 2 \left( \Nabla{{[a|}} \tensor{C}{^d_{b]}_c}(\lambda) \right) \tensor{\omega}{_d} + 2 \tensor{C}{^e_{[a}_{|c|}}(\lambda) \tensor{C}{^d_{b]}_e}(\lambda) \tensor{\omega}{_d},
+				\end{split}
+			\end{equation}
+			即
+			\begin{gather}
+				\tensor{R}{_a_b_c^d}(\lambda) = \tensor{R}{_a_b_c^d} - 2 \Nabla{{[a}} \tensor{C}{^d_{b]}_c}(\lambda) + 2 \tensor{C}{^e_c_{[a}}(\lambda) \tensor{C}{^d_{b]}_e}(\lambda),\\
+				\tensor{R}{_a_b}(\lambda) = \tensor{R}{_a_c_b^c}(\lambda) = \tensor{R}{_a_b} - 2 \Nabla{{[a}} \tensor{C}{^c_{c]}_b}(\lambda) + 2 \tensor{C}{^e_b_{[a}}(\lambda) \tensor{C}{^c_{c]}_e}(\lambda),
+			\end{gather}
+			由于 $\tensor{C}{^c_a_b}(0)=0$，求导得
+			\begin{equation}
+				\var{\tensor{R}{_a_b}} = - 2 \Nabla{{[a}} \var \tensor{C}{^c_{c]}_b} = \Nabla{c} \tensor{C}{^c_a_b} - \Nabla{a} \tensor{C}{^c_c_b},
+			\end{equation}
+			而由~\eqref{eq-Clambda}得
+			\begin{equation}
+				\begin{split}
+					\var{\tensor{C}{^c_a_b}} ={} & \frac{1}{2} \var\tensor{g}{^c^d} \left( \Nabla{a} \tensor{g}{_b_d} + \Nabla{b} \tensor{g}{_a_d} - \Nabla{d} \tensor{g}{_a_b} \right) + \frac{1}{2} \tensor{g}{^c^d} \left( \Nabla{a} \var \tensor{g}{_b_d} + \Nabla{b} \var \tensor{g}{_a_d} - \Nabla{d} \var \tensor{g}{_a_b} \right)\\
+					={} & \frac{1}{2} \tensor{g}{^c^d} \left( \Nabla{a} \var \tensor{g}{_b_d} + \Nabla{b} \var \tensor{g}{_a_d} - \Nabla{d} \var \tensor{g}{_a_b} \right),
+				\end{split}
+			\end{equation}
+		\end{Proof}

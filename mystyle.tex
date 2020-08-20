@@ -77,7 +77,7 @@
 	\theoremseparator{.}
 	% \theoremprework{\bigskip\hrule}
 	% \theorempostwork{\hrule\bigskip}
-	\newtheorem{Property}{命题}
+	\newtheorem{Property}{命题}[chapter]
 }
 {
 	\theoremstyle{plain}
@@ -119,7 +119,7 @@
 	\theoremstyle{nonumberplain}
 	\theoremseparator{}
 	\theoremsymbol{\mbox{$\square$}}
-	\newtheorem{Proof}{证明}
+	\newtheorem{Proof}{证明}[chapter]
 }
 {
 	\theoremindent0cm
@@ -242,6 +242,8 @@
 
 %\newcommand*{\circled}[1]{\lower.7ex\hbox{\tikz\draw (0pt, 0pt)circle (.5em) node {\makebox[1em][c]{\small #1}};}}
 \newcommand{\card}[1]{\abs{#1}}
+
+\newcommand{\myvaried}[1]{{\phantom{#1}\llap{\raisebox{0pt}[0pt][0pt]{\ensuremath{\mspace{3mu}\overset{\lambda}{#1}}}}}}
 
 \DeclareMathOperator{\ddiv}{div}
 \DeclareMathOperator{\ggrad}{grad}
