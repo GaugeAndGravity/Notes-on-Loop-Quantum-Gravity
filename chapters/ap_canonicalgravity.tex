@@ -155,3 +155,47 @@
 			\end{equation}
 			可得真空场方程。
 		\end{Proof}
+
+		\begin{Remark}
+			\begin{enumerate}
+				\item 也可采用矩阵的语言，使用伴随矩阵为工具计算 $\delta g$，参见\inlinecite{liang3}。
+				\item 也可考察 $\La = R \form{\vol}$，则需要计算适配体元的变分。梁灿彬老师在 \inlinecite{liang3} 的下册第~9~页中写道
+				\begin{quote}
+					……对 $\tensor{g}{_a_b}$ 变分时就必须考虑 $\form{\vol}$ 的相应变分，从而给计算带来麻烦。
+				\end{quote}
+				进而得出用标量密度 $\Lad$ 更合适的结论。然而鄙人实际算了发现没觉得体元的变分有多复杂……见下文。
+
+				记 $\form{\vol}(\lambda)$ 是与 $\tensor{g}{_a_b}(\lambda)$ 适配的体元，则
+				\begin{equation}
+					\tensor{g}{^a^e}(\lambda) \tensor{g}{^b^f}(\lambda) \tensor{g}{^c^g}(\lambda) \tensor{g}{^d^h}(\lambda) \tensor{\vol}{_a_b_c_d}(\lambda) \tensor{\vol}{_e_f_g_h}(\lambda) = - 4!,
+				\end{equation}
+				对 $\lambda$ 求导得
+				\begin{equation}
+					\begin{split}
+						0 &= 4 \left( \var \tensor{g}{^a^e} \right) \tensor{g}{^b^f} \tensor{g}{^c^g} \tensor{g}{^d^h} \tensor{\vol}{_a_b_c_d} \tensor{\vol}{_e_f_g_h} + 2 \tensor{g}{^a^e} \tensor{g}{^b^f} \tensor{g}{^c^g} \tensor{g}{^d^h} \tensor{\vol}{_a_b_c_d} \var \tensor{\vol}{_e_f_g_h}\\
+						&= - 4 \times 3! \times \tensor{g}{_a_e} \var{\tensor{g}{^a^e}} + 2 \tensor{\vol}{^e^f^g^h} \var{\tensor{\vol}{_e_f_g_h}},
+					\end{split}
+				\end{equation}
+				故
+				\begin{equation}
+					\begin{split}
+						\tensor{\vol}{^a^b^c^d} \var{\tensor{\vol}{_a_b_c_d}} &= - 2 \times 3! \times \tensor{g}{^a^b} \var{\tensor{g}{_a_b}}\\
+						&= - \frac{1}{2} 4! \tensor{g}{^a^b} \var{\tensor{g}{_a_b}}\\
+						&= \frac{1}{2} \tensor{\vol}{^e^f^g^h} \left( \tensor{\vol}{_e_f_g_h} \tensor{g}{^a^b} \var{\tensor{g}{_a_b}} \right),
+					\end{split}
+				\end{equation}
+				两边取对偶形式去掉 $\form{\vol}$，知
+				\begin{equation}
+					\var{\tensor{\vol}{_a_b_c_d}} = \frac{1}{2} \tensor{\vol}{_a_b_c_d} \tensor{g}{^e^f} \var{\tensor{g}{_e_f}}.
+				\end{equation}
+
+				算完适配体元变分后，即可算得
+				\begin{equation}
+					\begin{split}
+						\var{\La} &= \tensor{g}{^a^b} \var(\tensor{R}{_a_b}) \form{\vol} - \tensor{R}{^a^b} \var(\tensor{g}{_a_b}) \form{\vol} + R \var{\form{\vol}}\\
+						&= \left( \Nabla{a} \tensor{v}{^a} \right) \form{\vol} - \left( \tensor{R}{^a^b} - \frac{1}{2} R \tensor{g}{^a^b} \right) \var{\tensor{g}{_a_b}} \form{\vol},
+					\end{split}
+				\end{equation}
+				从而得到场方程。
+			\end{enumerate}
+		\end{Remark}
