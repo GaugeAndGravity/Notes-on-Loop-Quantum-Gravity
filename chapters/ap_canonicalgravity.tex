@@ -196,40 +196,41 @@
 						&= \left( \Nabla{a} \tensor{v}{^a} \right) \form{\vol} - \left( \tensor{R}{^a^b} - \frac{1}{2} R \tensor{g}{^a^b} \right) \var{\tensor{g}{_a_b}} \form{\vol},
 					\end{split}
 				\end{equation}
-				从而得到场方程。{\normalfont\ttfamily\color{green} 点击返回~\eqref{eq-EEq}。}
+				从而得到场方程。
 			\end{enumerate}
-
-			\begin{Property}[\pageref{pro-KLnh} 页命题~\ref{pro-KLnh}]
-				\begin{equation}
-					\tensor{K}{_a_b} = \frac{1}{2} \Ld{n} \tensor{h}{_a_b},
-				\end{equation}
-				其中 $\Ld{n}$ 表示沿 $\tensor{n}{^a}$ 的李导数。
-			\end{Property}
-			\begin{Proof}
-				\label{prf-KLnh}
-				由李导数公式
-				\begin{equation}
-					\Ld{v} \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}} = \tensor{v}{^c} \Nabla{c} \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}} - \sum_{i=1}^k \tensor{T}{^{a_1 \cdots c \cdots a_k}_{b_1 \cdots b_l}} \Nabla{c} \tensor{v}{^{a_i}} + \sum_{j=1}^l \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots c \cdots b_l}} \Nabla{{b_j}} \tensor{v}{^c}
-				\end{equation}
-				知
-				\begin{equation}
-					\Ld{v} \tensor{g}{_a_b} = 2 \Nabla{{(a}} \tensor{v}{_{b)}}
-				\end{equation}
-				及
-				\begin{equation}
-					\Ld{n} \tensor{n}{_a} = \tensor{n}{^b} \Nabla{b} \tensor{n}{_a} + \tensor{n}{_b} \Nabla{a} \tensor{n}{^b} = \tensor{n}{^b} \Nabla{b} \tensor{n}{_a},
-				\end{equation}
-				故
-				\begin{equation}
-					\begin{split}
-						\Ld{n} \tensor{h}{_a_b} &= \Ld{n} \left( \tensor{g}{_a_b} + \tensor{n}{_a} \tensor{n}{_b} \right)\\
-						&= 2 \Nabla{{(a}} \tensor{n}{_{b)}} + 2 \tensor{n}{_{(a}} \Ld{n} \tensor{n}{_{b)}}\\
-						&= 2 \Nabla{{(a}} \tensor{n}{_{b)}} + 2 \tensor{n}{_{(a}} \tensor{n}{^c} \Nabla{{|c|}} \tensor{n}{_{b)}}\\
-						&= 2 \tensor{\delta}{^c_{(a}} \Nabla{{|c|}} \tensor{n}{_b} + 2 \tensor{n}{_{(a}} \tensor{n}{^c} \Nabla{{|c|}} \tensor{n}{_{b)}}\\
-						&= 2 \tensor{K}{_{(ab)}}\\
-						&= 2 \tensor{K}{_a_b},
-					\end{split}
-				\end{equation}
-				证毕。{\normalfont\ttfamily\color{green} 点击返回命题~\ref{pro-KLnh}。}
-			\end{Proof}
+			{\normalfont\ttfamily\color{green} 点击返回~\eqref{eq-EEq}。}
 		\end{Remark}
+
+		\begin{Property}[\pageref{pro-KLnh} 页命题~\ref{pro-KLnh}]
+			\begin{equation}
+				\tensor{K}{_a_b} = \frac{1}{2} \Ld{n} \tensor{h}{_a_b},
+			\end{equation}
+			其中 $\Ld{n}$ 表示沿 $\tensor{n}{^a}$ 的李导数。
+		\end{Property}
+		\begin{Proof}
+			\label{prf-KLnh}
+			由李导数公式
+			\begin{equation}
+				\Ld{v} \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}} = \tensor{v}{^c} \Nabla{c} \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}} - \sum_{i=1}^k \tensor{T}{^{a_1 \cdots c \cdots a_k}_{b_1 \cdots b_l}} \Nabla{c} \tensor{v}{^{a_i}} + \sum_{j=1}^l \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots c \cdots b_l}} \Nabla{{b_j}} \tensor{v}{^c}
+			\end{equation}
+			知
+			\begin{equation}
+				\Ld{v} \tensor{g}{_a_b} = 2 \Nabla{{(a}} \tensor{v}{_{b)}}
+			\end{equation}
+			及
+			\begin{equation}
+				\Ld{n} \tensor{n}{_a} = \tensor{n}{^b} \Nabla{b} \tensor{n}{_a} + \tensor{n}{_b} \Nabla{a} \tensor{n}{^b} = \tensor{n}{^b} \Nabla{b} \tensor{n}{_a},
+			\end{equation}
+			故
+			\begin{equation}
+				\begin{split}
+					\Ld{n} \tensor{h}{_a_b} &= \Ld{n} \left( \tensor{g}{_a_b} + \tensor{n}{_a} \tensor{n}{_b} \right)\\
+					&= 2 \Nabla{{(a}} \tensor{n}{_{b)}} + 2 \tensor{n}{_{(a}} \Ld{n} \tensor{n}{_{b)}}\\
+					&= 2 \Nabla{{(a}} \tensor{n}{_{b)}} + 2 \tensor{n}{_{(a}} \tensor{n}{^c} \Nabla{{|c|}} \tensor{n}{_{b)}}\\
+					&= 2 \tensor{\delta}{^c_{(a}} \Nabla{{|c|}} \tensor{n}{_b} + 2 \tensor{n}{_{(a}} \tensor{n}{^c} \Nabla{{|c|}} \tensor{n}{_{b)}}\\
+					&= 2 \tensor{K}{_{(ab)}}\\
+					&= 2 \tensor{K}{_a_b},
+				\end{split}
+			\end{equation}
+			证毕。{\normalfont\ttfamily\color{green} 点击返回命题~\ref{pro-KLnh}。}
+		\end{Proof}
