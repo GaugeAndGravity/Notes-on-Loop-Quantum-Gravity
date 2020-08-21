@@ -40,7 +40,7 @@
 		\end{equation}
 		的运动方程为真空 Einstein 方程\footnote{证明见\pageref{prf_EEq}页。}%\marginpar{\itshape 证明见\pageref{prf_EEq}页}
 		\begin{equation}
-			Ric - \frac{1}{2} \curR g = 0,
+			Ric - \frac{1}{2} \curR g = 0, \label{eq-EEq}
 		\end{equation}
 		或采取抽象指标形式，写作
 		\begin{equation}
@@ -98,13 +98,15 @@
 		\end{equation}
 		我们即将看到它与 $\tensor{h}{_a_b}$ 的共轭动量的联系。这从以下命题即可初见端倪：
 		\begin{Property}
+			\label{pro-KLnh}
 			\begin{equation}
 				\tensor{K}{_a_b} = \frac{1}{2} \Ld{n} \tensor{h}{_a_b},
 			\end{equation}
 			其中 $\Ld{n}$ 表示沿 $\tensor{n}{^a}$ 的李导数。
 		\end{Property}
-		这里略去证明，可参见\inlinecite{wald1989,liang3,Thiemann2007} 等任何相关教材。%TODO: 符号表
-		还需定义空间量的时间导数，沿 $\tensor{t}{^a}$ 的李导数是好的候选者，但空间张量的李导数未必还是空间张量，为此定义 $\spaceLd{v} \tensor{T}{^{a\cdots}_{b \cdots}}$ 为 $\Ld{v} \tensor{T}{^{a\cdots}_{b \cdots}}$ 的空间投影，即
+		证明见附录~\pageref{prf-KLnh}页~\ref{prf-KLnh}
+		%也可参见\inlinecite{wald1989,liang3,Thiemann2007} 等任何相关教材。%TODO: 符号表
+		。还需定义空间量的时间导数，沿 $\tensor{t}{^a}$ 的李导数是好的候选者，但空间张量的李导数未必还是空间张量，为此定义 $\spaceLd{v} \tensor{T}{^{a\cdots}_{b \cdots}}$ 为 $\Ld{v} \tensor{T}{^{a\cdots}_{b \cdots}}$ 的空间投影，即
 		\begin{equation}
 			\spaceLd{v} \tensor{T}{^{a_1 \cdots a_k}_{b_1 \cdots b_l}} \definedby \tensor{h}{^{a_1}_{c_1}} \cdots \tensor{h}{^{a_k}_{c_k}} \tensor{h}{^{d_1}_{b_1}} \cdots \tensor{h}{^{d_l}_{b_l}} \Ld{v} \tensor{T}{^{c_1 \cdots c_k}_{d_1 \cdots d_l}}, \label{eq-spaceLd}
 		\end{equation}
