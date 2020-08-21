@@ -24,20 +24,14 @@
 			\label{prf_EEq}
 			考虑时空 $(M,\tensor{g}{_a_b})$ 及 $M$ 上的一族度规 $\tensor{g}{_a_b}(\lambda)$，满足 $\tensor{g}{_a_b}(0)=\tensor{g}{_a_b}$，则任何依赖度规的量 $T$ 的变分为
 			\begin{equation}
-				\var T\left( \tensor{g}{_a_b} \right) \definedby \left. \dv{T\left( \tensor{g}{_a_b}(\lambda) \right)}{\lambda}  \right|_{\lambda=0},
-			\end{equation}
-			对 $\tensor{\delta}{^a_b} = \tensor{g}{^a^c} \tensor{g}{_c_b}$ 两边变分得关系
-			\begin{equation}
-				\begin{split}
-					\var{\tensor{g}{_a_b}} = - \tensor{g}{_a_c} \tensor{g}{_b_d} \var{\tensor{g}{^c^d}} \qc \var{\tensor{g}{^a^b}} = - \tensor{g}{^a^c} \tensor{g}{^b^d} \var{\tensor{g}{_c_d}}.
-				\end{split}
+				\var T\left( \tensor{g}{_a_b} \right) \definedby \left. \dv{T\left( \tensor{g}{_a_b}(\lambda) \right)}{\lambda}  \right|_{\lambda=0}.
 			\end{equation}
 
 			注意到
 			\begin{equation}
-				\var{\Lad} = \underbrace{\sqrt{-g} \tensor{g}{^a^b} \var{\tensor{R}{_a_b}}}_{\RomanNumeralCaps{1}} + \underbrace{\sqrt{-g} \tensor{R}{_a_b} \var{\tensor{g}{^a^b}}}_{\RomanNumeralCaps{2}}
+				\var{\Lad} = \underbrace{\sqrt{-g} \tensor{g}{^a^b} \var{\tensor{R}{_a_b}}}_{\RomanNumeralCaps{1}} + \underbrace{\sqrt{-g} \tensor{R}{_a_b} \var{\tensor{g}{^a^b}}}_{\RomanNumeralCaps{2}} + \underbrace{R \var{\sqrt{-g}}}_{\RomanNumeralCaps{3}},\label{eq-varL_EH}
 			\end{equation}
-			考虑与 $\tensor{g}{_a_b}(\lambda)$ 适配的导数算符 $\tensor{\myvaried{\nabla}}{_a}$，假定与 $\Nabla{a}$ 相差 $\tensor{C}{^c_a_b}(\lambda)$，即
+			首先考虑与 $\tensor{g}{_a_b}(\lambda)$ 适配的导数算符 $\tensor{\myvaried{\nabla}}{_a}$，假定与 $\Nabla{a}$ 相差 $\tensor{C}{^c_a_b}(\lambda)$，即
 			\begin{equation}
 				\left( \Nabla{a} - \tensor{\myvaried{\nabla}}{_a} \right) \tensor{\omega}{_b} = \tensor{C}{^c_a_b}(\lambda) \tensor{\omega}{_c},
 			\end{equation}
@@ -82,10 +76,82 @@
 					&= \frac{1}{2} \tensor{g}{^c^d} \left( \Nabla{c} \Nabla{a} \var \tensor{g}{_b_d} + \Nabla{c} \Nabla{b} \var \tensor{g}{_a_d} - \Nabla{c} \Nabla{d} \var \tensor{g}{_a_b} - \Nabla{a} \Nabla{b} \var \tensor{g}{_c_d} \right),
 				\end{split}
 			\end{equation}
+			则~\eqref{eq-varL_EH} 中的 \RomanNumeralCaps{1} 为
+			\begin{equation}
+				\begin{split}
+					\RomanNumeralCaps{1} &= \sqrt{-g} \tensor{g}{^a^b} \var{\tensor{R}{_a_b}}\\
+					&= \frac{1}{2} \sqrt{-g} \left( \tensor{\nabla}{^d} \tensor{\nabla}{^b} \var \tensor{g}{_b_d} + \tensor{\nabla}{^d} \tensor{\nabla}{^a} \var \tensor{g}{_a_d} - \tensor{g}{^a^b} \tensor{\nabla}{^d} \Nabla{d} \var \tensor{g}{_a_b} - \tensor{g}{^c^d} \tensor{\nabla}{^a} \Nabla{a} \var \tensor{g}{_c_d} \right)\\
+					&= \sqrt{-g} \left( \tensor{\nabla}{^a} \tensor{\nabla}{^b} \var{\tensor{g}{_a_b}} - \tensor{g}{^b^c} \tensor{\nabla}{^a} \Nabla{a} \var{\tensor{g}{_b_c}} \right)\\
+					&= \sqrt{-g} \Nabla{a} \tensor{v}{^a},
+				\end{split}
+			\end{equation}
+			其中
+			\begin{equation}
+				\tensor{v}{^a} \definedby \tensor{\nabla}{^b} \var{\tensor{g}{_a_b}} - \tensor{g}{^b^c} \Nabla{a} \var{\tensor{g}{_b_c}},
+			\end{equation}
+			故这一项仅为边界项。
+
+			对 $\tensor{\delta}{^a_b} = \tensor{g}{^a^c} \tensor{g}{_c_b}$ 两边变分得关系
+			\begin{equation}
+				\begin{split}
+					\var{\tensor{g}{_a_b}} = - \tensor{g}{_a_c} \tensor{g}{_b_d} \var{\tensor{g}{^c^d}} \qc \var{\tensor{g}{^a^b}} = - \tensor{g}{^a^c} \tensor{g}{^b^d} \var{\tensor{g}{_c_d}},
+				\end{split}
+			\end{equation}
+			故得~\eqref{eq-varL_EH} 中的 \RomanNumeralCaps{2} 为
+			\begin{equation}
+				\begin{split}
+					\RomanNumeralCaps{2} &= \sqrt{-g} \tensor{R}{_a_b} \var{\tensor{g}{^a^b}}\\
+					&= - \sqrt{-g} \tensor{R}{_a_b} \tensor{g}{^a^c} \tensor{g}{^b^d} \var{\tensor{g}{_c_d}}\\
+					&= - \sqrt{g} \tensor{R}{^a^b} \var{\tensor{g}{_a_b}},
+				\end{split}
+			\end{equation}
+			最后考虑 \RomanNumeralCaps{3}，注意到若记 $\tensor{\nvol}{_a_b_c_d}$ 为坐标体元，有行列式表达式
+			\begin{equation}
+				g = \frac{1}{4!} \tensor{\nvol}{^a^b^c^d} \tensor{\nvol}{^e^f^g^h} \tensor{g}{_a_e} \tensor{g}{_b_f} \tensor{g}{_c_g} \tensor{g}{_d_h},
+			\end{equation}
 			则
 			\begin{equation}
 				\begin{split}
-					\var{R} = 
+					\var g &= \frac{1}{3!} \tensor{\nvol}{^a^b^c^d} \tensor{\nvol}{^e^f^g^h} \tensor{g}{_a_e} \tensor{g}{_b_f} \tensor{g}{_c_g} \var \tensor{g}{_d_h},
 				\end{split}
 			\end{equation}
+			记
+			\begin{equation}
+				\tensor{T}{^d^h} \definedby \frac{1}{3!} \tensor{\nvol}{^a^b^c^d} \tensor{\nvol}{^e^f^g^h} \tensor{g}{_a_e} \tensor{g}{_b_f} \tensor{g}{_c_g},
+			\end{equation}
+			则显然它对称，迹为 $4g$，有
+			\begin{equation}
+				\tensor{T}{^d^h} = g \tensor{g}{^d^h} + \tensor{S}{^d^h},
+			\end{equation}
+			其中 $\tensor{S}{^d^h}$ 无迹。另一方面，
+			\begin{equation}
+				\begin{split}
+					\tensor{T}{^d^h} \tensor{g}{_h_l} &= \frac{1}{3!} \tensor{\nvol}{^a^b^c^d} \tensor{\nvol}{^e^f^g^h} \tensor{g}{_a_e} \tensor{g}{_b_f} \tensor{g}{_c_g} \tensor{g}{_h_l}\\
+					&= \frac{1}{3!} \tensor{\nvol}{^\mu^\nu^\sigma^\rho} \tensor{\nvol}{^\alpha^\beta^\gamma^\delta} \tensor{g}{_\mu_\alpha} \tensor{g}{_\nu_\beta} \tensor{g}{_\sigma_\gamma} \tensor{g}{_\delta_\eta} \tensor{\left( \pdv{x^\rho} \right)}{^d} \tensor{\left( \dd{x^\eta} \right)}{_l}\\
+					&= \tensor{\nvol}{^0^1^2^\rho} \tensor{\nvol}{^\alpha^\beta^\gamma^\delta} \tensor{g}{_0_\alpha} \tensor{g}{_1_\beta} \tensor{g}{_2_\gamma} \tensor{g}{_\delta_\eta} \tensor{\left( \pdv{x^\rho} \right)}{^d} \tensor{\left( \dd{x^\eta} \right)}{_l}\\
+					&= \tensor{\nvol}{^\alpha^\beta^\gamma^\delta} \tensor{g}{_0_\alpha} \tensor{g}{_1_\beta} \tensor{g}{_2_\gamma} \tensor{g}{_\delta_3} \tensor{\left( \pdv{x^3} \right)}{^d} \tensor{\left( \dd{x^3} \right)}{_l}\\
+					&= g\tensor{\delta}{^d_l},
+				\end{split}
+			\end{equation}
+			其中倒数第二行中 $\eta$ 必取 $3$ 是因为，否则，不妨设 $\eta$ 取 $0$，则 $\alpha$ 与 $\delta$ 对称，与 $\tensor{\nvol}{^\alpha^\beta^\gamma^\delta}$ 缩并为 $0$。则可知 $\tensor{S}{^d^h}=0$，
+			\begin{equation}
+				\tensor{T}{^d^h} = \frac{1}{3!} \tensor{\nvol}{^a^b^c^d} \tensor{\nvol}{^e^f^g^h} \tensor{g}{_a_e} \tensor{g}{_b_f} \tensor{g}{_c_g} = g \tensor{g}{^d^h},
+			\end{equation}
+			故
+			\begin{equation}
+				\var{g} = g \tensor{g}{^a^b} \var{\tensor{g}{_a_b}},
+			\end{equation}
+			于是
+			\begin{equation}
+				\begin{split}
+					\RomanNumeralCaps{3} &= R \var{\sqrt{-g}}\\
+					&= - \frac{R}{2\sqrt{-g}} \var{g}\\
+					&= \frac{1}{2} \sqrt{-g} R \tensor{g}{^a^b} \var{\tensor{g}{_a_b}},
+				\end{split}
+			\end{equation}
+			故
+			\begin{equation}
+				\var{\Lad} = \RomanNumeralCaps{1} + \RomanNumeralCaps{2} + \RomanNumeralCaps{3} = \sqrt{-g} \Nabla{a} \tensor{v}{^a} - \sqrt{-g} \left( \tensor{R}{^a^b} - \frac{1}{2} R \tensor{g}{^a^b} \right) \var{\tensor{g}{_a_b}},
+			\end{equation}
+			可得真空场方程。
 		\end{Proof}
