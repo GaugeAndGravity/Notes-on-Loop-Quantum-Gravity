@@ -234,3 +234,73 @@
 			\end{equation}
 			证毕。{\normalfont\ttfamily\color{green} 点击返回命题~\ref{pro-KLnh}。}
 		\end{Proof}
+
+		\begin{Property}[\pageref{eq-L_split}页\eqref{eq-L_split}]
+			$\Lad_{\text{EH}} = \frac{1}{2\gkappa} \sqrt{- \det g} \curR$ 用空间量表示为
+			\begin{equation}
+				\Lad = \frac{1}{2\gkappa} \sqrt{h} N \left( \spacecurR - K^2 + \tensor{K}{_a_b} \tensor{K}{^a^b} \right).
+			\end{equation}
+			
+		\end{Property}
+		\begin{Proof}
+			\label{ap-eq-L_split}
+			首先，先证明：
+			\begin{Lemma}
+				\begin{equation}
+					\sqrt{-g} = N\sqrt{h}.
+				\end{equation}
+				\begin{Proof}
+					注意到3维的坐标体元为
+					\begin{equation}
+						\begin{split}
+							\tensor{\nvol}{_b_c_d} &= \frac{1}{\sqrt{-g}} \left( {\tensor{t}{^a} \tensor{\vol}{_a_b_c_d}} \right)\sptilde\\
+							&= \frac{1}{\sqrt{-g}} \left( {\left( N \tensor{n}{^a} + \tensor{N}{^a} \right) \tensor{\vol}{_a_b_c_d}} \right)\sptilde\\
+							&= \frac{1}{\sqrt{-g}} N \tensor{\vol}{_b_c_d} + 0\\
+							&= \frac{\sqrt{h}}{\sqrt{-g}} N \tensor{\nvol}{_b_c_d},
+						\end{split}
+					\end{equation}
+					故
+					\begin{equation}
+						\sqrt{-g} = N\sqrt{h},
+					\end{equation}
+					其中 $\sptilde$ 表示取空间投影，而 $\tensor{N}{^a} \tensor{\vol}{_a_b_c_d}$ 的空间投影为零可通过如下考虑看出：任取空间面上的基底 $\tensor{e}{^a_i}$，$i=1,2,3$，注意到 $\left( \tensor{N}{^a} \tensor{\vol}{_a_b_c_d} \right)\sptilde$ 独立分量只有一个，不妨考虑 $\tensor{N}{^a} \tensor{\vol}{_a_b_c_d} \tensor{e}{^a_1} \tensor{e}{^a_2} \tensor{e}{^a_3}$，但 $\tensor{N}{^a}$ 是 $\left\{ \tensor{e}{^a_i} \right\}_{i=1}^3$ 的线性组合，故分量为零。
+				\end{Proof}
+			\end{Lemma}
+
+			接下来分解曲率，借用高斯方程~\eqref{eqgauss}：
+			\begin{equation*}
+				\tensor{\spacecurR}{_a_b_c^d} = \tensor{h}{_a^k} \tensor{h}{_b^l} \tensor{h}{_c^m} \tensor{h}{_n^d} \tensor{\curR}{_k_l_m^n} - 2 \tensor{K}{_{c[a}} \tensor{K}{_{b]}^d},
+			\end{equation*}
+			注意到
+			\begin{equation*}
+				R = \tensor{g}{^a^b} \tensor{R}{_a_b} = \left( \tensor{h}{^a^b} - \tensor{n}{^a}\tensor{n}{^b} \right) \tensor{R}{_a_b},
+			\end{equation*}
+			考虑 Ricci 张量的时时分量：
+			\begin{equation*}
+				\begin{split}
+					\tensor{R}{_a_b} \tensor{n}{^a} \tensor{n}{^b} &= \tensor{R}{_a_c_b^c} \tensor{n}{^a} \tensor{n}{^b}\\
+					&= - \tensor{n}{^a} \left( \Nabla{a} \Nabla{c} - \Nabla{c} \Nabla{a} \right) \tensor{n}{^c}\\
+					&= - \Nabla{a} \left( \tensor{n}{^a} \Nabla{c} \tensor{n}{^c} \right) + \left( \Nabla{a} \tensor{n}{^a} \right) \Nabla{c} \tensor{n}{^c} + \Nabla{c} \left( \tensor{n}{^a} \Nabla{a} \tensor{n}{^c} \right) - \left( \Nabla{c} \tensor{n}{^a} \right) \left( \Nabla{a} \tensor{n}{^c} \right)\\
+					&= - \Nabla{a} \left( \tensor{n}{^a} \Nabla{c} \tensor{n}{^c} \right) + K^2 + \Nabla{c} \left( \tensor{n}{^a} \Nabla{a} \tensor{n}{^c} \right) - \tensor{K}{_a_c} \tensor{K}{^a^c},
+				\end{split}
+			\end{equation*}
+			而
+			\begin{equation*}
+				\begin{split}
+					\tensor{h}{^a^b} \tensor{R}{_a_b} &= \tensor{h}{^a^b} \tensor{g}{^c^d} \tensor{R}{_a_c_b_d}\\
+					&= \tensor{h}{^a^b} \left( \tensor{h}{^c^d} - \tensor{n}{^c} \tensor{n}{^d} \right) \tensor{R}{_a_c_b_d}\\
+					&= \tensor{h}{^a^b} \tensor{h}{^c^d} \left( \tensor{\spacecurR}{_a_c_b_d} + 2 \tensor{K}{_{b[a}} \tensor{K}{_{c]d}} \right) - \left( \tensor{g}{^a^b} + \tensor{n}{^a} \tensor{n}{^b} \right) \tensor{n}{^c} \tensor{n}{^d} \tensor{R}{_a_c_b_d}\\
+					&= \spacecurR + K^2 - \tensor{K}{_a_b} \tensor{K}{^a^b} - \tensor{n}{^c} \tensor{n}{^d} \tensor{R}{_c_d} - 0,
+				\end{split}
+			\end{equation*}
+			故
+			\begin{equation*}
+				\begin{split}
+					R &= \left( \tensor{h}{^a^b} - \tensor{n}{^a}\tensor{n}{^b} \right) \tensor{R}{_a_b}\\
+					&= \spacecurR + K^2 + \tensor{K}{_a_b} \tensor{K}{^a^b} - 2 \tensor{n}{^a} \tensor{n}{^b} \tensor{R}{_a_b}\\
+					&= \spacecurR - K^2 + \tensor{K}{_a_b} \tensor{K}{^a^b} + 2 \Nabla{a} \left( \tensor{n}{^a} \Nabla{b} \tensor{n}{^b} - \tensor{n}{^b} \Nabla{b} \tensor{n}{^a} \right),
+				\end{split}
+			\end{equation*}
+			弃去边界项，命题得证。
+			{\normalfont\ttfamily\color{green} 点击返回~\eqref{eq-L_split}。}
+		\end{Proof}
