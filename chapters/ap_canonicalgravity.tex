@@ -382,3 +382,115 @@
 			\end{gather}
 			{\normalfont\ttfamily\color{green} 点击返回~\eqref{eq-ADM_H}。}
 		\end{Proof}
+
+		\begin{Property}
+			ADM 形式中，约束之间的泊松括号为
+			\begin{equation}
+				\begin{split}
+					\left\{ V({u}), V({v}) \right\} &= 2\gkappa V(\Ld{{u}} {v}),\\
+					\left\{ V({v}), C(f) \right\} &= 2\gkappa C(v(f)),\\
+					\left\{ C(f), C(f') \right\} &= 2\gkappa V(f\tensor{D}{^a}f'-f' \tensor{D}{^a}f).
+				\end{split}
+			\end{equation}
+		\end{Property}
+
+		\begin{Proof}
+			\label{ap-eq-ADM_constrain_alg}
+			利用
+			\begin{gather}
+				\var(\sqrt{h} \spacecurR) = \sqrt{h} \left( \tensor{\spacecurR}{_a_b} - \frac{1}{2} \spacecurR \tensor{h}{_a_b} \right) \var{\tensor{h}{^a^b}} + \sqrt{h} \tensor{D}{^a} \left( \tensor{D}{^b} \var{\tensor{h}{_a_b}} - \tensor{h}{^c^d} \tensor{D}{_a} \var{\tensor{h}{_c_d}} \right),\\
+				\var h = h \tensor{h}{^a^b} \var \tensor{h}{_a_b},\\
+				\var{\tensor{h}{^a^b}} = - \tensor{h}{^a^c} \tensor{h}{^b^d} \var{\tensor{h}{_c_d}},
+			\end{gather}
+			标量约束的变分
+			\begin{equation}
+				\var C(f) = \underbrace{- \frac{1}{2\gkappa} \var \int_{\spc} \dd[3]{x} \sqrt{h} \spacecurR f}_{\mathrm{I}} + \underbrace{2\gkappa \var \int_{\spc} \frac{f}{h} \left( \tensor{\pi}{_a_b} \tensor{\pi}{^a^b} - \frac{1}{2} \pi^2 \right)}_{\mathrm{II}},
+			\end{equation}
+			分别计算：
+			\begin{align*}
+				\mathrm{I} &= - \frac{1}{2\gkappa} \int_{\spc} f \left[ \left( \tensor{\spacecurR}{_a_b} - \frac{1}{2} \spacecurR \tensor{h}{_a_b} \right) \var{\tensor{h}{^a^b}} + \tensor{D}{^a} \left( \tensor{D}{^b} \var{\tensor{h}{_a_b}} - \tensor{h}{^c^d} \tensor{D}{_a} \var{\tensor{h}{_c_d}} \right) \right]\\
+				&= - \frac{1}{2\gkappa} \int_{\spc} -f \left[ \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right) \var{\tensor{h}{_a_b}} \right] - \left( \tensor{D}{^b} \var{\tensor{h}{_a_b}} - \tensor{h}{^c^d} \tensor{D}{_a} \var{\tensor{h}{_c_d}} \right) \tensor{D}{^a} f\\ \displaybreak[1]
+				&= \frac{1}{2\gkappa} \int_{\spc} \left[ f \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right) - \left( \tensor{D}{^b} \tensor{D}{^a} f - \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f  \right) \right] \var{\tensor{h}{_a_b}},\\
+				\mathrm{II} &= 2\gkappa \var \int_{\spc} \dd[3]{x} \frac{f}{\sqrt{h}} \left( \tensor{h}{_a_c} \tensor{h}{_b_d} \tensor{\pi}{^a^b} \tensor{\pi}{^c^d} - \frac{1}{2} \tensor{h}{_a_b} \tensor{h}{_c_d} \tensor{\pi}{^a^b} \tensor{\pi}{^c^d} \right)\\
+				&= 2\gkappa \int_{\spc} \dd[3]{x} \frac{f}{\sqrt{h}} \left( -\frac{1}{2} \tensor{h}{^a^b} \var{\tensor{h}{_a_b}} \right) \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right)\\
+				& \qquad \phantom{1} + \frac{f}{\sqrt{h}} \left[ \left( 2 \tensor{h}{_a_c} \var \tensor{h}{_b_d} - \tensor{h}{_c_d} \var \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} \tensor{\pi}{^c^d} + \left( \tensor{h}{_a_c} \tensor{h}{_b_d} - \frac{1}{2} \tensor{h}{_a_b} \tensor{h}{_c_d} \right) 2 \tensor{\pi}{^c^d} \var \tensor{\pi}{^a^b} \right]\\
+				&= 2\gkappa \int_{\spc} \dd[3]{x} \frac{f}{\sqrt{h}} \bigg\{ \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \var \tensor{h}{_a_b}\\
+				& \qquad \phantom{1} + 2 \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \var{\tensor{\pi}{^a^b}} \bigg\},
+			\end{align*}
+			故
+			\begin{equation*}
+				\begin{split}
+					\fdv{C(f)}{\tensor{h}{_a_b}} &= \frac{\sqrt{h}}{2\gkappa} \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f - \tensor{D}{^b} \tensor{D}{^a} f \right) + f \bigg\{ \frac{\sqrt{h}}{2\gkappa} \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right)\\
+					&\qquad \phantom{1} + \frac{2\gkappa}{\sqrt{h}} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\},\\
+					\fdv{C(f)}{\tensor{\pi}{^a^b}} &= \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right),
+				\end{split}
+			\end{equation*}
+			于是
+			\begin{align*}
+				\left\{ C(f), C(f') \right\} &= 2\gkappa \int_{\spc} \dd[3]{x} \left( \fdv{C(f)}{\tensor{h}{_a_b}} \fdv{C(f')}{\tensor{\pi}{^a^b}} - \fdv{C(f')}{\tensor{h}{_a_b}} \fdv{C(f)}{\tensor{\pi}{^a^b}} \right)\\
+				&= 4\gkappa \int_{\spc} \dd[3]{x} f' \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f - \tensor{D}{^b} \tensor{D}{^a} f \right) \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\
+				& \qquad \phantom{1} + f f' \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \bigg\{ \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b}\right)\\ \displaybreak[1]
+				&\qquad \phantom{1} + \frac{4\gkappa^2}{h} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\}\\ \displaybreak[1]
+				&\qquad \phantom{1} - f \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f' - \tensor{D}{^b} \tensor{D}{^a} f' \right) \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\ \displaybreak[1]
+				& \qquad \phantom{1} - f f' \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \bigg\{ \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b}\right)\\ \displaybreak[1]
+				&\qquad \phantom{1} + \frac{4\gkappa^2}{h} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\}\\ \displaybreak[1]
+				&= - 4\gkappa \int_{\spc} \dd[3]{x} \frac{\pi}{2} \left( f' \tensor{D}{_c} \tensor{D}{^c} f - f \tensor{D}{_c} \tensor{D}{^c} f' \right)\\\displaybreak[1]
+				&\qquad \phantom{1} + \left( f' \tensor{D}{^b} \tensor{D}{^a} f - f \tensor{D}{^b} \tensor{D}{^a} f' \right) \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\\displaybreak[1]
+				&= - 4\gkappa \int_{\spc} \dd[3]{x} \left( f' \tensor{D}{^b} \tensor{D}{^a} f - f \tensor{D}{^b} \tensor{D}{^a} f' \right) \tensor{\pi}{_a_b} \\
+				&= 4\gkappa \int_{\spc} \dd[3]{x} f' \left( \tensor{D}{^a} f \right) \tensor{D}{^b} \tensor{\pi}{_a_b} - f \left( \tensor{D}{^a} f' \right) \tensor{D}{^b} \tensor{\pi}{_a_b}\\
+				&= 2\gkappa V(f\tensor{D}{^a}f' - f'\tensor{D}{^a}f)
+			\end{align*}
+			而矢量约束的变分
+			\begin{align*}
+				\var{V(v)} &= \var( -2 \int_{\spc} \dd[3]{x} \tensor{v}{_a} \tensor{D}{_b} \tensor{\pi}{^a^b} )\\
+				&= \var(2 \int_{\spc} \dd[3]{x} \left( \tensor{D}{_b} \tensor{v}{_a} \right) \tensor{\pi}{^a^b})\\
+				&= \var(\int_{\spc} \dd[3]{x} \tensor{\pi}{^a^b} \Ld{v} \tensor{h}{_a_b})\\
+				&= \int_{\spc} \dd[3]{x} \left( \Ld{v} \tensor{h}{_a_b} \right) \var{\tensor{\pi}{^a^b}} - \left( \Ld{v} \tensor{\pi}{^a^b} \right) \var{\tensor{h}{_a_b}} + \Ld{v} \left( \tensor{\pi}{^a^b} \var{\tensor{h}{_a_b}} \right)\\
+				&= \int_{\spc} \dd[3]{x} \left( \Ld{v} \tensor{h}{_a_b} \right) \var{\tensor{\pi}{^a^b}} - \left( \Ld{v} \tensor{\pi}{^a^b} \right) \var{\tensor{h}{_a_b}}\\
+				&\qquad \phantom{1} + \tensor{v}{^c} \tensor{D}{_c} \left( \tensor{\pi}{^a^b} \var{\tensor{h}{_a_b}} \right) + \tensor{\pi}{^a^b} \var{\tensor{h}{_a_b}} \tensor{D}{_c} \tensor{v}{^c}\\
+				&= \int_{\spc} \dd[3]{x} \left( \Ld{v} \tensor{h}{_a_b} \right) \var{\tensor{\pi}{^a^b}} - \left( \Ld{v} \tensor{\pi}{^a^b} \right) \var{\tensor{h}{_a_b}} + \tensor{D}{_c} \left( \tensor{v}{^c} \tensor{\pi}{^a^b} \var{\tensor{h}{_a_b}} \right),
+			\end{align*}
+			得
+			\begin{align*}
+				\displaybreak[1]
+				\fdv{V(v)}{\tensor{h}{_a_b}} &= - \Ld{v} \tensor{\pi}{^a^b},\\
+				\fdv{V(v)}{\tensor{\pi}{^a^b}} &= \Ld{v} \tensor{h}{_a_b},
+			\end{align*}
+			故
+			\begin{align*}
+				\left\{ V(u), V(v) \right\} &= 2\gkappa \int_{\spc} \dd[3]{x} \left( \fdv{V(u)}{\tensor{h}{_a_b}} \fdv{V(v)}{\tensor{\pi}{^a^b}} - \fdv{V(v)}{\tensor{h}{_a_b}} \fdv{V(u)}{\tensor{\pi}{^a^b}} \right)\\ \displaybreak[1]
+				&= -2\gkappa \int_{\spc} \dd[3]{x} \left( \Ld{u} \tensor{\pi}{^a^b} \right) \Ld{v} \tensor{h}{_a_b} - \left( \Ld{v} \tensor{\pi}{^a^b} \right) \Ld{u} \tensor{h}{_a_b}\\
+				&= -2\gkappa \int_{\spc} \dd[3]{x} \Ld{u} \left( \tensor{\pi}{^a^b} \Ld{v} \tensor{h}{_a_b} \right) - \Ld{v} \left( \tensor{\pi}{^a^b} \Ld{u} \tensor{h}{_a_b} \right)\\ \displaybreak[1]
+				&\qquad \phantom{1} - \tensor{\pi}{^a^b} \Ld{u} \Ld{v} \tensor{h}{_a_b} - \tensor{\pi}{^a^b} \Ld{v} \Ld{u} \tensor{h}{_a_b}\\ \displaybreak[1]
+				&= 2\gkappa \int_{\spc} \dd[3]{x} \tensor{\pi}{^a^b} \Ld{[u,v]} \tensor{h}{_a_b}\\ \displaybreak[1]
+				&= 2\gkappa V([u,v]),\\
+				\left\{ V(v), C(f) \right\} &= 2\gkappa \int_{\spc} \dd[3]{x} \left( \fdv{V(v)}{\tensor{h}{_a_b}} \fdv{C(f)}{\tensor{\pi}{^a^b}} - \fdv{C(f)}{\tensor{h}{_a_b}} \fdv{V(v)}{\tensor{\pi}{^a^b}} \right)\\
+				&= 2\gkappa \int_{\spc} \dd[3]{x} \left( -\Ld{v} \tensor{\pi}{^a^b} \right) \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\
+				&\qquad \phantom{1} - \left( \Ld{v} \tensor{h}{_a_b} \right) \frac{\sqrt{h}}{2\gkappa} \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f - \tensor{D}{^b} \tensor{D}{^a} f \right)\\
+				&\qquad \phantom{1} - \left( \Ld{v} \tensor{h}{_a_b} \right) f \bigg\{ \frac{\sqrt{h}}{2\gkappa} \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right)\\ \displaybreak[1]
+				&\qquad\quad \phantom{1} + \frac{2\gkappa}{\sqrt{h}} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\}\\ \displaybreak[1]
+				&= -2\gkappa \int_{\spc} \dd[3]{x} \frac{4\gkappa}{\sqrt{h}} \left( \tensor{v}{^c} \tensor{D}{_c} \tensor{\pi}{^a^b} - \tensor{\pi}{^a^c} \tensor{D}{_c} \tensor{v}{^b} - \tensor{\pi}{^b^c} \tensor{D}{_c} \tensor{v}{^a} + \tensor{\pi}{^a^b} \tensor{D}{_c} \tensor{v}{^c} \right)\\
+				&\qquad \phantom{1} \times \left[ f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \right]\\ \displaybreak[1]
+				&\qquad \phantom{1} + \frac{\sqrt{h}}{\gkappa} \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f - \tensor{D}{^b} \tensor{D}{^a} f \right) \tensor{D}{_a} \tensor{v}{_b}\\ \displaybreak[1]
+				&\qquad \phantom{1} + 2 \left( \tensor{D}{_a} \tensor{v}{_b} \right) f \bigg\{ \frac{\sqrt{h}}{2\gkappa} \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right)\\ \displaybreak[1]
+				&\qquad\quad \phantom{1} + \frac{2\gkappa}{\sqrt{h}} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\}\\
+				&= -2\gkappa \int_{\spc} \dd[3]{x} \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{v}{^c} \tensor{D}{_c} \tensor{\pi}{^a^b}\\
+				&\qquad - \frac{8\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{^a^c} \tensor{\pi}{_a^b} - \frac{1}{2} \pi \tensor{\pi}{^b^c} \right) \tensor{D}{_c} \tensor{v}{_b}\\
+				&\qquad + \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{^a^b} \tensor{\pi}{_a_b} - \frac{1}{2} \pi^2 \right) \tensor{D}{_c} \tensor{v}{^c}\\
+				&\qquad + \frac{\sqrt{h}}{\gkappa} {\color{blue} \left[ \left( \tensor{D}{_c} \tensor{D}{^c} f \right) \tensor{D}{_a} \tensor{v}{^a} - \left( \tensor{D}{^b} \tensor{D}{^a} f \right) \tensor{D}{_a} \tensor{v}{_b} \right]}\\
+				&\qquad + \frac{\sqrt{h}}{\gkappa}\left( {\color{blue} \tensor{\spacecurR}{^a^b}} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right) {\color{blue} \tensor{v}{_b} \tensor{D}{_a} f}\\
+				&\qquad + \frac{4\gkappa}{\sqrt{h}} f \bigg[ - \frac{1}{2} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) \tensor{D}{_c} \tensor{v}{^c}\\ \displaybreak[1]
+				&\qquad\quad + 2 \left( \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \frac{1}{2} \pi \tensor{\pi}{^a^b} \right) \tensor{D}{_a} \tensor{v}{_b} \bigg]\\
+				&= -2\gkappa \int_{\spc} \dd[3]{x} \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{v}{^c} \tensor{D}{_c} \tensor{\pi}{^a^b}\\ \displaybreak[1]
+				&\qquad + \frac{2\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{^a^b} \tensor{\pi}{_a_b} - \frac{1}{2} \pi^2 \right) \tensor{D}{_c} \tensor{v}{^c} - \frac{\sqrt{h}}{2\gkappa} \spacecurR v(f)\\
+				&= 2\gkappa \int_{\spc} \dd[3]{x} \frac{2\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} \tensor{D}{_c} \tensor{v}{^c}\\
+				&\qquad + \frac{4\gkappa}{\sqrt{h}} \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} \tensor{v}{^c} \tensor{D}{_c} f\\
+				&\qquad + \frac{4\gkappa}{\sqrt{h}} f \tensor{\pi}{^a^b} \tensor{v}{^c} \tensor{D}{_c} \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) - \frac{\sqrt{h}}{2\gkappa} \spacecurR v(f)\\
+				&= 2\gkappa C(v(f)) + 2\gkappa \int_{\spc} \dd[3]{x} \frac{2\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} \tensor{D}{_c} \tensor{v}{^c}\\
+				&\qquad {}+ \frac{2\gkappa}{\sqrt{h}} \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} v(f)\\
+				& \qquad {} + \frac{4\gkappa}{\sqrt{h}} f \tensor{\pi}{^a^b} \tensor{v}{^c} \tensor{D}{_c} \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\
+				&= 2\gkappa C(v(f)) + 2\gkappa \int_{\spc} \dd[3]{x} \frac{2\gkappa}{\sqrt{h}} f \tensor{\pi}{^a^b} \tensor{v}{^c} \tensor{D}{_c} \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\
+				& \qquad {} - \frac{2\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{v}{^c} \tensor{D}{_c} \tensor{\pi}{^a^b}\\
+				&= 2\gkappa C(v(f)).
+			\end{align*}
+		\end{Proof}

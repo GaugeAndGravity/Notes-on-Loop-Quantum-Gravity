@@ -142,7 +142,7 @@
 			\pi_N = \pdv{\Lad}{\dot{N}} = 0 \qc \tensor{\pi}{^a} = \pdv{\Lad}{\tensor{\dot{N}}{_a}} = 0, \label{eq-constrain12}\\
 			\tensor{\pi}{^a^b} = \pdv{\Lad}{\tensor{\dot{h}}{_a_b}} = \frac{1}{2\gkappa} \sqrt{h} \left( \tensor{K}{^a^b} - K \tensor{h}{^a^b} \right), \label{eq-pi}
 		\end{gather}
-		其中 $\pi_N$, $\tensor{\pi}{^a}$, $\tensor{\pi}{^a^b}$ 分别是与 $N$, $\tensor{N}{_a}$, $\tensor{h}{_a_b}$ 共轭的动量。\eqref{eq-constrain12} 给出两个初级约束。去掉一些边界项后，有哈密顿量\footnote{计算过程见\pageref{ap-eq-ADM_H}}
+		其中 $\pi_N$, $\tensor{\pi}{^a}$, $\tensor{\pi}{^a^b}$ 分别是与 $N$, $\tensor{N}{_a}$, $\tensor{h}{_a_b}$ 共轭的动量。\eqref{eq-constrain12} 给出两个初级约束。去掉一些边界项后，有哈密顿量\footnote{计算过程见 \pageref{ap-eq-ADM_H} 页}
 		\begin{equation}
 			H[N,\tensor{N}{_a}, \tensor{h}{_a_b}, \tensor{\pi}{^a^b}] = \int_{\spc} \dd[3]{x} \left( N C + \tensor{N}{_a} \tensor{V}{^a} \right), \label{eq-ADM_H}
 		\end{equation}
@@ -168,12 +168,12 @@
 		\begin{equation}
 			C(f) \definedby \int_{\spc} \dd[3]{x} C f  \qc V ({v}) \definedby \int_{\spc} \dd[3]{x} \tensor{V}{_a} \tensor{v}{^a},
 		\end{equation}
-		其中 $f\in C^\infty(\spc), v\in \Gamma(\TB{\spc})$ 满足适当的边界条件，可以算得泊松括号
+		其中 $f\in C^\infty(\spc), v\in \Gamma(\TB{\spc})$ 满足适当的边界条件，可以算得泊松括号\footnote{计算过程见~\pageref{ap-eq-ADM_constrain_alg} 页。}
 		\begin{equation}
 			\begin{split}
 				\left\{ V({u}), V({v}) \right\} &= 2\gkappa V(\Ld{{u}} {v}),\\
 				\left\{ V({v}), C(f) \right\} &= 2\gkappa C(v(f)),\\
-				\left\{ C(f), C(f') \right\} &= 2\gkappa V(f\tensor{D}{^a}f'-f' \tensor{D}{^a}f),
+				\left\{ C(f), C(f') \right\} &= 2\gkappa V(f\tensor{D}{^a}f'-f' \tensor{D}{^a}f),\label{eq-ADM_constrain_alg}
 			\end{split}
 		\end{equation}
 		又因
