@@ -135,16 +135,16 @@
 		\end{equation}
 		其中 $h$ 是 $\tensor{h}{_a_b}$ 的分量矩阵的行列式， $\spacecurR$ 是 $\spc_t$ 上的标量曲率，由 $\tensor{h}{_a_b}$ 及其二阶空间导数确定，而 $\tensor{K}{_a_b}$ 通过
 		\begin{equation}
-			\tensor{K}{_a_b} = \frac{1}{2N} \left( \tensor{\dot{h}}{_a_b} - 2 \tensor{D}{_{(a}} \tensor{N}{_{b)}} \right)
+			\tensor{K}{_a_b} = \frac{1}{2N} \left( \tensor{\dot{h}}{_a_b} - 2 \tensor{D}{_{(a}} \tensor{N}{_{b)}} \right) \label{eq-K_doth}
 		\end{equation}
-		由 $\tensor{\dot{h}}{_a_b}, N, \tensor{N}{_a}, \spaceD{a}$ 决定，并有 $K = \tensor{h}{^a^b} \tensor{K}{_a_b}$。这说明~\eqref{eq-L_split} 的确是位型变量 $\left( \tensor{h}{_a_b} , N, \tensor{N}{_a} \right)$ 及其时间导数及空间导数的函数。可求得共轭动量
+		由 $\tensor{\dot{h}}{_a_b}, N, \tensor{N}{_a}, \spaceD{a}$ 决定，并有 $K = \tensor{h}{^a^b} \tensor{K}{_a_b}$。这说明~\eqref{eq-L_split} 的确是位型变量 $\left( \tensor{h}{_a_b} , N, \tensor{N}{_a} \right)$ 及其时间导数及空间导数的函数。可求得共轭动量\footnote{证明参见~\pageref{ap-eq-pi} 页。}
 		\begin{gather}
 			\pi_N = \pdv{\Lad}{\dot{N}} = 0 \qc \tensor{\pi}{^a} = \pdv{\Lad}{\tensor{\dot{N}}{_a}} = 0, \label{eq-constrain12}\\
 			\tensor{\pi}{^a^b} = \pdv{\Lad}{\tensor{\dot{h}}{_a_b}} = \frac{1}{2\gkappa} \sqrt{h} \left( \tensor{K}{^a^b} - K \tensor{h}{^a^b} \right), \label{eq-pi}
 		\end{gather}
-		其中 $\pi_N$, $\tensor{\pi}{^a}$, $\tensor{\pi}{^a^b}$ 分别是与 $N$, $\tensor{N}{_a}$, $\tensor{h}{_a_b}$ 共轭的动量。\eqref{eq-constrain12} 给出两个初级约束。去掉一些边界项后，有哈密顿量
+		其中 $\pi_N$, $\tensor{\pi}{^a}$, $\tensor{\pi}{^a^b}$ 分别是与 $N$, $\tensor{N}{_a}$, $\tensor{h}{_a_b}$ 共轭的动量。\eqref{eq-constrain12} 给出两个初级约束。去掉一些边界项后，有哈密顿量\footnote{计算过程见\pageref{ap-eq-ADM_H}}
 		\begin{equation}
-			H[N,\tensor{N}{_a}, \tensor{h}{_a_b}, \tensor{\pi}{^a^b}] = \frac{1}{2\gkappa} \int_{\spc} \dd[3]{x} \left( N C + \tensor{N}{_a} \tensor{V}{^a} \right), \label{eq-ADM_H}
+			H[N,\tensor{N}{_a}, \tensor{h}{_a_b}, \tensor{\pi}{^a^b}] = \int_{\spc} \dd[3]{x} \left( N C + \tensor{N}{_a} \tensor{V}{^a} \right), \label{eq-ADM_H}
 		\end{equation}
 		其中
 		\begin{gather}
@@ -178,7 +178,7 @@
 		\end{equation}
 		又因
 		\begin{equation}
-			H = \frac{1}{2\gkappa} \left( C(N) + V(\myvec{N}) \right),
+			H = C(N) + V(\myvec{N}),
 		\end{equation}
 		知 $H,C,V$ 两两泊松括号弱等于零（在约束面上为零），并且是约束的线性组合，故 ADM 形式的广义相对论是第一类约束系统。
 

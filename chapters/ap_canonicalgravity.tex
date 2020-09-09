@@ -304,3 +304,81 @@
 			弃去边界项，命题得证。
 			{\normalfont\ttfamily\color{green} 点击返回~\eqref{eq-L_split}。}
 		\end{Proof}
+
+		\begin{Property}[\pageref{eq-pi}页\eqref{eq-pi}]
+			可求得共轭动量
+			\begin{gather}
+				\pi_N = \pdv{\Lad}{\dot{N}} = 0 \qc \tensor{\pi}{^a} = \pdv{\Lad}{\tensor{\dot{N}}{_a}} = 0, \label{ap-eq-constrain12}\\
+				\tensor{\pi}{^a^b} = \pdv{\Lad}{\tensor{\dot{h}}{_a_b}} = \frac{1}{2\gkappa} \sqrt{h} \left( \tensor{K}{^a^b} - K \tensor{h}{^a^b} \right), \label{ap-eq-pi}
+			\end{gather}
+			其中 $\pi_N$, $\tensor{\pi}{^a}$, $\tensor{\pi}{^a^b}$ 分别是与 $N$, $\tensor{N}{_a}$, $\tensor{h}{_a_b}$ 共轭的动量。
+		\end{Property}
+		
+		\begin{Proof}
+			\label{ap-eq-pi}
+			首先，易发现 $\Lad$ 不含 $\dot{N}$ 和 $\tensor{\dot{N}}{^a}$，故~\eqref{ap-eq-constrain12} 显然。而依赖 $\tensor{\dot{h}}{_a_b}$ 的项只有 $\tensor{K}{_a_b}$，注意到~\eqref{eq-K_doth}：
+			\begin{equation*}
+				\tensor{K}{_a_b} = \frac{1}{2N} \left( \tensor{\dot{h}}{_a_b} - 2 \tensor{D}{_{(a}} \tensor{N}{_{b)}} \right),
+			\end{equation*}
+			得
+			\begin{equation}
+				\begin{split}
+					\tensor{\pi}{^a^b} &= \pdv{\Lad}{\tensor{\dot{h}}{_a_b}}\\
+					&= \pdv{\Lad}{\tensor{K}{_c_d}} \pdv{\tensor{K}{_c_d}}{\tensor{\dot{h}}{_a_b}}\\
+					&= \frac{1}{2\gkappa} \sqrt{h} N \left( - 2 K \tensor{h}{^c^d} + 2 \tensor{K}{^c^d} \right) \times \frac{1}{2N} \tensor{\delta}{^a_{(c}} \tensor{\delta}{^b_{d)}}\\
+					&= \frac{1}{2\gkappa} \sqrt{h} \left( \tensor{K}{^a^b} - K \tensor{h}{^a^b} \right),
+				\end{split}
+			\end{equation}
+			证毕。
+			{\normalfont\ttfamily\color{green} 点击返回~\eqref{eq-pi}。}
+		\end{Proof}
+
+		\begin{Property}[\pageref{eq-ADM_H}页 \eqref{eq-ADM_H}]
+			ADM形式的哈密顿量为
+			\begin{equation}
+				H[N,\tensor{N}{_a}, \tensor{h}{_a_b}, \tensor{\pi}{^a^b}] = \int_{\spc} \dd[3]{x} \left( N C + \tensor{N}{_a} \tensor{V}{^a} \right), \label{ap-eq-ADM_H}
+			\end{equation}
+			其中
+			\begin{gather}
+				C \definedby - \frac{\sqrt{h}}{2\gkappa} \spacecurR + \frac{2\gkappa}{\sqrt{h}} \left( \tensor{\pi}{_a_b} \tensor{\pi}{^a^b} - \frac{1}{2} \pi^2 \right),\\
+				\tensor{V}{^a} \definedby -2 \spaceD{b} \tensor{\pi}{^a^b}.
+			\end{gather}
+		\end{Property}
+
+		\begin{Proof}
+			\label{ap-eq-ADM_H}
+			由~\eqref{ap-eq-pi} 取迹得
+			\begin{equation}
+				\pi = \frac{1}{2\gkappa} \sqrt{h} \left( K - 3 K \right) = - \frac{1}{\gkappa} \sqrt{h} K,
+			\end{equation}
+			代入反解得
+			\begin{equation}
+				\begin{split}
+					\tensor{K}{^a^b} &= \frac{2\gkappa}{\sqrt{h}} \tensor{\pi}{^a^b} + K \tensor{h}{^a^b}\\
+					&= \frac{2\gkappa}{\sqrt{h}} \tensor{\pi}{^a^b} - \frac{\gkappa}{\sqrt{h}} \pi \tensor{h}{^a^b}\\
+					&= \frac{2\gkappa}{\sqrt{h}} \left( \tensor{\pi}{^a^b} - \frac{1}{2} \pi \tensor{h}{^a^b} \right),
+				\end{split}
+			\end{equation}
+			故
+			\begin{equation}
+				\begin{split}
+					\Had ={}& \tensor{\dot{h}}{_a_b} \tensor{\pi}{^a^b} - \Lad\\
+					={}& \left( 2 N \tensor{K}{_a_b} + 2 \tensor{D}{_{(a}} \tensor{N}{_{b)}} \right) \tensor{\pi}{^a^b} - \frac{1}{2\gkappa} \sqrt{h} N \left( \spacecurR - K^2 + \tensor{K}{_a_b} \tensor{K}{^a^b} \right)\\
+					={}& \frac{4\gkappa}{\sqrt{h}} N \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} + 2 \tensor{\pi}{^a^b} \tensor{D}{_a} \tensor{N}{_b}\\
+					& {} - \frac{\sqrt{h}}{2\gkappa} N \left[ \spacecurR - \frac{\gkappa^2}{h} \pi^2 + \frac{4\gkappa^2}{h} \left( \tensor{\pi}{^a^b} - \frac{1}{2} \pi \tensor{h}{^a^b} \right) \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \right]\\
+					={} & \frac{4\gkappa}{\sqrt{h}} N \left( \tensor{\pi}{_a_b} \tensor{\pi}{^a^b} - \frac{1}{2} \pi^2 \right) + 2 \tensor{D}{_a} \left( \tensor{\pi}{^a^b} \tensor{N}{_b} \right) - 2 \tensor{N}{_b} \tensor{D}{_a} \tensor{\pi}{^a^b}\\
+					& {} - N \left[ \frac{\sqrt{h}}{2\gkappa} \spacecurR - \frac{\gkappa}{2\sqrt{h}} \pi^2 + \frac{2\gkappa}{\sqrt{h}} \left( \tensor{\pi}{_a_b} \tensor{\pi}{^a^b} - \pi^2 + \frac{3}{4} \pi^2 \right) \right]\\
+					={} & 2 \tensor{D}{_a} \left( \tensor{\pi}{^a^b} \tensor{N}{_b} \right) - 2 \tensor{N}{_a} \tensor{D}{_b} \tensor{\pi}{^a^b} - \frac{\sqrt{h}}{2\gkappa} N \spacecurR + \frac{2\gkappa}{\sqrt{h}} N \left( \tensor{\pi}{_a_b} \tensor{\pi}{^a^b} - \frac{1}{2} \pi^2 \right),
+				\end{split}
+			\end{equation}
+			弃去第一项边界项，得
+			\begin{equation}
+				\Had = N C + \tensor{N}{_a} \tensor{V}{^a},
+			\end{equation}
+			其中
+			\begin{gather}
+				C \definedby - \frac{\sqrt{h}}{2\gkappa} \spacecurR + \frac{2\gkappa}{\sqrt{h}} \left( \tensor{\pi}{_a_b} \tensor{\pi}{^a^b} - \frac{1}{2} \pi^2 \right),\\
+				\tensor{V}{^a} \definedby -2 \spaceD{b} \tensor{\pi}{^a^b}.
+			\end{gather}
+			{\normalfont\ttfamily\color{green} 点击返回~\eqref{eq-ADM_H}。}
+		\end{Proof}
