@@ -1,4 +1,4 @@
-# *.pdf
+*.pdf
 
 *.aux
 *.log
@@ -20,3 +20,6 @@
 *.synctex(busy)
 *.synctex.gz
 *.synctex.gz(busy)
+
+# 不同系统下令人讨厌的隐藏文件
+.*

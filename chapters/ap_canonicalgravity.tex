@@ -383,7 +383,7 @@
 			{\normalfont\ttfamily\color{green} 点击返回~\eqref{eq-ADM_H}。}
 		\end{Proof}
 
-		\begin{Property}
+		\begin{Property}[\pageref{eq-ADM_constrain_alg}页 \eqref{eq-ADM_constrain_alg}]
 			ADM 形式中，约束之间的泊松括号为
 			\begin{equation}
 				\begin{split}
@@ -437,8 +437,9 @@
 				&= - 4\gkappa \int_{\spc} \dd[3]{x} \frac{\pi}{2} \left( f' \tensor{D}{_c} \tensor{D}{^c} f - f \tensor{D}{_c} \tensor{D}{^c} f' \right)\\\displaybreak[1]
 				&\qquad \phantom{1} + \left( f' \tensor{D}{^b} \tensor{D}{^a} f - f \tensor{D}{^b} \tensor{D}{^a} f' \right) \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\\displaybreak[1]
 				&= - 4\gkappa \int_{\spc} \dd[3]{x} \left( f' \tensor{D}{^b} \tensor{D}{^a} f - f \tensor{D}{^b} \tensor{D}{^a} f' \right) \tensor{\pi}{_a_b} \\
-				&= 4\gkappa \int_{\spc} \dd[3]{x} f' \left( \tensor{D}{^a} f \right) \tensor{D}{^b} \tensor{\pi}{_a_b} - f \left( \tensor{D}{^a} f' \right) \tensor{D}{^b} \tensor{\pi}{_a_b}\\
-				&= 2\gkappa V(f\tensor{D}{^a}f' - f'\tensor{D}{^a}f)
+				&= 4\gkappa \int_{\spc} \dd[3]{x} \left( \tensor{D}{^a} f \right) \tensor{D}{^b} \left( f' \tensor{\pi}{_a_b} \right) - \left( \tensor{D}{^a} f' \right) \tensor{D}{^b} \left( f \tensor{\pi}{_a_b} \right)\\
+				&= 4\gkappa \int_{\spc} \dd[3]{x} f' \tensor{D}{^a} f \tensor{D}{^b} \tensor{\pi}{_a_b} - f \tensor{D}{^a} f' \tensor{D}{^b} \tensor{\pi}{_a_b}\\
+				&= 2\gkappa V(f\tensor{D}{^a}f' - f'\tensor{D}{^a}f).
 			\end{align*}
 			而矢量约束的变分
 			\begin{align*}
@@ -461,9 +462,12 @@
 				\left\{ V(u), V(v) \right\} &= 2\gkappa \int_{\spc} \dd[3]{x} \left( \fdv{V(u)}{\tensor{h}{_a_b}} \fdv{V(v)}{\tensor{\pi}{^a^b}} - \fdv{V(v)}{\tensor{h}{_a_b}} \fdv{V(u)}{\tensor{\pi}{^a^b}} \right)\\ \displaybreak[1]
 				&= -2\gkappa \int_{\spc} \dd[3]{x} \left( \Ld{u} \tensor{\pi}{^a^b} \right) \Ld{v} \tensor{h}{_a_b} - \left( \Ld{v} \tensor{\pi}{^a^b} \right) \Ld{u} \tensor{h}{_a_b}\\
 				&= -2\gkappa \int_{\spc} \dd[3]{x} \Ld{u} \left( \tensor{\pi}{^a^b} \Ld{v} \tensor{h}{_a_b} \right) - \Ld{v} \left( \tensor{\pi}{^a^b} \Ld{u} \tensor{h}{_a_b} \right)\\ \displaybreak[1]
-				&\qquad \phantom{1} - \tensor{\pi}{^a^b} \Ld{u} \Ld{v} \tensor{h}{_a_b} - \tensor{\pi}{^a^b} \Ld{v} \Ld{u} \tensor{h}{_a_b}\\ \displaybreak[1]
+				&\qquad \phantom{1} - \tensor{\pi}{^a^b} \Ld{u} \Ld{v} \tensor{h}{_a_b} + \tensor{\pi}{^a^b} \Ld{v} \Ld{u} \tensor{h}{_a_b}\\ \displaybreak[1]
 				&= 2\gkappa \int_{\spc} \dd[3]{x} \tensor{\pi}{^a^b} \Ld{[u,v]} \tensor{h}{_a_b}\\ \displaybreak[1]
-				&= 2\gkappa V([u,v]),\\
+				&= 2\gkappa V([u,v]),
+			\end{align*}
+			最后，
+			\begin{align*}
 				\left\{ V(v), C(f) \right\} &= 2\gkappa \int_{\spc} \dd[3]{x} \left( \fdv{V(v)}{\tensor{h}{_a_b}} \fdv{C(f)}{\tensor{\pi}{^a^b}} - \fdv{C(f)}{\tensor{h}{_a_b}} \fdv{V(v)}{\tensor{\pi}{^a^b}} \right)\\
 				&= 2\gkappa \int_{\spc} \dd[3]{x} \left( -\Ld{v} \tensor{\pi}{^a^b} \right) \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\
 				&\qquad \phantom{1} - \left( \Ld{v} \tensor{h}{_a_b} \right) \frac{\sqrt{h}}{2\gkappa} \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f - \tensor{D}{^b} \tensor{D}{^a} f \right)\\
@@ -478,11 +482,11 @@
 				&\qquad - \frac{8\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{^a^c} \tensor{\pi}{_a^b} - \frac{1}{2} \pi \tensor{\pi}{^b^c} \right) \tensor{D}{_c} \tensor{v}{_b}\\
 				&\qquad + \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{^a^b} \tensor{\pi}{_a_b} - \frac{1}{2} \pi^2 \right) \tensor{D}{_c} \tensor{v}{^c}\\
 				&\qquad + \frac{\sqrt{h}}{\gkappa} {\color{blue} \left[ \left( \tensor{D}{_c} \tensor{D}{^c} f \right) \tensor{D}{_a} \tensor{v}{^a} - \left( \tensor{D}{^b} \tensor{D}{^a} f \right) \tensor{D}{_a} \tensor{v}{_b} \right]}\\
-				&\qquad + \frac{\sqrt{h}}{\gkappa}\left( {\color{blue} \tensor{\spacecurR}{^a^b}} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right) {\color{blue} \tensor{v}{_b} \tensor{D}{_a} f}\\
+				&\qquad - \frac{\sqrt{h}}{\gkappa}\left( {\color{blue} \tensor{\spacecurR}{^a^b}} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right) {\color{blue} \tensor{v}{_b} \tensor{D}{_a} f}\\
 				&\qquad + \frac{4\gkappa}{\sqrt{h}} f \bigg[ - \frac{1}{2} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) \tensor{D}{_c} \tensor{v}{^c}\\ \displaybreak[1]
 				&\qquad\quad + 2 \left( \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \frac{1}{2} \pi \tensor{\pi}{^a^b} \right) \tensor{D}{_a} \tensor{v}{_b} \bigg]\\
 				&= -2\gkappa \int_{\spc} \dd[3]{x} \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{v}{^c} \tensor{D}{_c} \tensor{\pi}{^a^b}\\ \displaybreak[1]
-				&\qquad + \frac{2\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{^a^b} \tensor{\pi}{_a_b} - \frac{1}{2} \pi^2 \right) \tensor{D}{_c} \tensor{v}{^c} - \frac{\sqrt{h}}{2\gkappa} \spacecurR v(f)\\
+				&\qquad + \frac{2\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{^a^b} \tensor{\pi}{_a_b} - \frac{1}{2} \pi^2 \right) \tensor{D}{_c} \tensor{v}{^c} + \frac{\sqrt{h}}{2\gkappa} \spacecurR v(f)\\
 				&= 2\gkappa \int_{\spc} \dd[3]{x} \frac{2\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} \tensor{D}{_c} \tensor{v}{^c}\\
 				&\qquad + \frac{4\gkappa}{\sqrt{h}} \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{\pi}{^a^b} \tensor{v}{^c} \tensor{D}{_c} f\\
 				&\qquad + \frac{4\gkappa}{\sqrt{h}} f \tensor{\pi}{^a^b} \tensor{v}{^c} \tensor{D}{_c} \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) - \frac{\sqrt{h}}{2\gkappa} \spacecurR v(f)\\
@@ -493,4 +497,60 @@
 				& \qquad {} - \frac{2\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right) \tensor{v}{^c} \tensor{D}{_c} \tensor{\pi}{^a^b}\\
 				&= 2\gkappa C(v(f)).
 			\end{align*}
+			{\normalfont\ttfamily\color{green} 点击返回~\eqref{eq-ADM_constrain_alg}。}
+		\end{Proof}
+
+		\begin{Property}[\pageref{eq-tab}页 \eqref{eq-tab}]
+			还可讨论标量约束和矢量约束生成的规范变换。任给一个用 $\tensor{h}{_a_b}, \tensor{\pi}{^a^b}$ 构造的张量，例如 $\tensor{t}{_a_b}$，可以算出
+			\begin{equation}
+				\begin{split}
+					\left\{ \tensor{t}{_a_b} , V(v) \right\} &\approx 2\gkappa \Ld{v} \tensor{t}{_a_b},\\
+					\left\{ \tensor{t}{_a_b} , C(N) \right\} & \approx 2 \gkappa N \spaceLd{n} \tensor{t}{_a_b}.
+				\end{split}
+			\end{equation}
+		\end{Property}
+		\begin{Proof}
+			\label{ap-eq-tab}
+			以下略去 $t$ 的指标。
+			\begin{align*}
+				\left\{ t(x), V(v) \right\} &= 2 \gkappa \int_{\spc} \dd[3]{y} \left( \fdv{V(v)}{\tensor{\pi}{^a^b}} \pdv{t}{\tensor{h}{_a_b}} \delta(x-y) - \fdv{V(v)}{\tensor{h}{_a_b}} \pdv{t}{\tensor{\pi}{^a^b}} \delta(x-y) \right)\\
+				&=2 \gkappa \fdv{V(v)}{\tensor{\pi}{^a^b}} \pdv{t}{\tensor{h}{_a_b}} - 2 \gkappa \fdv{V(v)}{\tensor{h}{_a_b}} \pdv{t}{\tensor{\pi}{^a^b}},\\
+				\left\{ t(x), C(N) \right\} &= 2 \gkappa \int_{\spc} \dd[3]{y} \left( \fdv{C(N)}{\tensor{\pi}{^a^b}} \pdv{t}{\tensor{h}{_a_b}} \delta(x-y) - \fdv{C(N)}{\tensor{h}{_a_b}} \pdv{t}{\tensor{\pi}{^a^b}} \delta(x-y) \right)\\
+				&= 2 \gkappa \fdv{C(N)}{\tensor{\pi}{^a^b}} \pdv{t}{\tensor{h}{_a_b}} - 2 \gkappa \fdv{C(N)}{\tensor{h}{_a_b}} \pdv{t}{\tensor{\pi}{^a^b}},
+			\end{align*}
+			由之前的计算得
+			\begin{align*}
+				\displaybreak[1]
+				\fdv{V(v)}{\tensor{h}{_a_b}} &= - \Ld{v} \tensor{\pi}{^a^b},\\
+				\fdv{V(v)}{\tensor{\pi}{^a^b}} &= \Ld{v} \tensor{h}{_a_b},
+			\end{align*}
+			于是矢量约束生成的规范变换明显为
+			\begin{align*}
+				\left\{ t, V(v) \right\} &= 2 \gkappa \left( \pdv{t}{\tensor{h}{_a_b}} \Ld{v} \tensor{h}{_a_b} + \pdv{t}{\tensor{\pi}{^a^b}} \Ld{v} \tensor{\pi}{^a^b} \right)\\
+				&= 2 \gkappa \Ld{v} t,
+			\end{align*}
+			对于标量约束，由之前的结果得
+			\begin{align*}
+				\fdv{C(f)}{\tensor{h}{_a_b}} &= \frac{\sqrt{h}}{2\gkappa} \left( \tensor{h}{^a^b} \tensor{D}{_c} \tensor{D}{^c} f - \tensor{D}{^b} \tensor{D}{^a} f \right) + f \bigg\{ \frac{\sqrt{h}}{2\gkappa} \left( \tensor{\spacecurR}{^a^b} - \frac{1}{2} \spacecurR \tensor{h}{^a^b} \right)\\
+				&\qquad \phantom{1} + \frac{2\gkappa}{\sqrt{h}} \left[ -\frac{1}{2} \tensor{h}{^a^b} \left( \tensor{\pi}{_c_d} \tensor{\pi}{^c^d} - \frac{1}{2} \pi^2 \right) + 2 \tensor{\pi}{^c^a} \tensor{\pi}{_c^b} - \pi \tensor{\pi}{^a^b} \right] \bigg\}\\
+				\fdv{C(f)}{\tensor{\pi}{^a^b}} &= \frac{4\gkappa}{\sqrt{h}} f \left( \tensor{\pi}{_a_b} - \frac{1}{2} \pi \tensor{h}{_a_b} \right)\\
+				&= 2 f \tensor{K}{_a_b}\\
+				&= f \spaceLd{n} \tensor{h}{_a_b},
+			\end{align*}
+			由于 $\fdv{C(f)}{\tensor{h}{_a_b}}$ 包含不与 $f$ 直接成正比的第一项，显然它并不可能直接等于 $-f \Ld{n} \tensor{\pi}{^a^b}$。然而，考虑到运动方程
+			\begin{equation*}
+				\spaceLd{Nn+\myvec{N}} \tensor{\pi}{^a^b} = - \fdv{H}{\tensor{h}{_a_b}} = - \fdv{\tensor{h}{_a_b}} \left( C(N) + V(\myvec{N}) \right),
+			\end{equation*}
+			可知 on shell 有
+			\begin{equation}
+				\fdv{C(f)}{\tensor{h}{_a_b}} \approx -f \spaceLd{n} \tensor{\pi}{^a^b},
+			\end{equation}
+			于是 on shell 有
+			\begin{equation}
+				\begin{split}
+					\left\{ t, C(N) \right\} &\approx 2 \gkappa \left( \pdv{t}{\tensor{h}{_a_b}} \spaceLd{Nn} \tensor{h}{_a_b} + \pdv{t}{\tensor{\pi}{^a^b}} \spaceLd{Nn} \tensor{\pi}{^a^b} \right)\\
+					&\approx 2 \gkappa \spaceLd{Nn} t.
+				\end{split}
+			\end{equation}
+			{\normalfont\ttfamily\color{green} 点击返回~\eqref{eq-tab}。}
 		\end{Proof}
